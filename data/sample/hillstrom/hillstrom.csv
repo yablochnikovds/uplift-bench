@@ -1,0 +1,2001 @@
+recency,history_segment,history,mens,womens,zip_code,newbie,channel,segment,visit,conversion,spend
+5,2) $100 - $200,614.96,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+2,2) $100 - $200,201.65,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,855.84,0,0,Rural,0,Phone,No E-Mail,0,0,0.0
+3,4) $350 - $500,328.32,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,349.61,0,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",895.88,0,1,Urban,0,Phone,No E-Mail,0,0,0.0
+1,1) $0 - $100,1032.7,1,1,Surburban,0,Web,No E-Mail,1,0,0.0
+5,"6) $750 - $1,000",1158.52,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+3,1) $0 - $100,1116.77,0,1,Rural,0,Web,No E-Mail,1,0,0.0
+7,5) $500 - $750,165.28,1,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+8,"6) $750 - $1,000",756.27,1,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+9,1) $0 - $100,1415.46,1,1,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+2,"6) $750 - $1,000",1024.3,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,877.68,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,483.96,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+10,"7) $1,000 +",635.62,0,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+5,5) $500 - $750,1022.41,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+4,2) $100 - $200,1453.05,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,894.46,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",375.13,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+9,2) $100 - $200,66.98,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",1420.66,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,1437.11,1,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+6,3) $200 - $350,613.43,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+7,2) $100 - $200,129.84,1,1,Rural,1,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,581.37,0,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+8,"7) $1,000 +",1466.91,0,1,Surburban,0,Multichannel,Mens E-Mail,1,1,83.27
+4,4) $350 - $500,859.22,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",218.07,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+4,"7) $1,000 +",542.0,1,1,Rural,1,Phone,No E-Mail,0,0,0.0
+3,2) $100 - $200,66.26,0,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,1165.33,0,0,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+7,1) $0 - $100,39.09,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+5,5) $500 - $750,608.83,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",959.09,1,0,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+9,5) $500 - $750,117.39,1,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,621.45,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,905.31,0,1,Urban,0,Web,No E-Mail,0,0,0.0
+9,4) $350 - $500,195.68,1,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+9,5) $500 - $750,342.34,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+8,5) $500 - $750,257.25,0,1,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+6,1) $0 - $100,224.6,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+9,3) $200 - $350,1121.08,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,779.62,1,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+9,"7) $1,000 +",1018.05,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",875.97,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,1483.15,0,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+4,2) $100 - $200,452.99,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,691.57,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+10,1) $0 - $100,37.16,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,1) $0 - $100,1184.99,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,635.73,1,1,Urban,0,Web,No E-Mail,1,0,0.0
+11,1) $0 - $100,948.72,1,0,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",233.73,0,0,Surburban,1,Web,No E-Mail,0,0,0.0
+5,"7) $1,000 +",1299.09,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",1275.38,1,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",709.18,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+11,"7) $1,000 +",625.68,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1054.61,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+5,3) $200 - $350,404.98,1,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+1,"6) $750 - $1,000",535.75,0,0,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,859.66,0,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+8,"7) $1,000 +",777.53,0,0,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+10,3) $200 - $350,1473.09,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",899.02,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+5,2) $100 - $200,20.99,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+3,2) $100 - $200,860.63,0,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+1,1) $0 - $100,515.14,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,4) $350 - $500,714.44,0,1,Urban,1,Web,Womens E-Mail,1,0,0.0
+3,1) $0 - $100,23.37,0,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+4,2) $100 - $200,589.54,0,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,199.33,0,1,Rural,0,Phone,No E-Mail,0,0,0.0
+1,"7) $1,000 +",1077.38,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,763.48,0,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+7,4) $350 - $500,1139.58,1,1,Urban,1,Web,Mens E-Mail,1,0,0.0
+10,1) $0 - $100,620.69,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+8,1) $0 - $100,1287.3,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+8,4) $350 - $500,406.81,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+10,3) $200 - $350,912.09,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,782.42,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+5,"7) $1,000 +",620.02,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+8,"7) $1,000 +",651.02,1,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,1386.57,0,0,Surburban,1,Web,Mens E-Mail,1,0,0.0
+11,1) $0 - $100,1270.28,1,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,241.39,0,0,Rural,1,Phone,No E-Mail,0,0,0.0
+7,1) $0 - $100,230.29,0,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",1382.79,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,4) $350 - $500,561.77,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+10,"6) $750 - $1,000",525.71,1,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+4,"7) $1,000 +",448.53,0,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+10,5) $500 - $750,304.42,1,1,Surburban,0,Web,Mens E-Mail,1,0,0.0
+4,3) $200 - $350,560.65,1,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+1,3) $200 - $350,35.75,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,678.05,1,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+10,3) $200 - $350,744.1,0,0,Rural,1,Phone,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,780.75,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+9,4) $350 - $500,1083.41,0,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+9,"6) $750 - $1,000",514.87,1,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+7,4) $350 - $500,672.26,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+6,3) $200 - $350,213.31,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+6,3) $200 - $350,1143.89,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+4,"7) $1,000 +",592.17,0,1,Surburban,0,Web,No E-Mail,1,0,0.0
+4,"7) $1,000 +",256.92,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+3,4) $350 - $500,156.62,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,35.81,0,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+11,3) $200 - $350,449.57,1,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+9,2) $100 - $200,938.0,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,1096.26,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1124.89,1,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,1184.42,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,1126.21,0,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+6,1) $0 - $100,309.64,1,0,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+1,"7) $1,000 +",595.32,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+11,4) $350 - $500,308.69,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+11,1) $0 - $100,729.48,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,29.9,0,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+6,1) $0 - $100,1439.96,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,1494.74,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+3,2) $100 - $200,310.94,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+9,4) $350 - $500,975.6,1,0,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+1,"7) $1,000 +",1460.11,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+4,1) $0 - $100,1140.62,1,1,Urban,1,Web,Mens E-Mail,1,0,0.0
+6,3) $200 - $350,861.68,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",133.69,0,0,Rural,1,Phone,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",846.92,1,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,389.01,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+5,"7) $1,000 +",583.61,0,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+4,"7) $1,000 +",414.63,0,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+11,1) $0 - $100,1488.75,1,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+7,1) $0 - $100,1298.64,0,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,983.93,1,0,Urban,1,Web,No E-Mail,1,0,0.0
+5,"7) $1,000 +",1361.4,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+1,2) $100 - $200,140.72,1,0,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+1,4) $350 - $500,289.57,0,1,Surburban,0,Web,Womens E-Mail,1,0,0.0
+6,3) $200 - $350,1249.64,1,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+11,3) $200 - $350,911.73,1,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+11,3) $200 - $350,960.33,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+2,2) $100 - $200,1163.79,0,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+2,4) $350 - $500,928.12,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",659.61,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,319.64,1,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+9,1) $0 - $100,1402.45,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+3,"7) $1,000 +",887.49,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+9,1) $0 - $100,922.04,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,1085.43,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+4,2) $100 - $200,1451.06,0,0,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,876.27,1,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+8,4) $350 - $500,967.92,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+1,2) $100 - $200,516.26,1,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+3,1) $0 - $100,1186.36,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+1,2) $100 - $200,1494.17,0,0,Urban,0,Phone,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",347.01,1,1,Surburban,1,Web,No E-Mail,0,0,0.0
+3,4) $350 - $500,1042.4,1,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",404.7,0,1,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",1294.03,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",854.97,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+9,4) $350 - $500,1452.37,1,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,985.18,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+8,4) $350 - $500,876.88,1,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,1211.04,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+1,3) $200 - $350,582.12,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+7,1) $0 - $100,846.67,1,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+2,2) $100 - $200,1093.45,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,1491.14,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,1107.99,0,1,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+3,"6) $750 - $1,000",1345.24,1,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+5,4) $350 - $500,1368.52,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+10,5) $500 - $750,1052.81,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1340.14,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,993.9,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+7,3) $200 - $350,1334.84,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+11,2) $100 - $200,657.04,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+6,"7) $1,000 +",1150.63,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+8,1) $0 - $100,1450.59,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,303.09,0,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+10,4) $350 - $500,499.22,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,1343.2,0,0,Urban,0,Web,Womens E-Mail,1,0,0.0
+2,5) $500 - $750,1115.38,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+8,4) $350 - $500,1082.08,0,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+4,4) $350 - $500,414.78,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+8,4) $350 - $500,469.12,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+9,2) $100 - $200,95.9,0,1,Urban,0,Phone,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",392.25,0,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+2,3) $200 - $350,227.09,0,1,Rural,0,Web,No E-Mail,1,0,0.0
+5,1) $0 - $100,116.31,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",31.13,1,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+10,2) $100 - $200,1224.7,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,110.2,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1031.54,1,1,Urban,0,Web,Womens E-Mail,1,0,0.0
+10,2) $100 - $200,490.76,0,0,Urban,0,Phone,Mens E-Mail,0,1,125.6
+1,"7) $1,000 +",442.66,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,158.14,1,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,923.55,1,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",1259.51,0,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+1,"6) $750 - $1,000",394.65,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,830.73,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,1480.76,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+3,1) $0 - $100,1002.34,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+2,1) $0 - $100,705.63,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+10,"7) $1,000 +",154.03,0,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+7,4) $350 - $500,1080.92,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+5,"7) $1,000 +",286.38,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",851.15,1,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+9,5) $500 - $750,37.07,0,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+4,5) $500 - $750,1476.03,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+2,1) $0 - $100,1399.85,1,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,1174.66,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+7,"6) $750 - $1,000",832.73,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+8,3) $200 - $350,791.98,1,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+10,1) $0 - $100,493.38,0,1,Surburban,1,Phone,No E-Mail,1,0,0.0
+3,1) $0 - $100,1368.75,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+10,4) $350 - $500,1059.96,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+10,4) $350 - $500,942.25,0,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,356.36,0,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+3,"7) $1,000 +",678.29,0,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",787.83,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+9,4) $350 - $500,542.03,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+6,3) $200 - $350,167.53,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,91.27,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+10,1) $0 - $100,1073.5,1,0,Urban,1,Web,Womens E-Mail,1,0,0.0
+7,4) $350 - $500,351.68,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+6,2) $100 - $200,207.48,0,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+1,4) $350 - $500,1087.09,1,1,Rural,1,Web,No E-Mail,1,0,0.0
+6,2) $100 - $200,665.28,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+2,5) $500 - $750,500.58,1,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",31.81,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+2,3) $200 - $350,374.47,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+4,1) $0 - $100,56.35,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+3,"6) $750 - $1,000",54.16,0,0,Urban,0,Web,No E-Mail,1,0,0.0
+8,"6) $750 - $1,000",701.23,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+4,3) $200 - $350,365.35,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,359.88,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",539.44,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+9,3) $200 - $350,742.6,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+6,4) $350 - $500,797.51,1,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+2,1) $0 - $100,960.16,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+8,1) $0 - $100,818.29,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,2) $100 - $200,628.38,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,1453.19,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+1,"7) $1,000 +",773.0,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1209.2,1,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",357.47,1,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+9,3) $200 - $350,366.97,1,1,Rural,0,Web,No E-Mail,1,0,0.0
+9,2) $100 - $200,233.09,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,315.66,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",361.79,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,414.71,0,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",726.26,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+9,2) $100 - $200,1429.83,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",712.56,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",746.5,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+5,"7) $1,000 +",877.15,1,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",762.63,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+8,4) $350 - $500,45.82,1,0,Surburban,1,Web,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",192.54,1,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+9,2) $100 - $200,1274.14,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,806.09,1,1,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+6,"7) $1,000 +",856.27,1,1,Rural,0,Phone,Womens E-Mail,1,0,0.0
+1,"7) $1,000 +",685.94,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",813.99,0,1,Urban,0,Web,No E-Mail,0,0,0.0
+10,3) $200 - $350,956.94,1,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+9,4) $350 - $500,1141.22,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,368.3,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+9,3) $200 - $350,760.41,1,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+6,5) $500 - $750,1377.22,1,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+6,4) $350 - $500,877.37,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+5,2) $100 - $200,1265.68,0,1,Rural,1,Web,Mens E-Mail,1,0,0.0
+2,"6) $750 - $1,000",1032.1,0,0,Urban,0,Web,Womens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",528.59,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+9,4) $350 - $500,1486.99,1,0,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",903.94,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",119.84,0,1,Urban,1,Phone,Womens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",347.75,0,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,352.47,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,620.03,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",213.83,0,1,Rural,1,Web,No E-Mail,0,0,0.0
+5,3) $200 - $350,1090.7,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+2,2) $100 - $200,265.57,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+1,"6) $750 - $1,000",380.54,0,0,Surburban,0,Phone,No E-Mail,1,0,0.0
+4,5) $500 - $750,1122.51,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+7,1) $0 - $100,321.09,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+4,5) $500 - $750,1313.97,0,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1127.56,0,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+4,2) $100 - $200,385.83,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,644.25,0,1,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",304.33,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+6,5) $500 - $750,48.76,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,1156.32,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+7,2) $100 - $200,1252.57,1,0,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+2,"6) $750 - $1,000",916.46,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+9,1) $0 - $100,1237.2,1,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+10,4) $350 - $500,601.26,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1106.65,0,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+1,1) $0 - $100,294.37,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,2) $100 - $200,592.76,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,5) $500 - $750,731.33,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+9,3) $200 - $350,345.47,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1035.54,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,1434.93,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1475.03,0,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+9,2) $100 - $200,250.03,0,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+3,"7) $1,000 +",607.03,0,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,982.44,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+4,4) $350 - $500,1342.11,1,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+2,1) $0 - $100,333.13,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",39.76,1,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+4,1) $0 - $100,713.63,0,1,Rural,0,Web,No E-Mail,0,0,0.0
+4,2) $100 - $200,1305.64,1,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+2,1) $0 - $100,1331.2,0,1,Rural,1,Web,Mens E-Mail,1,0,0.0
+1,1) $0 - $100,695.86,0,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+8,4) $350 - $500,964.1,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",48.35,1,1,Surburban,0,Phone,No E-Mail,1,0,0.0
+5,3) $200 - $350,529.09,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",941.57,1,0,Rural,0,Phone,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,770.54,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+8,"7) $1,000 +",759.1,1,0,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+3,3) $200 - $350,793.76,1,1,Rural,0,Web,No E-Mail,1,0,0.0
+2,"6) $750 - $1,000",1136.7,0,0,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+10,4) $350 - $500,1050.39,0,0,Urban,1,Web,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",252.66,0,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+6,4) $350 - $500,194.25,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,102.53,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,134.93,1,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,24.95,0,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+8,"7) $1,000 +",1295.86,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+8,2) $100 - $200,83.33,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+11,2) $100 - $200,1402.15,0,1,Rural,1,Web,No E-Mail,0,0,0.0
+7,"7) $1,000 +",152.01,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",911.87,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,3) $200 - $350,1428.01,1,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+1,"7) $1,000 +",1365.33,1,0,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+7,1) $0 - $100,97.36,1,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+9,2) $100 - $200,1096.77,1,1,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+6,5) $500 - $750,119.81,0,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+7,"7) $1,000 +",497.09,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+10,4) $350 - $500,1413.26,0,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",1179.53,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+4,"7) $1,000 +",1291.49,0,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+6,"7) $1,000 +",802.4,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+8,5) $500 - $750,903.1,0,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+8,"7) $1,000 +",1262.37,0,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",228.07,0,0,Surburban,1,Web,No E-Mail,0,0,0.0
+2,"7) $1,000 +",595.35,0,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+3,1) $0 - $100,376.33,1,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",633.44,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+5,3) $200 - $350,1408.13,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+9,4) $350 - $500,574.79,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,471.23,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,156.9,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,325.01,1,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+1,2) $100 - $200,185.7,0,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,1025.95,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",644.27,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1051.4,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,1381.98,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,747.18,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,70.07,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+6,3) $200 - $350,935.87,0,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+10,"6) $750 - $1,000",432.75,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+6,1) $0 - $100,1223.46,0,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1331.56,0,1,Surburban,0,Web,Womens E-Mail,1,0,0.0
+9,"7) $1,000 +",683.26,1,1,Urban,1,Phone,No E-Mail,0,0,0.0
+4,3) $200 - $350,385.29,1,1,Urban,1,Phone,No E-Mail,0,0,0.0
+3,2) $100 - $200,1074.52,1,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+3,5) $500 - $750,1382.35,0,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+7,"7) $1,000 +",182.3,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",1290.55,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,456.67,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+8,5) $500 - $750,317.87,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1495.24,0,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+3,4) $350 - $500,543.46,0,0,Surburban,1,Phone,No E-Mail,1,0,0.0
+10,"6) $750 - $1,000",916.61,1,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+11,4) $350 - $500,740.82,0,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+5,3) $200 - $350,834.79,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+3,4) $350 - $500,279.78,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+3,2) $100 - $200,1476.97,0,1,Urban,0,Web,Womens E-Mail,1,0,0.0
+6,5) $500 - $750,1182.62,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+1,"6) $750 - $1,000",22.95,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+9,4) $350 - $500,1171.29,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+3,2) $100 - $200,348.11,1,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+6,3) $200 - $350,1146.09,0,1,Urban,1,Multichannel,Womens E-Mail,1,1,82.26
+2,"7) $1,000 +",611.63,0,0,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+5,"7) $1,000 +",289.6,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+1,3) $200 - $350,1027.37,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,980.8,0,1,Urban,0,Web,No E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1134.82,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",822.09,0,1,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+5,5) $500 - $750,834.2,1,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+8,1) $0 - $100,348.28,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,976.02,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+4,"7) $1,000 +",901.17,1,0,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,90.45,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+10,"7) $1,000 +",1259.42,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1137.9,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,453.52,1,1,Surburban,0,Phone,No E-Mail,1,0,0.0
+6,2) $100 - $200,29.99,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+3,5) $500 - $750,1335.39,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,478.13,0,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,902.19,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+3,4) $350 - $500,1278.48,1,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+4,4) $350 - $500,915.17,1,0,Rural,1,Web,Womens E-Mail,1,0,0.0
+4,4) $350 - $500,1144.44,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1486.84,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+7,5) $500 - $750,1069.78,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+5,"7) $1,000 +",204.81,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+8,2) $100 - $200,1153.1,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+2,5) $500 - $750,910.92,1,1,Rural,1,Phone,Mens E-Mail,1,1,57.71
+3,5) $500 - $750,748.1,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,758.08,0,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+2,4) $350 - $500,1143.6,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1199.54,0,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,781.63,1,1,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+7,4) $350 - $500,1488.12,1,1,Surburban,0,Multichannel,Womens E-Mail,0,1,27.95
+11,5) $500 - $750,201.1,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,1477.25,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+4,2) $100 - $200,226.6,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+6,2) $100 - $200,769.95,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+9,2) $100 - $200,1375.2,0,1,Urban,0,Multichannel,No E-Mail,1,0,0.0
+10,4) $350 - $500,749.83,0,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+7,4) $350 - $500,275.67,0,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+10,4) $350 - $500,1411.4,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+3,2) $100 - $200,761.66,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+8,"7) $1,000 +",1127.43,0,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,807.83,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+3,2) $100 - $200,381.13,1,1,Rural,0,Phone,Mens E-Mail,0,1,77.56
+3,"7) $1,000 +",1444.71,0,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",574.66,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+1,"6) $750 - $1,000",475.43,0,0,Urban,1,Web,No E-Mail,0,0,0.0
+4,1) $0 - $100,1327.94,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,804.62,0,1,Rural,1,Web,No E-Mail,0,0,0.0
+11,4) $350 - $500,1221.69,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",1244.85,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",1002.79,1,1,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+2,3) $200 - $350,291.01,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,276.51,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",631.92,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",142.25,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+4,4) $350 - $500,611.47,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+8,1) $0 - $100,1146.0,1,0,Urban,0,Web,Womens E-Mail,1,0,0.0
+10,"7) $1,000 +",1055.91,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+5,"7) $1,000 +",1186.21,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",1385.79,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1142.93,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+2,"7) $1,000 +",1151.28,0,1,Rural,0,Multichannel,No E-Mail,1,0,0.0
+2,5) $500 - $750,709.58,0,0,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+4,1) $0 - $100,310.24,1,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+3,4) $350 - $500,1351.02,1,1,Rural,0,Web,No E-Mail,1,0,0.0
+6,1) $0 - $100,1073.09,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,523.96,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+7,3) $200 - $350,1401.1,1,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+5,"7) $1,000 +",1250.8,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+8,1) $0 - $100,969.8,1,1,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+2,1) $0 - $100,1017.03,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+1,"7) $1,000 +",156.72,1,1,Surburban,1,Web,No E-Mail,0,0,0.0
+1,4) $350 - $500,397.42,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+5,1) $0 - $100,1056.16,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,970.81,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+11,5) $500 - $750,135.6,0,1,Rural,1,Web,No E-Mail,1,0,0.0
+8,3) $200 - $350,552.29,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,292.52,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+3,"7) $1,000 +",33.21,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+2,5) $500 - $750,922.57,1,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+10,"7) $1,000 +",496.13,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,1010.52,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,1029.07,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+5,5) $500 - $750,411.7,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+2,1) $0 - $100,1380.33,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,199.81,0,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",1368.94,1,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+2,3) $200 - $350,1050.75,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+3,"7) $1,000 +",1427.8,1,0,Rural,1,Phone,No E-Mail,1,0,0.0
+11,"7) $1,000 +",1092.29,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+7,3) $200 - $350,897.35,0,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+7,3) $200 - $350,81.13,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,733.99,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+10,5) $500 - $750,611.71,1,0,Urban,1,Multichannel,No E-Mail,1,0,0.0
+5,5) $500 - $750,1320.16,1,0,Urban,1,Web,Womens E-Mail,1,0,0.0
+4,"7) $1,000 +",516.35,0,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1130.07,0,0,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,423.62,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,220.98,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+7,2) $100 - $200,815.18,1,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+5,2) $100 - $200,383.8,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",263.91,1,0,Rural,1,Web,Womens E-Mail,1,0,0.0
+7,"7) $1,000 +",260.18,1,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1328.55,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+1,2) $100 - $200,905.09,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,1111.4,0,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+1,2) $100 - $200,764.29,0,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",1061.17,1,1,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+10,3) $200 - $350,758.69,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+2,2) $100 - $200,1311.91,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",882.87,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,1412.42,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",1457.24,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+5,"7) $1,000 +",196.76,0,0,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",202.85,1,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+10,5) $500 - $750,296.12,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,85.71,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,582.89,1,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+3,1) $0 - $100,1241.11,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+10,3) $200 - $350,1382.21,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,442.33,1,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+6,5) $500 - $750,1345.57,0,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+6,"7) $1,000 +",368.11,1,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+9,2) $100 - $200,323.28,1,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",689.04,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,1043.42,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",1222.71,0,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+3,1) $0 - $100,802.9,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+8,3) $200 - $350,63.4,0,0,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+11,3) $200 - $350,722.55,0,0,Surburban,1,Web,Mens E-Mail,0,0,0.0
+11,1) $0 - $100,47.9,0,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,1099.06,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+7,5) $500 - $750,894.99,1,1,Urban,1,Web,Mens E-Mail,1,0,0.0
+4,4) $350 - $500,885.37,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+5,5) $500 - $750,432.07,0,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",1453.76,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,756.78,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,1417.88,0,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+8,2) $100 - $200,1037.97,0,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",116.0,0,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+11,"7) $1,000 +",370.58,1,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+11,3) $200 - $350,911.54,1,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+9,"6) $750 - $1,000",1065.81,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+8,1) $0 - $100,785.6,0,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1089.43,0,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+11,3) $200 - $350,427.92,0,0,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+8,"6) $750 - $1,000",650.8,1,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+11,5) $500 - $750,972.25,1,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+10,5) $500 - $750,1477.31,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,990.94,1,1,Rural,1,Phone,No E-Mail,0,1,28.39
+8,3) $200 - $350,593.5,0,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+11,2) $100 - $200,319.34,0,0,Rural,1,Web,No E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1265.45,0,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+9,"7) $1,000 +",903.72,1,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,820.5,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,783.1,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+11,1) $0 - $100,195.3,0,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+7,4) $350 - $500,1281.67,1,0,Rural,1,Phone,Mens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",138.05,1,1,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+8,"7) $1,000 +",343.18,0,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+2,1) $0 - $100,1087.41,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+11,3) $200 - $350,727.59,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+2,3) $200 - $350,825.47,1,1,Surburban,0,Multichannel,No E-Mail,1,0,0.0
+8,"7) $1,000 +",1153.26,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1477.54,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+5,3) $200 - $350,1182.32,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+9,3) $200 - $350,338.39,0,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+9,"7) $1,000 +",1386.38,1,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,456.93,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+6,4) $350 - $500,186.83,0,0,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",431.63,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,79.32,0,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,996.35,1,1,Urban,0,Web,No E-Mail,1,0,0.0
+2,2) $100 - $200,310.95,0,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,1123.23,0,0,Urban,1,Web,Mens E-Mail,1,0,0.0
+4,2) $100 - $200,1322.0,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",608.53,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+3,"7) $1,000 +",169.66,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+10,2) $100 - $200,178.44,1,0,Rural,0,Phone,Womens E-Mail,1,0,0.0
+9,4) $350 - $500,969.73,0,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,649.84,1,0,Urban,0,Web,Womens E-Mail,1,0,0.0
+10,3) $200 - $350,1089.1,1,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+5,3) $200 - $350,944.43,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,4) $350 - $500,1421.31,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,88.94,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,"7) $1,000 +",205.53,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+6,5) $500 - $750,648.82,0,1,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+10,2) $100 - $200,1298.02,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+10,5) $500 - $750,1336.4,0,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+9,4) $350 - $500,570.59,1,0,Urban,1,Phone,No E-Mail,0,0,0.0
+10,3) $200 - $350,1244.29,0,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+3,"7) $1,000 +",1432.66,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,1410.25,1,0,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+8,5) $500 - $750,361.62,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",32.9,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+6,"7) $1,000 +",447.08,0,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",266.87,1,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,1102.45,1,1,Rural,1,Web,Mens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",471.52,1,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+10,2) $100 - $200,230.26,1,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",456.04,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+3,"7) $1,000 +",1117.29,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,54.6,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+9,"7) $1,000 +",1463.53,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+4,1) $0 - $100,148.18,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+4,1) $0 - $100,26.54,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+8,"7) $1,000 +",408.65,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+2,2) $100 - $200,301.41,1,0,Rural,0,Phone,Womens E-Mail,1,0,0.0
+9,5) $500 - $750,620.66,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+9,3) $200 - $350,441.29,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,1316.75,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+2,"7) $1,000 +",1238.53,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,1478.25,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+3,"6) $750 - $1,000",689.45,1,1,Rural,1,Multichannel,No E-Mail,1,0,0.0
+9,"7) $1,000 +",1446.21,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+4,"7) $1,000 +",1044.3,0,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",1156.49,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+11,3) $200 - $350,390.0,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",801.23,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+11,3) $200 - $350,1070.88,1,1,Rural,1,Phone,No E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1049.21,1,1,Surburban,0,Web,Mens E-Mail,1,0,0.0
+11,4) $350 - $500,1465.8,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+6,3) $200 - $350,1431.63,1,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+2,2) $100 - $200,647.82,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+10,3) $200 - $350,821.64,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+10,5) $500 - $750,166.81,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1372.43,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+9,1) $0 - $100,555.86,1,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+6,3) $200 - $350,721.39,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,1423.72,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+5,4) $350 - $500,259.99,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,4) $350 - $500,722.1,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",927.68,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+7,5) $500 - $750,670.54,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+2,"7) $1,000 +",1035.45,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+1,3) $200 - $350,1477.16,1,0,Urban,0,Phone,No E-Mail,1,0,0.0
+3,5) $500 - $750,299.26,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+6,3) $200 - $350,1023.78,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+6,2) $100 - $200,1224.32,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",136.73,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,156.03,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",986.59,1,1,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+8,"6) $750 - $1,000",228.46,1,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+5,3) $200 - $350,202.14,0,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,90.48,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",530.9,0,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+8,"7) $1,000 +",1267.64,1,1,Surburban,0,Multichannel,No E-Mail,1,0,0.0
+9,1) $0 - $100,1383.31,1,0,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+2,"7) $1,000 +",1175.65,1,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+1,"7) $1,000 +",795.28,0,0,Urban,0,Web,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",923.45,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+4,"7) $1,000 +",1000.68,1,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+10,5) $500 - $750,56.5,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,172.7,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,955.31,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+9,2) $100 - $200,1030.05,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1153.54,1,0,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+7,"7) $1,000 +",1217.69,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,"7) $1,000 +",1005.37,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+9,"6) $750 - $1,000",570.98,0,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+5,"7) $1,000 +",1251.3,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+4,2) $100 - $200,1419.88,0,0,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+7,4) $350 - $500,279.59,0,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+11,1) $0 - $100,786.18,0,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+6,2) $100 - $200,673.87,1,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",981.18,0,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+5,3) $200 - $350,1439.75,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,270.17,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",819.17,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",1040.8,0,0,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,1220.68,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,4) $350 - $500,1115.44,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,41.28,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+10,5) $500 - $750,1164.97,0,1,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+5,5) $500 - $750,28.23,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1251.55,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",961.22,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,64.39,0,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+4,3) $200 - $350,280.99,1,0,Surburban,0,Phone,No E-Mail,1,0,0.0
+11,2) $100 - $200,1214.99,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,1372.0,1,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+7,1) $0 - $100,1142.98,0,1,Surburban,1,Multichannel,No E-Mail,1,0,0.0
+9,2) $100 - $200,1407.66,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+2,1) $0 - $100,887.57,0,0,Rural,1,Multichannel,No E-Mail,1,0,0.0
+6,1) $0 - $100,31.71,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",977.6,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,486.02,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+7,4) $350 - $500,558.74,0,0,Rural,1,Web,No E-Mail,0,0,0.0
+11,"7) $1,000 +",1230.98,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+5,4) $350 - $500,679.56,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+3,1) $0 - $100,822.05,1,0,Surburban,0,Phone,No E-Mail,1,0,0.0
+3,5) $500 - $750,1392.86,0,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+2,"7) $1,000 +",198.03,1,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,74.27,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",992.25,0,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+10,3) $200 - $350,462.48,0,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+3,5) $500 - $750,964.32,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",383.49,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,661.6,0,1,Urban,0,Phone,No E-Mail,0,0,0.0
+6,4) $350 - $500,1295.28,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+6,4) $350 - $500,970.14,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,125.7,1,1,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+8,3) $200 - $350,1071.34,0,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+5,5) $500 - $750,722.37,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,433.17,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+8,"7) $1,000 +",619.33,1,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+3,4) $350 - $500,423.49,1,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+11,2) $100 - $200,607.46,0,1,Rural,0,Phone,No E-Mail,0,0,0.0
+6,5) $500 - $750,1152.41,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,162.37,1,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",1154.76,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",1401.05,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,1312.3,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,275.23,1,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+3,3) $200 - $350,1388.02,1,0,Urban,0,Phone,No E-Mail,1,0,0.0
+8,"6) $750 - $1,000",210.55,0,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+5,4) $350 - $500,1265.07,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+9,2) $100 - $200,1301.76,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,1291.51,0,1,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+11,"7) $1,000 +",511.27,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,1376.31,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+1,3) $200 - $350,1281.09,0,1,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+11,3) $200 - $350,1026.57,1,0,Urban,0,Web,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",666.58,0,1,Rural,0,Web,Mens E-Mail,1,0,0.0
+10,"7) $1,000 +",1094.33,0,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+7,4) $350 - $500,1445.53,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+9,2) $100 - $200,1317.52,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",153.63,1,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+9,"6) $750 - $1,000",1388.84,1,0,Rural,1,Phone,Mens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",1318.42,1,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+6,4) $350 - $500,1409.02,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,969.83,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+11,5) $500 - $750,370.06,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,775.01,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+10,3) $200 - $350,1441.38,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",212.14,0,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+2,4) $350 - $500,792.21,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+10,2) $100 - $200,1241.28,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+8,"7) $1,000 +",980.81,1,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+6,3) $200 - $350,1399.6,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+2,2) $100 - $200,1387.62,0,1,Rural,0,Phone,No E-Mail,1,0,0.0
+1,4) $350 - $500,772.57,0,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+6,5) $500 - $750,594.81,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+4,1) $0 - $100,694.63,1,0,Urban,0,Web,No E-Mail,0,0,0.0
+5,3) $200 - $350,1336.1,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+1,"7) $1,000 +",602.77,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+2,3) $200 - $350,692.4,1,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+2,5) $500 - $750,823.53,0,1,Urban,1,Web,Womens E-Mail,1,0,0.0
+6,1) $0 - $100,909.73,1,0,Urban,0,Multichannel,No E-Mail,1,0,0.0
+8,3) $200 - $350,983.05,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+11,2) $100 - $200,614.69,0,0,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+10,3) $200 - $350,707.42,1,1,Rural,1,Phone,No E-Mail,0,0,0.0
+3,1) $0 - $100,755.95,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+4,1) $0 - $100,506.94,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",982.7,1,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+4,2) $100 - $200,534.05,0,1,Rural,0,Web,No E-Mail,0,0,0.0
+10,5) $500 - $750,656.42,1,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+9,2) $100 - $200,573.14,1,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+8,2) $100 - $200,504.28,1,1,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+11,2) $100 - $200,1395.47,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+4,2) $100 - $200,732.7,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+4,1) $0 - $100,168.13,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+3,4) $350 - $500,443.34,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",302.34,0,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+6,5) $500 - $750,1425.42,1,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+3,4) $350 - $500,1157.9,1,1,Rural,1,Web,No E-Mail,0,0,0.0
+8,2) $100 - $200,154.79,1,1,Urban,1,Phone,No E-Mail,0,0,0.0
+7,3) $200 - $350,223.52,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+6,"7) $1,000 +",605.83,0,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+10,3) $200 - $350,1085.33,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,4) $350 - $500,809.82,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+2,1) $0 - $100,1066.23,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,343.0,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,1069.76,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,598.13,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,576.97,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+9,3) $200 - $350,371.94,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,4) $350 - $500,108.47,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+10,4) $350 - $500,998.65,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+1,1) $0 - $100,1426.24,1,1,Surburban,0,Web,Mens E-Mail,1,0,0.0
+8,5) $500 - $750,61.52,0,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+3,"7) $1,000 +",1034.48,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+11,2) $100 - $200,580.85,1,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+2,1) $0 - $100,1257.84,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1030.45,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,737.29,0,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+3,1) $0 - $100,1442.19,0,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+8,1) $0 - $100,608.33,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+4,"7) $1,000 +",123.53,0,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+10,4) $350 - $500,577.41,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+7,5) $500 - $750,1486.23,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",745.71,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+5,5) $500 - $750,1226.89,0,0,Urban,0,Phone,No E-Mail,1,0,0.0
+2,"6) $750 - $1,000",255.39,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",1304.82,1,0,Urban,1,Phone,No E-Mail,1,0,0.0
+11,2) $100 - $200,308.79,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+4,"7) $1,000 +",772.1,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",772.76,1,0,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+9,"6) $750 - $1,000",437.7,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,1175.46,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+10,3) $200 - $350,908.7,0,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,123.17,0,0,Urban,0,Phone,No E-Mail,0,0,0.0
+6,4) $350 - $500,1146.32,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+2,1) $0 - $100,951.23,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+8,4) $350 - $500,627.49,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+2,"7) $1,000 +",1422.01,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+4,"7) $1,000 +",871.93,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,557.62,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+4,3) $200 - $350,241.69,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+11,1) $0 - $100,295.28,0,1,Rural,1,Web,Mens E-Mail,1,0,0.0
+8,1) $0 - $100,905.59,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",501.7,1,1,Rural,1,Web,No E-Mail,0,0,0.0
+2,5) $500 - $750,1295.81,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,77.53,1,0,Surburban,0,Web,Mens E-Mail,1,0,0.0
+8,5) $500 - $750,1492.35,0,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+9,4) $350 - $500,1396.59,1,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+11,1) $0 - $100,958.32,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+10,"7) $1,000 +",665.39,0,1,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+9,1) $0 - $100,364.1,0,1,Surburban,0,Web,Womens E-Mail,1,0,0.0
+4,1) $0 - $100,607.57,0,0,Surburban,1,Web,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",756.43,0,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+4,1) $0 - $100,1384.42,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,1031.18,1,1,Rural,0,Phone,Womens E-Mail,1,0,0.0
+7,3) $200 - $350,558.35,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+4,2) $100 - $200,416.85,1,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,885.78,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+7,3) $200 - $350,320.45,0,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+2,1) $0 - $100,903.13,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,422.56,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",683.9,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,841.47,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+8,3) $200 - $350,1271.5,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,1140.3,1,0,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+9,4) $350 - $500,427.76,1,0,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+9,"6) $750 - $1,000",1062.03,0,1,Rural,0,Phone,No E-Mail,0,0,0.0
+11,4) $350 - $500,682.37,1,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+6,5) $500 - $750,531.23,1,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,3) $200 - $350,828.14,0,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,934.54,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+11,"7) $1,000 +",352.06,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+4,4) $350 - $500,639.1,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",42.06,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+2,5) $500 - $750,1228.16,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",723.97,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+1,2) $100 - $200,858.61,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+8,3) $200 - $350,812.18,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,1024.82,1,0,Surburban,0,Multichannel,No E-Mail,1,0,0.0
+8,3) $200 - $350,818.5,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+7,5) $500 - $750,1305.47,0,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+2,"7) $1,000 +",689.88,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+8,4) $350 - $500,689.9,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",1041.78,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+11,1) $0 - $100,128.08,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+4,3) $200 - $350,1211.24,0,1,Urban,0,Web,Mens E-Mail,1,0,0.0
+4,4) $350 - $500,1091.88,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+9,2) $100 - $200,1307.49,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+2,4) $350 - $500,757.82,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,147.94,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+3,"7) $1,000 +",591.74,0,1,Surburban,0,Web,No E-Mail,1,0,0.0
+2,3) $200 - $350,1357.12,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+7,3) $200 - $350,396.17,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+4,3) $200 - $350,759.32,1,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+5,5) $500 - $750,1445.86,1,1,Rural,1,Web,No E-Mail,1,0,0.0
+9,5) $500 - $750,547.2,0,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,739.15,0,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,606.81,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+11,4) $350 - $500,211.58,1,0,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+2,"7) $1,000 +",496.95,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,432.77,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,354.86,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+7,2) $100 - $200,1012.33,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,631.48,0,0,Surburban,0,Multichannel,No E-Mail,1,0,0.0
+2,4) $350 - $500,846.79,0,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+6,5) $500 - $750,592.74,1,0,Urban,0,Web,Womens E-Mail,1,0,0.0
+1,3) $200 - $350,1146.3,1,0,Rural,1,Web,Womens E-Mail,1,0,0.0
+9,"7) $1,000 +",551.77,0,0,Rural,1,Web,No E-Mail,0,0,0.0
+7,5) $500 - $750,540.39,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,491.78,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,5) $500 - $750,1089.99,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+11,3) $200 - $350,437.09,0,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,727.21,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",848.36,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,1114.03,1,0,Surburban,0,Multichannel,No E-Mail,1,0,0.0
+6,5) $500 - $750,1353.04,0,1,Rural,1,Web,No E-Mail,0,0,0.0
+10,4) $350 - $500,489.31,1,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,1115.45,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",1113.57,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",94.48,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+8,1) $0 - $100,349.99,0,1,Rural,0,Web,No E-Mail,1,0,0.0
+2,"6) $750 - $1,000",1282.98,0,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",600.57,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",803.34,0,1,Urban,1,Multichannel,No E-Mail,1,0,0.0
+10,3) $200 - $350,226.09,0,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+4,4) $350 - $500,208.96,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",240.68,1,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",636.81,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1439.65,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+8,4) $350 - $500,814.82,0,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",894.02,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",653.11,1,1,Surburban,1,Web,No E-Mail,1,0,0.0
+6,"7) $1,000 +",1117.48,0,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",95.75,1,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+4,4) $350 - $500,684.5,1,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+6,3) $200 - $350,583.45,0,1,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+2,5) $500 - $750,537.93,0,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+8,3) $200 - $350,1373.48,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+9,4) $350 - $500,1021.17,1,1,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+1,2) $100 - $200,1063.16,1,0,Urban,1,Web,No E-Mail,0,0,0.0
+1,1) $0 - $100,250.9,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,1067.53,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,288.58,1,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+1,3) $200 - $350,42.37,0,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+8,3) $200 - $350,1422.4,1,1,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+2,"7) $1,000 +",1105.44,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+9,1) $0 - $100,696.46,1,0,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,83.16,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+10,"6) $750 - $1,000",420.89,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1346.98,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+5,3) $200 - $350,104.34,0,1,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+8,4) $350 - $500,1056.99,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+2,1) $0 - $100,50.24,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+3,4) $350 - $500,860.52,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",833.41,1,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",1262.73,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+8,3) $200 - $350,311.38,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+4,5) $500 - $750,1350.66,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,1050.2,0,0,Urban,1,Web,Mens E-Mail,1,0,0.0
+7,4) $350 - $500,1362.01,1,0,Urban,1,Web,No E-Mail,0,0,0.0
+1,3) $200 - $350,1421.57,1,1,Urban,0,Multichannel,No E-Mail,1,0,0.0
+8,4) $350 - $500,932.51,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+11,4) $350 - $500,1441.02,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+7,4) $350 - $500,754.24,0,0,Urban,1,Web,No E-Mail,0,0,0.0
+6,5) $500 - $750,1068.56,1,0,Rural,0,Web,No E-Mail,1,0,0.0
+10,"6) $750 - $1,000",62.51,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+2,4) $350 - $500,686.91,1,1,Urban,1,Phone,No E-Mail,0,0,0.0
+4,4) $350 - $500,958.22,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,845.78,1,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+2,1) $0 - $100,490.62,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+3,4) $350 - $500,36.79,1,0,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+10,"7) $1,000 +",1307.96,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+8,5) $500 - $750,290.15,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,968.84,0,0,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+2,4) $350 - $500,222.48,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",805.81,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+9,"6) $750 - $1,000",1174.03,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,1050.63,1,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",108.79,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,1353.27,0,0,Surburban,1,Web,Mens E-Mail,1,0,0.0
+8,2) $100 - $200,678.68,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",969.73,0,1,Surburban,1,Web,Womens E-Mail,1,0,0.0
+1,4) $350 - $500,1435.5,1,1,Urban,1,Web,No E-Mail,0,0,0.0
+7,5) $500 - $750,219.46,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+2,5) $500 - $750,144.72,0,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",1374.84,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",412.97,0,1,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+9,2) $100 - $200,1396.64,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+4,5) $500 - $750,315.71,1,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+5,3) $200 - $350,1247.17,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",1177.91,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+9,2) $100 - $200,1175.96,0,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",771.51,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+8,5) $500 - $750,875.8,0,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",316.18,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+4,"7) $1,000 +",604.32,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,1228.41,1,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+6,3) $200 - $350,1383.59,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,1369.83,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+9,3) $200 - $350,226.49,1,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+10,2) $100 - $200,980.16,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,172.36,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,576.97,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,1055.77,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+7,3) $200 - $350,870.48,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+8,5) $500 - $750,1192.31,1,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1307.11,1,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+9,2) $100 - $200,765.2,1,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,1372.28,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+1,4) $350 - $500,1034.64,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,39.02,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+5,1) $0 - $100,177.32,0,0,Surburban,1,Web,Mens E-Mail,0,0,0.0
+8,1) $0 - $100,556.94,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+9,4) $350 - $500,1161.84,1,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+1,4) $350 - $500,1173.0,1,0,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+8,3) $200 - $350,1299.85,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,194.86,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+6,5) $500 - $750,821.28,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,679.72,1,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,327.54,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+1,3) $200 - $350,1251.42,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,842.27,0,1,Urban,0,Web,No E-Mail,0,0,0.0
+5,1) $0 - $100,1148.76,1,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",229.18,0,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,534.36,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+6,2) $100 - $200,452.78,0,1,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+7,1) $0 - $100,362.39,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,1242.4,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",832.66,1,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+9,3) $200 - $350,177.29,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+5,3) $200 - $350,548.34,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+9,1) $0 - $100,1319.33,1,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+10,5) $500 - $750,1357.26,0,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+11,5) $500 - $750,733.28,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+2,3) $200 - $350,162.5,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,779.07,0,1,Rural,0,Web,No E-Mail,0,0,0.0
+10,"6) $750 - $1,000",825.6,1,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+8,3) $200 - $350,869.29,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+4,3) $200 - $350,1262.52,0,1,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+4,1) $0 - $100,1056.02,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,330.25,0,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+8,3) $200 - $350,223.7,1,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+7,5) $500 - $750,954.7,0,0,Rural,0,Phone,No E-Mail,0,0,0.0
+4,1) $0 - $100,690.71,0,0,Urban,0,Phone,Womens E-Mail,1,0,0.0
+8,"7) $1,000 +",1419.56,0,1,Urban,1,Web,No E-Mail,1,0,0.0
+8,3) $200 - $350,1273.61,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,4) $350 - $500,34.09,0,0,Urban,1,Web,No E-Mail,0,0,0.0
+6,5) $500 - $750,341.79,1,0,Urban,0,Phone,Womens E-Mail,1,0,0.0
+1,2) $100 - $200,1238.98,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+8,1) $0 - $100,886.61,0,0,Rural,0,Web,No E-Mail,1,0,0.0
+7,"6) $750 - $1,000",448.32,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+10,"7) $1,000 +",1119.23,0,0,Rural,0,Phone,No E-Mail,0,0,0.0
+2,3) $200 - $350,932.4,1,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",393.12,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+1,2) $100 - $200,742.96,0,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",1196.51,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+6,2) $100 - $200,357.22,0,0,Urban,0,Phone,No E-Mail,1,0,0.0
+5,4) $350 - $500,635.26,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,163.01,0,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",1168.98,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+7,4) $350 - $500,155.95,0,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1286.75,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+11,2) $100 - $200,832.99,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+3,2) $100 - $200,916.91,0,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,678.42,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+11,"7) $1,000 +",936.1,1,0,Surburban,0,Web,No E-Mail,1,0,0.0
+10,2) $100 - $200,935.17,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+7,5) $500 - $750,692.58,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+6,2) $100 - $200,1117.17,1,0,Urban,0,Web,No E-Mail,0,0,0.0
+1,5) $500 - $750,51.7,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,1273.1,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",385.01,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,"7) $1,000 +",500.12,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,74.63,1,1,Urban,1,Web,Mens E-Mail,1,0,0.0
+4,2) $100 - $200,45.59,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+5,"7) $1,000 +",313.33,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+3,3) $200 - $350,1035.13,0,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,1067.41,1,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+1,2) $100 - $200,392.81,0,0,Rural,1,Phone,No E-Mail,1,0,0.0
+1,5) $500 - $750,1179.68,0,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+3,1) $0 - $100,242.6,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",260.25,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+10,1) $0 - $100,667.17,0,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+3,4) $350 - $500,729.3,0,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",248.48,0,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,48.67,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,45.64,1,0,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+1,2) $100 - $200,1078.23,1,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+4,"7) $1,000 +",1360.32,1,0,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+4,2) $100 - $200,47.03,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,5) $500 - $750,502.7,0,1,Urban,0,Web,No E-Mail,0,0,0.0
+4,"7) $1,000 +",443.09,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+11,"6) $750 - $1,000",1341.55,1,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+3,"6) $750 - $1,000",1315.08,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+1,"6) $750 - $1,000",56.05,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,1323.09,0,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+3,"7) $1,000 +",935.42,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",223.41,0,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+7,3) $200 - $350,880.46,0,0,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+1,"7) $1,000 +",310.23,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+4,"7) $1,000 +",730.77,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",639.04,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+3,"7) $1,000 +",1241.31,0,1,Rural,1,Web,No E-Mail,1,0,0.0
+4,"6) $750 - $1,000",660.97,0,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+6,2) $100 - $200,1078.09,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,1115.85,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,780.07,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,947.41,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+3,3) $200 - $350,1264.43,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,"7) $1,000 +",384.9,0,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,546.27,0,0,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+8,1) $0 - $100,841.3,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,216.75,1,0,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+1,3) $200 - $350,609.36,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+8,5) $500 - $750,102.09,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+2,4) $350 - $500,626.54,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,1097.22,1,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",586.28,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+8,4) $350 - $500,872.71,0,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+9,3) $200 - $350,95.15,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",943.37,1,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,1109.0,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+5,"7) $1,000 +",1173.24,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,800.88,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",367.55,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,994.98,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,554.67,1,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,25.6,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,1271.53,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+8,3) $200 - $350,1417.96,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+5,4) $350 - $500,362.64,0,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+2,1) $0 - $100,40.58,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+1,"7) $1,000 +",1130.02,0,0,Rural,0,Phone,No E-Mail,0,0,0.0
+11,1) $0 - $100,1406.86,1,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+4,2) $100 - $200,1370.09,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+9,1) $0 - $100,762.94,0,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,605.57,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",1454.91,0,1,Surburban,1,Web,Womens E-Mail,1,0,0.0
+6,5) $500 - $750,1030.94,0,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+8,3) $200 - $350,154.95,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,5) $500 - $750,765.49,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+2,3) $200 - $350,895.47,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+3,1) $0 - $100,570.67,1,0,Urban,1,Multichannel,No E-Mail,1,0,0.0
+7,2) $100 - $200,612.25,1,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1149.66,1,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+7,3) $200 - $350,769.36,0,0,Urban,0,Phone,Womens E-Mail,1,0,0.0
+11,4) $350 - $500,409.05,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+5,5) $500 - $750,230.12,0,1,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+3,2) $100 - $200,444.67,1,0,Urban,0,Phone,No E-Mail,1,0,0.0
+1,5) $500 - $750,693.45,1,1,Rural,1,Phone,Mens E-Mail,1,0,0.0
+11,"7) $1,000 +",40.51,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1304.43,1,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+10,"7) $1,000 +",1331.8,1,1,Urban,0,Multichannel,Mens E-Mail,1,1,143.08
+1,4) $350 - $500,616.68,0,0,Surburban,0,Web,No E-Mail,0,0,0.0
+6,2) $100 - $200,487.53,1,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+4,2) $100 - $200,1093.67,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",867.16,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+10,3) $200 - $350,171.8,1,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+2,4) $350 - $500,79.16,1,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,1215.61,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",478.93,1,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+4,1) $0 - $100,283.81,1,0,Rural,1,Web,No E-Mail,0,0,0.0
+2,"7) $1,000 +",1013.03,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",1122.65,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,963.54,1,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+2,"7) $1,000 +",32.48,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,968.92,0,1,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+2,4) $350 - $500,514.99,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+2,2) $100 - $200,367.13,0,0,Urban,0,Web,No E-Mail,0,0,0.0
+8,4) $350 - $500,1160.64,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,167.07,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+1,4) $350 - $500,790.35,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,1) $0 - $100,850.43,0,0,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+1,2) $100 - $200,802.19,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",109.39,1,0,Urban,1,Web,Mens E-Mail,1,0,0.0
+3,5) $500 - $750,1329.58,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,745.18,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+10,"6) $750 - $1,000",85.16,0,0,Surburban,0,Web,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",947.06,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+6,2) $100 - $200,938.15,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+5,"7) $1,000 +",902.76,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+9,1) $0 - $100,55.8,0,0,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+6,1) $0 - $100,882.97,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+11,4) $350 - $500,891.96,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",730.0,1,1,Urban,1,Web,No E-Mail,0,0,0.0
+10,"7) $1,000 +",1372.12,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+7,1) $0 - $100,172.59,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+5,"7) $1,000 +",1160.56,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+6,3) $200 - $350,1069.77,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1339.64,1,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+7,2) $100 - $200,52.49,0,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+4,3) $200 - $350,347.26,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+9,1) $0 - $100,517.73,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+3,1) $0 - $100,1144.76,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",256.29,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",992.38,1,0,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,1119.54,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+5,"7) $1,000 +",1149.92,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",133.47,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,4) $350 - $500,1495.87,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",701.66,1,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,946.15,0,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,1425.61,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",408.3,1,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+11,4) $350 - $500,548.9,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+8,"7) $1,000 +",569.58,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,1329.25,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+4,4) $350 - $500,317.15,1,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,216.96,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+4,4) $350 - $500,1186.93,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+1,4) $350 - $500,1367.54,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+6,1) $0 - $100,630.24,1,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",431.16,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,1386.63,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1177.49,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+2,"7) $1,000 +",384.77,0,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,148.27,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,54.03,1,1,Surburban,1,Web,No E-Mail,0,0,0.0
+9,5) $500 - $750,1466.19,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+5,3) $200 - $350,300.82,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+5,3) $200 - $350,1437.5,1,1,Urban,1,Phone,Womens E-Mail,1,0,0.0
+6,1) $0 - $100,1447.63,1,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,545.74,1,1,Rural,1,Web,No E-Mail,1,0,0.0
+5,4) $350 - $500,642.91,0,1,Rural,0,Web,No E-Mail,0,0,0.0
+4,2) $100 - $200,984.9,1,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+9,4) $350 - $500,905.04,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+2,5) $500 - $750,1213.69,1,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+11,4) $350 - $500,558.23,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1285.59,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,630.68,0,1,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+4,"6) $750 - $1,000",550.92,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",261.76,1,1,Surburban,1,Multichannel,No E-Mail,1,0,0.0
+11,4) $350 - $500,1025.05,0,0,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,177.6,0,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+3,"6) $750 - $1,000",856.59,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,501.69,1,1,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",41.06,0,0,Urban,0,Web,No E-Mail,0,0,0.0
+5,"7) $1,000 +",652.52,0,1,Rural,0,Web,No E-Mail,0,0,0.0
+9,"7) $1,000 +",1229.46,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+9,"7) $1,000 +",1191.48,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,431.22,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,57.57,1,1,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+3,4) $350 - $500,1388.75,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+4,4) $350 - $500,1192.83,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,1050.04,1,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+3,1) $0 - $100,623.21,0,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",730.64,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+10,5) $500 - $750,704.96,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",320.36,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,368.67,1,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+7,1) $0 - $100,281.85,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",531.68,1,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+2,2) $100 - $200,710.4,0,0,Surburban,0,Web,Mens E-Mail,1,0,0.0
+7,"7) $1,000 +",723.81,0,1,Urban,1,Web,Womens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",193.24,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+9,"7) $1,000 +",637.57,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,173.11,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+2,2) $100 - $200,92.58,1,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+1,3) $200 - $350,242.32,0,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+5,2) $100 - $200,1144.73,0,0,Surburban,0,Web,No E-Mail,1,0,0.0
+10,"7) $1,000 +",283.93,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+3,"7) $1,000 +",335.83,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+6,2) $100 - $200,1034.98,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",456.01,1,0,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+1,5) $500 - $750,60.34,0,0,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+2,1) $0 - $100,767.1,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+11,3) $200 - $350,514.29,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+1,2) $100 - $200,948.49,0,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+1,4) $350 - $500,1061.82,0,1,Rural,1,Phone,Womens E-Mail,1,0,0.0
+4,2) $100 - $200,394.35,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+3,4) $350 - $500,1301.37,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+1,1) $0 - $100,430.41,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+9,3) $200 - $350,101.63,1,0,Urban,0,Phone,No E-Mail,1,0,0.0
+10,"6) $750 - $1,000",1084.62,1,0,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+2,"6) $750 - $1,000",1301.08,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+11,2) $100 - $200,1202.62,1,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,167.78,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+11,"7) $1,000 +",1290.02,0,0,Urban,0,Web,No E-Mail,0,0,0.0
+10,5) $500 - $750,616.47,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+10,4) $350 - $500,42.21,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+11,"6) $750 - $1,000",248.11,0,1,Urban,1,Phone,Womens E-Mail,1,0,0.0
+11,"7) $1,000 +",248.12,1,1,Surburban,1,Web,No E-Mail,1,0,0.0
+4,3) $200 - $350,442.5,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+11,3) $200 - $350,1029.16,0,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1409.11,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+2,1) $0 - $100,409.66,1,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+2,2) $100 - $200,670.31,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+9,3) $200 - $350,627.65,0,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+2,3) $200 - $350,55.28,0,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",475.44,0,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,497.43,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+1,"7) $1,000 +",829.27,1,0,Urban,1,Web,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",1215.96,0,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,1089.7,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+5,1) $0 - $100,1248.65,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+8,4) $350 - $500,29.97,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+9,1) $0 - $100,994.64,1,0,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",1383.24,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+10,2) $100 - $200,484.99,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+2,2) $100 - $200,788.59,1,0,Urban,1,Phone,No E-Mail,0,0,0.0
+9,"6) $750 - $1,000",103.45,0,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+4,4) $350 - $500,1214.89,0,1,Rural,1,Web,No E-Mail,0,0,0.0
+2,1) $0 - $100,760.53,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+10,5) $500 - $750,434.7,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+10,5) $500 - $750,1254.61,1,1,Surburban,0,Web,Womens E-Mail,1,0,0.0
+6,"7) $1,000 +",1054.79,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+3,4) $350 - $500,1094.12,0,1,Surburban,0,Multichannel,No E-Mail,1,0,0.0
+2,2) $100 - $200,781.77,0,1,Rural,1,Phone,Mens E-Mail,1,0,0.0
+3,4) $350 - $500,1185.64,0,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,1286.08,0,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+9,"6) $750 - $1,000",449.01,1,0,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+5,4) $350 - $500,1075.37,1,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,76.18,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+9,2) $100 - $200,1253.04,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,1287.55,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+1,3) $200 - $350,394.39,1,1,Surburban,1,Web,No E-Mail,0,0,0.0
+7,"7) $1,000 +",1185.39,0,1,Urban,1,Phone,Womens E-Mail,1,0,0.0
+10,2) $100 - $200,518.46,0,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,1351.02,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+4,"7) $1,000 +",799.27,0,0,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+11,"7) $1,000 +",892.11,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+10,"7) $1,000 +",854.99,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+7,4) $350 - $500,81.4,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+8,"7) $1,000 +",49.63,0,1,Rural,0,Web,Mens E-Mail,0,1,113.33
+6,"6) $750 - $1,000",924.36,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+8,4) $350 - $500,924.9,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+11,"6) $750 - $1,000",57.64,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",145.31,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+5,4) $350 - $500,247.03,0,1,Urban,0,Phone,No E-Mail,0,0,0.0
+11,"7) $1,000 +",202.52,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+2,1) $0 - $100,703.84,0,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+2,"7) $1,000 +",896.12,1,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,246.39,0,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+7,5) $500 - $750,1241.25,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,951.88,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+5,3) $200 - $350,26.61,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+7,3) $200 - $350,1259.96,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",1383.0,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",793.44,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+3,"7) $1,000 +",162.85,1,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,916.99,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+9,5) $500 - $750,169.38,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,981.27,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,937.2,1,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,781.4,1,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+11,3) $200 - $350,486.78,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+8,"7) $1,000 +",1191.62,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,977.92,1,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,1111.99,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+3,3) $200 - $350,378.89,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+7,2) $100 - $200,912.55,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,389.17,0,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+2,5) $500 - $750,216.58,0,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",205.77,0,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+4,"6) $750 - $1,000",596.98,0,1,Rural,1,Phone,No E-Mail,1,0,0.0
+2,"7) $1,000 +",1426.35,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+2,1) $0 - $100,192.5,0,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+7,5) $500 - $750,294.66,1,0,Urban,0,Web,No E-Mail,1,0,0.0
+7,2) $100 - $200,231.43,1,1,Rural,1,Phone,Mens E-Mail,1,0,0.0
+4,2) $100 - $200,892.4,1,1,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+8,3) $200 - $350,477.99,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+6,1) $0 - $100,495.65,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",1265.69,0,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,341.84,0,1,Rural,1,Web,No E-Mail,0,0,0.0
+11,"7) $1,000 +",307.22,1,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",179.8,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,162.26,0,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+5,"7) $1,000 +",876.49,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",1220.09,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+9,1) $0 - $100,1132.28,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+7,"7) $1,000 +",1285.64,1,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+7,1) $0 - $100,679.05,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+11,5) $500 - $750,863.8,1,0,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+9,3) $200 - $350,249.37,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+2,5) $500 - $750,1180.36,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+11,5) $500 - $750,70.18,0,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+6,"7) $1,000 +",557.6,0,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",401.36,1,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+4,1) $0 - $100,1229.59,0,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+8,4) $350 - $500,159.72,0,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,854.83,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+11,"7) $1,000 +",1418.83,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+7,5) $500 - $750,1381.48,1,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,1456.62,1,1,Surburban,0,Phone,No E-Mail,1,0,0.0
+6,4) $350 - $500,1149.31,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+3,1) $0 - $100,680.16,1,0,Surburban,1,Web,Mens E-Mail,0,0,0.0
+1,"7) $1,000 +",1236.45,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+10,1) $0 - $100,548.85,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+9,2) $100 - $200,1112.08,1,0,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+10,2) $100 - $200,1091.53,1,0,Rural,0,Phone,No E-Mail,0,0,0.0
+5,5) $500 - $750,729.36,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,5) $500 - $750,433.63,1,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+3,"7) $1,000 +",1496.85,0,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+2,3) $200 - $350,393.92,0,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+5,5) $500 - $750,563.88,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+1,1) $0 - $100,237.01,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,1490.25,0,0,Rural,1,Phone,No E-Mail,0,0,0.0
+4,"6) $750 - $1,000",169.37,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,1361.25,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+1,3) $200 - $350,973.11,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,402.78,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+11,3) $200 - $350,1047.58,1,1,Urban,1,Phone,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1177.38,0,0,Urban,0,Web,Womens E-Mail,1,0,0.0
+8,5) $500 - $750,1099.0,1,1,Rural,1,Web,No E-Mail,0,0,0.0
+3,1) $0 - $100,199.36,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+10,3) $200 - $350,45.58,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",1409.41,1,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+6,3) $200 - $350,510.63,1,1,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+5,5) $500 - $750,1350.94,0,0,Rural,1,Multichannel,No E-Mail,1,0,0.0
+8,"7) $1,000 +",426.03,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+3,"7) $1,000 +",930.58,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",356.68,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+6,4) $350 - $500,1092.24,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+11,1) $0 - $100,463.2,1,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+7,"7) $1,000 +",1447.4,0,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+1,"7) $1,000 +",508.38,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1308.65,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",625.58,1,0,Rural,1,Web,Womens E-Mail,1,0,0.0
+6,"7) $1,000 +",1056.49,0,1,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+8,2) $100 - $200,152.04,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+5,"7) $1,000 +",576.61,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+4,2) $100 - $200,1290.95,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,1007.96,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+1,5) $500 - $750,816.57,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+11,1) $0 - $100,619.38,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,1064.26,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+7,"6) $750 - $1,000",602.3,0,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+6,5) $500 - $750,454.1,1,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,127.02,0,1,Urban,0,Web,Mens E-Mail,1,0,0.0
+8,2) $100 - $200,538.2,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,1) $0 - $100,281.55,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,106.97,1,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,1163.61,1,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+2,2) $100 - $200,654.48,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+6,3) $200 - $350,525.41,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+6,3) $200 - $350,388.81,0,1,Urban,1,Web,Mens E-Mail,1,0,0.0
+9,5) $500 - $750,49.29,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,938.7,0,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+6,4) $350 - $500,261.91,0,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1085.85,1,1,Urban,1,Phone,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,539.97,1,1,Rural,1,Phone,No E-Mail,0,0,0.0
+4,3) $200 - $350,61.12,1,0,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,881.63,1,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",271.0,1,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+11,4) $350 - $500,904.41,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+8,1) $0 - $100,587.47,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+6,4) $350 - $500,1360.33,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,1263.72,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+2,2) $100 - $200,758.24,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+8,3) $200 - $350,1292.87,0,0,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,1138.13,0,0,Surburban,0,Web,No E-Mail,0,0,0.0
+2,"7) $1,000 +",564.18,0,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+5,"7) $1,000 +",530.94,0,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+1,5) $500 - $750,823.75,1,0,Urban,1,Web,No E-Mail,0,0,0.0
+3,5) $500 - $750,1236.9,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+6,3) $200 - $350,343.01,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+6,"7) $1,000 +",664.3,0,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,5) $500 - $750,1170.59,1,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,643.93,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+2,5) $500 - $750,919.69,0,0,Urban,0,Phone,No E-Mail,0,0,0.0
+6,1) $0 - $100,1278.31,1,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,"7) $1,000 +",130.8,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",1301.68,1,1,Urban,0,Phone,Mens E-Mail,0,0,0.0
+8,3) $200 - $350,1310.73,0,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+8,4) $350 - $500,357.12,0,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+7,4) $350 - $500,41.35,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+11,2) $100 - $200,654.49,1,1,Rural,0,Phone,Womens E-Mail,1,0,0.0
+1,5) $500 - $750,449.17,0,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",1429.29,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+10,3) $200 - $350,1072.91,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,1406.97,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",885.08,1,1,Urban,1,Web,No E-Mail,1,0,0.0
+5,1) $0 - $100,1041.03,1,0,Rural,1,Phone,Mens E-Mail,1,0,0.0
+3,3) $200 - $350,1177.83,1,0,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+2,"7) $1,000 +",1226.23,0,0,Surburban,1,Web,No E-Mail,0,0,0.0
+2,1) $0 - $100,534.33,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+2,"7) $1,000 +",446.35,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,1156.82,1,1,Urban,1,Web,No E-Mail,0,0,0.0
+9,4) $350 - $500,861.5,0,0,Rural,1,Web,Womens E-Mail,1,0,0.0
+3,"6) $750 - $1,000",361.84,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,334.65,0,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+4,"6) $750 - $1,000",1351.27,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",36.36,0,1,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+5,5) $500 - $750,32.01,0,0,Urban,1,Web,No E-Mail,0,0,0.0
+1,5) $500 - $750,250.93,0,0,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+9,3) $200 - $350,622.25,1,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",215.34,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+9,5) $500 - $750,328.28,1,1,Urban,1,Web,No E-Mail,0,0,0.0
+6,5) $500 - $750,484.06,0,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+7,1) $0 - $100,1381.67,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",119.26,0,0,Rural,1,Phone,No E-Mail,0,0,0.0
+10,2) $100 - $200,516.9,1,1,Surburban,1,Web,No E-Mail,0,0,0.0
+7,4) $350 - $500,591.95,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,904.76,0,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+7,2) $100 - $200,1045.38,1,0,Rural,1,Web,Womens E-Mail,1,0,0.0
+10,3) $200 - $350,1137.12,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+8,3) $200 - $350,192.7,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+1,1) $0 - $100,478.57,1,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+1,1) $0 - $100,1277.1,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,109.52,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",250.63,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+2,1) $0 - $100,882.38,1,1,Surburban,0,Multichannel,Womens E-Mail,0,1,41.07
+6,5) $500 - $750,170.91,0,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+1,2) $100 - $200,1243.77,0,0,Surburban,0,Web,Mens E-Mail,1,0,0.0
+3,4) $350 - $500,477.95,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+11,2) $100 - $200,541.05,1,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+2,5) $500 - $750,1150.98,0,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,1224.76,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+8,2) $100 - $200,280.01,0,0,Rural,0,Multichannel,No E-Mail,1,0,0.0
+6,2) $100 - $200,126.23,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+7,4) $350 - $500,947.67,0,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+3,1) $0 - $100,395.95,0,1,Surburban,1,Multichannel,No E-Mail,1,0,0.0
+2,"6) $750 - $1,000",1184.31,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,838.02,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,1292.1,0,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+1,"6) $750 - $1,000",495.97,0,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,1253.39,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,1370.9,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+10,"7) $1,000 +",381.21,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+6,3) $200 - $350,176.77,0,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",1154.34,0,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+4,2) $100 - $200,894.42,1,1,Surburban,1,Phone,Womens E-Mail,0,1,171.34
+10,2) $100 - $200,51.69,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+11,2) $100 - $200,247.13,0,0,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+8,"7) $1,000 +",1160.31,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+8,5) $500 - $750,54.59,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+7,1) $0 - $100,983.65,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",353.75,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,116.78,0,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+11,4) $350 - $500,93.74,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+10,4) $350 - $500,928.72,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+10,2) $100 - $200,1108.15,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",226.64,1,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+9,1) $0 - $100,926.87,0,1,Urban,1,Phone,Womens E-Mail,1,0,0.0
+5,2) $100 - $200,1167.81,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+3,3) $200 - $350,132.09,1,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+8,"6) $750 - $1,000",1257.83,0,0,Urban,0,Phone,No E-Mail,0,0,0.0
+10,5) $500 - $750,1357.31,0,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,1333.38,0,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+2,3) $200 - $350,1089.2,1,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+3,1) $0 - $100,1394.41,0,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+7,"7) $1,000 +",692.43,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+10,1) $0 - $100,703.31,1,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+8,"7) $1,000 +",920.19,0,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,653.83,0,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",1430.36,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+1,5) $500 - $750,119.92,1,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+6,1) $0 - $100,694.44,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+9,"7) $1,000 +",723.54,1,0,Rural,0,Web,Womens E-Mail,1,0,0.0
+4,5) $500 - $750,1059.77,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+7,3) $200 - $350,141.0,0,0,Urban,1,Web,No E-Mail,0,0,0.0
+2,4) $350 - $500,828.81,0,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",685.01,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,1005.47,1,0,Surburban,1,Phone,No E-Mail,0,0,0.0
+1,"7) $1,000 +",77.87,0,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",408.83,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1385.94,0,1,Urban,0,Web,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,450.51,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+10,1) $0 - $100,1173.74,1,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+2,1) $0 - $100,496.33,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,885.43,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+6,1) $0 - $100,1081.87,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+3,4) $350 - $500,1360.91,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+6,3) $200 - $350,619.71,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,705.9,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,288.61,1,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,1499.28,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+6,1) $0 - $100,136.61,1,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+9,4) $350 - $500,171.55,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,408.54,0,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+9,4) $350 - $500,1101.37,0,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+8,1) $0 - $100,770.38,1,0,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+10,5) $500 - $750,447.34,1,1,Rural,1,Multichannel,No E-Mail,0,0,0.0
+11,"7) $1,000 +",350.07,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+10,"7) $1,000 +",690.21,1,0,Urban,0,Web,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1219.66,1,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1455.05,0,0,Surburban,0,Web,No E-Mail,0,0,0.0
+7,"7) $1,000 +",1116.76,0,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+7,"7) $1,000 +",616.98,0,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+4,3) $200 - $350,494.32,0,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,235.17,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+9,1) $0 - $100,189.72,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,344.33,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+6,5) $500 - $750,1437.78,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+9,4) $350 - $500,520.17,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1189.46,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+5,"7) $1,000 +",1344.4,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+3,"6) $750 - $1,000",455.19,1,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,1473.87,0,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,194.66,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,4) $350 - $500,1059.08,0,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,644.04,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,143.02,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+7,2) $100 - $200,1488.75,0,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,427.75,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+3,"7) $1,000 +",409.66,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,447.19,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,634.2,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,823.38,0,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+8,"7) $1,000 +",853.62,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+9,4) $350 - $500,330.84,1,0,Surburban,0,Web,No E-Mail,0,0,0.0
+5,2) $100 - $200,982.2,0,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,100.66,1,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+4,4) $350 - $500,491.28,0,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+5,2) $100 - $200,908.42,0,1,Rural,1,Web,Mens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",433.06,1,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+2,"6) $750 - $1,000",227.8,1,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+5,1) $0 - $100,913.33,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+5,"7) $1,000 +",678.55,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+3,"7) $1,000 +",865.91,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,783.36,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,173.97,0,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+5,4) $350 - $500,254.9,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1167.26,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+2,2) $100 - $200,887.2,0,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+8,"7) $1,000 +",772.66,1,0,Surburban,0,Web,Mens E-Mail,1,0,0.0
+6,4) $350 - $500,853.8,1,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+6,4) $350 - $500,1169.26,1,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,92.45,0,0,Surburban,0,Web,No E-Mail,0,0,0.0
+1,4) $350 - $500,887.27,0,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+1,3) $200 - $350,945.77,0,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+6,"7) $1,000 +",644.3,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1452.9,1,1,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+9,1) $0 - $100,199.44,1,0,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+3,5) $500 - $750,455.65,1,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,363.53,1,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1366.61,0,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,778.83,0,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,731.56,0,0,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+8,"7) $1,000 +",1372.44,1,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+1,5) $500 - $750,1213.69,0,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+7,"7) $1,000 +",305.93,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+10,1) $0 - $100,657.63,1,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",946.82,1,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+5,3) $200 - $350,272.1,1,1,Surburban,0,Phone,No E-Mail,0,0,0.0
+10,"7) $1,000 +",374.91,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,762.29,0,0,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+11,3) $200 - $350,689.51,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+1,5) $500 - $750,1317.71,1,0,Rural,1,Web,No E-Mail,0,0,0.0
+5,1) $0 - $100,1473.06,0,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+10,1) $0 - $100,819.43,0,0,Urban,0,Phone,Mens E-Mail,1,0,0.0
+7,"7) $1,000 +",356.48,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+2,2) $100 - $200,212.18,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+7,4) $350 - $500,1299.29,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,875.51,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1160.92,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+5,"7) $1,000 +",740.87,1,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,474.79,0,0,Rural,1,Multichannel,No E-Mail,0,0,0.0
+4,4) $350 - $500,656.21,1,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+1,4) $350 - $500,164.71,0,1,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",707.66,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,468.31,1,0,Rural,1,Phone,Womens E-Mail,1,0,0.0
+5,1) $0 - $100,1272.47,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+10,3) $200 - $350,421.15,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+8,"6) $750 - $1,000",1256.72,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+3,4) $350 - $500,199.09,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+10,1) $0 - $100,275.75,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,1080.02,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,1407.47,0,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,1073.98,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+10,4) $350 - $500,159.41,1,1,Rural,1,Web,No E-Mail,0,0,0.0
+10,2) $100 - $200,152.1,1,1,Urban,1,Web,No E-Mail,0,0,0.0
+7,1) $0 - $100,305.02,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,122.31,1,0,Rural,0,Multichannel,Mens E-Mail,1,0,0.0
+10,1) $0 - $100,1160.07,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+7,1) $0 - $100,1095.51,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+3,2) $100 - $200,221.51,0,1,Urban,0,Web,No E-Mail,1,0,0.0
+9,1) $0 - $100,33.41,0,1,Urban,0,Web,No E-Mail,0,0,0.0
+1,1) $0 - $100,301.16,1,0,Urban,1,Multichannel,No E-Mail,1,0,0.0
+10,4) $350 - $500,1189.38,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+10,5) $500 - $750,788.85,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",203.37,1,0,Urban,1,Web,No E-Mail,1,0,0.0
+11,5) $500 - $750,435.01,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,893.74,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+5,4) $350 - $500,312.78,0,0,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+6,1) $0 - $100,1026.44,1,0,Rural,1,Phone,No E-Mail,1,0,0.0
+8,"6) $750 - $1,000",1438.15,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+9,3) $200 - $350,83.97,0,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",246.89,0,0,Urban,1,Web,Womens E-Mail,1,0,0.0
+1,"7) $1,000 +",864.85,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+2,4) $350 - $500,580.21,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+3,"6) $750 - $1,000",914.77,0,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,631.69,0,0,Rural,1,Web,Mens E-Mail,0,0,0.0
+3,3) $200 - $350,1043.07,1,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+9,2) $100 - $200,1051.85,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,1362.0,0,1,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",199.71,1,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+10,"6) $750 - $1,000",1442.51,1,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1068.66,1,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1297.17,0,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+11,1) $0 - $100,105.47,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,1380.32,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1101.7,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,1395.44,0,0,Rural,1,Phone,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,1427.47,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+3,2) $100 - $200,265.77,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+1,"7) $1,000 +",342.63,1,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,381.53,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+6,5) $500 - $750,126.65,0,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+11,2) $100 - $200,1489.09,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+4,4) $350 - $500,1015.97,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,1013.23,0,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,183.79,0,0,Rural,1,Phone,No E-Mail,0,0,0.0
+2,5) $500 - $750,1063.43,0,0,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+10,4) $350 - $500,349.89,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+4,1) $0 - $100,229.92,0,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+4,2) $100 - $200,658.65,1,0,Rural,1,Multichannel,No E-Mail,1,0,0.0
+1,"6) $750 - $1,000",1377.83,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+1,2) $100 - $200,109.82,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+1,"7) $1,000 +",650.98,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+7,3) $200 - $350,920.34,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+5,3) $200 - $350,453.87,1,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,"7) $1,000 +",1299.63,0,0,Urban,0,Phone,Womens E-Mail,1,0,0.0
+2,5) $500 - $750,433.77,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+10,4) $350 - $500,50.92,0,1,Surburban,0,Web,Womens E-Mail,1,0,0.0
+3,4) $350 - $500,106.71,1,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,1434.81,0,0,Rural,0,Phone,No E-Mail,0,0,0.0
+10,4) $350 - $500,45.58,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+1,2) $100 - $200,1443.76,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+6,3) $200 - $350,1409.91,0,0,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,4) $350 - $500,293.66,0,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+7,3) $200 - $350,700.89,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+1,3) $200 - $350,1485.39,0,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",830.19,0,1,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",318.52,1,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,624.28,0,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+4,2) $100 - $200,1104.51,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,1073.95,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",712.06,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1295.16,1,1,Rural,1,Web,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1343.69,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+5,5) $500 - $750,1173.04,1,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,229.59,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+3,5) $500 - $750,743.61,0,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+7,4) $350 - $500,318.55,1,0,Surburban,1,Web,No E-Mail,0,0,0.0
+2,3) $200 - $350,1330.83,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+10,5) $500 - $750,1394.55,0,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",1222.57,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+4,4) $350 - $500,1059.93,1,0,Rural,1,Phone,Mens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",1468.33,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+1,4) $350 - $500,1233.51,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+3,"7) $1,000 +",297.12,0,0,Urban,0,Web,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1201.53,0,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+2,5) $500 - $750,321.95,0,1,Surburban,1,Web,No E-Mail,0,0,0.0
+7,2) $100 - $200,1171.6,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+4,5) $500 - $750,577.48,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,804.91,0,0,Urban,1,Phone,Womens E-Mail,1,0,0.0
+9,3) $200 - $350,1475.9,1,0,Surburban,1,Web,Womens E-Mail,1,0,0.0
+10,3) $200 - $350,124.23,1,1,Rural,1,Multichannel,Womens E-Mail,1,0,0.0
+8,2) $100 - $200,297.95,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+8,5) $500 - $750,652.8,0,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+8,"6) $750 - $1,000",606.27,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+7,1) $0 - $100,399.92,0,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",237.51,1,1,Rural,1,Multichannel,Mens E-Mail,1,0,0.0
+5,5) $500 - $750,821.39,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+2,"6) $750 - $1,000",420.53,0,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+11,2) $100 - $200,1162.06,0,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,1496.62,1,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,582.58,1,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+5,"7) $1,000 +",157.83,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+2,3) $200 - $350,674.1,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+7,5) $500 - $750,293.46,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+7,4) $350 - $500,1454.32,0,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,1205.36,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+6,1) $0 - $100,169.34,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",181.11,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+7,"7) $1,000 +",784.68,1,0,Rural,0,Web,Mens E-Mail,1,0,0.0
+8,"7) $1,000 +",775.18,1,0,Rural,0,Phone,Womens E-Mail,1,0,0.0
+9,3) $200 - $350,33.0,1,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+10,2) $100 - $200,1146.76,0,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+10,"6) $750 - $1,000",706.89,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,356.85,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,1377.37,0,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1071.25,0,0,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+8,5) $500 - $750,280.49,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,1496.78,1,1,Rural,1,Web,Womens E-Mail,1,0,0.0
+8,"6) $750 - $1,000",148.95,1,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,156.81,0,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+3,1) $0 - $100,1282.55,1,1,Urban,0,Multichannel,Womens E-Mail,1,0,0.0
+2,"6) $750 - $1,000",816.4,1,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,1471.13,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,4) $350 - $500,1341.16,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+3,4) $350 - $500,69.58,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+11,1) $0 - $100,440.21,0,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+4,"6) $750 - $1,000",697.53,0,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+10,3) $200 - $350,23.38,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,1470.12,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+9,2) $100 - $200,704.05,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,1141.66,1,1,Urban,0,Multichannel,Mens E-Mail,0,0,0.0
+1,"7) $1,000 +",1417.94,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",526.27,0,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+11,5) $500 - $750,1457.78,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",747.6,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+7,4) $350 - $500,1145.73,1,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1119.7,0,1,Surburban,1,Web,No E-Mail,1,0,0.0
+2,1) $0 - $100,39.68,1,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+2,1) $0 - $100,247.06,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+5,4) $350 - $500,986.79,1,1,Surburban,1,Web,Womens E-Mail,1,0,0.0
+4,2) $100 - $200,499.87,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+3,"6) $750 - $1,000",717.37,1,0,Urban,1,Phone,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",1455.4,0,1,Rural,0,Web,No E-Mail,1,0,0.0
+3,1) $0 - $100,1450.23,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,209.34,0,1,Urban,0,Web,Womens E-Mail,0,0,0.0
+10,4) $350 - $500,1411.3,0,1,Rural,0,Web,Mens E-Mail,1,0,0.0
+1,4) $350 - $500,964.71,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",1043.46,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,228.7,0,0,Surburban,1,Web,No E-Mail,0,1,39.43
+2,1) $0 - $100,65.28,0,0,Rural,0,Phone,No E-Mail,0,0,0.0
+5,1) $0 - $100,85.79,1,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+11,"7) $1,000 +",180.31,0,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+2,"7) $1,000 +",1091.09,1,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+11,4) $350 - $500,409.61,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+6,"7) $1,000 +",1222.67,0,0,Urban,1,Multichannel,Womens E-Mail,1,0,0.0
+10,5) $500 - $750,1023.77,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+7,"7) $1,000 +",1126.41,0,0,Rural,1,Web,Mens E-Mail,1,0,0.0
+10,5) $500 - $750,1307.7,1,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+4,5) $500 - $750,1021.8,1,0,Rural,0,Web,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",282.17,1,0,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+1,2) $100 - $200,609.85,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+7,3) $200 - $350,569.5,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+9,4) $350 - $500,529.05,0,0,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+7,1) $0 - $100,94.32,1,1,Urban,0,Phone,No E-Mail,0,0,0.0
+7,2) $100 - $200,1146.56,0,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+6,"6) $750 - $1,000",362.96,1,1,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+8,1) $0 - $100,391.71,0,1,Urban,1,Web,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,947.91,0,1,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+8,4) $350 - $500,877.61,0,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+9,5) $500 - $750,924.01,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+7,2) $100 - $200,476.78,1,0,Urban,0,Phone,No E-Mail,1,0,0.0
+11,1) $0 - $100,491.11,1,0,Surburban,1,Web,Womens E-Mail,0,0,0.0
+2,4) $350 - $500,644.11,0,1,Surburban,1,Phone,Womens E-Mail,1,0,0.0
+10,2) $100 - $200,1466.13,1,0,Rural,0,Phone,Womens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",654.45,0,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",649.28,1,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,677.3,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",109.22,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+2,4) $350 - $500,368.68,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,587.84,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,1454.73,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,1449.53,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1478.63,1,0,Rural,1,Web,No E-Mail,0,0,0.0
+6,3) $200 - $350,370.1,1,1,Rural,0,Phone,Mens E-Mail,0,1,65.81
+1,1) $0 - $100,1382.34,0,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+7,5) $500 - $750,467.82,0,1,Urban,1,Web,Mens E-Mail,1,0,0.0
+7,1) $0 - $100,999.79,0,1,Rural,1,Phone,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",687.93,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+1,3) $200 - $350,377.01,0,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,1440.14,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+7,1) $0 - $100,1128.07,0,1,Urban,1,Phone,Mens E-Mail,0,0,0.0
+11,1) $0 - $100,633.4,1,1,Rural,1,Web,No E-Mail,0,0,0.0
+5,4) $350 - $500,1489.54,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+6,3) $200 - $350,548.73,0,0,Urban,1,Phone,No E-Mail,0,0,0.0
+8,3) $200 - $350,929.53,0,1,Surburban,1,Phone,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",702.21,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+9,3) $200 - $350,1159.5,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,1117.46,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+9,5) $500 - $750,702.76,1,0,Rural,1,Phone,No E-Mail,0,0,0.0
+2,3) $200 - $350,327.35,1,1,Rural,0,Web,No E-Mail,0,0,0.0
+5,3) $200 - $350,444.08,1,1,Surburban,1,Phone,No E-Mail,0,0,0.0
+5,3) $200 - $350,1347.57,0,0,Urban,1,Web,No E-Mail,1,0,0.0
+6,2) $100 - $200,114.58,1,1,Urban,0,Phone,Womens E-Mail,0,0,0.0
+10,"7) $1,000 +",660.6,0,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+1,4) $350 - $500,488.35,1,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",933.67,0,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,415.01,0,0,Surburban,1,Phone,No E-Mail,1,0,0.0
+9,3) $200 - $350,1303.2,0,1,Rural,0,Multichannel,Womens E-Mail,1,0,0.0
+6,"6) $750 - $1,000",492.66,0,1,Urban,0,Web,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",449.95,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,581.07,1,0,Urban,1,Phone,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1214.85,1,1,Urban,1,Multichannel,No E-Mail,1,0,0.0
+7,2) $100 - $200,898.11,0,0,Urban,0,Multichannel,Womens E-Mail,0,1,53.98
+7,4) $350 - $500,407.02,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+3,3) $200 - $350,703.36,0,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+11,"7) $1,000 +",888.27,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+2,"7) $1,000 +",240.61,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+7,1) $0 - $100,1400.99,0,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,5) $500 - $750,1248.91,0,1,Urban,0,Phone,No E-Mail,0,0,0.0
+5,5) $500 - $750,100.29,1,1,Urban,0,Web,No E-Mail,0,0,0.0
+6,5) $500 - $750,73.51,0,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,1237.0,0,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+10,3) $200 - $350,844.54,1,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+6,3) $200 - $350,1226.59,1,1,Rural,1,Phone,No E-Mail,1,0,0.0
+11,5) $500 - $750,278.57,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",76.26,0,0,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",665.18,1,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+2,3) $200 - $350,179.83,0,1,Urban,1,Web,Womens E-Mail,1,0,0.0
+2,4) $350 - $500,1220.11,0,1,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,801.81,1,1,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+6,1) $0 - $100,130.1,0,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1319.05,0,0,Rural,1,Web,No E-Mail,1,0,0.0
+8,"7) $1,000 +",106.52,1,1,Surburban,1,Web,Womens E-Mail,0,0,0.0
+1,4) $350 - $500,1291.2,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+1,1) $0 - $100,258.74,1,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+9,2) $100 - $200,275.47,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,"6) $750 - $1,000",1021.95,1,0,Surburban,0,Web,Mens E-Mail,1,0,0.0
+8,4) $350 - $500,1003.28,1,0,Urban,1,Phone,No E-Mail,0,0,0.0
+8,4) $350 - $500,1083.96,0,1,Rural,1,Phone,No E-Mail,0,0,0.0
+1,5) $500 - $750,43.94,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",442.28,1,1,Urban,0,Multichannel,No E-Mail,0,0,0.0
+1,1) $0 - $100,894.03,1,1,Surburban,1,Web,Mens E-Mail,1,0,0.0
+4,"7) $1,000 +",1145.31,1,1,Surburban,0,Phone,Womens E-Mail,1,0,0.0
+8,"6) $750 - $1,000",991.89,1,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+8,3) $200 - $350,24.23,1,1,Urban,1,Phone,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",1224.51,1,1,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+9,"6) $750 - $1,000",768.27,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+10,1) $0 - $100,906.22,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+4,"7) $1,000 +",1167.25,0,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",706.11,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+5,1) $0 - $100,821.32,0,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+4,1) $0 - $100,576.5,1,0,Surburban,0,Multichannel,Mens E-Mail,0,0,0.0
+6,4) $350 - $500,1077.49,1,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,1311.6,1,0,Surburban,0,Web,Womens E-Mail,0,0,0.0
+5,5) $500 - $750,690.28,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+8,2) $100 - $200,642.26,0,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+9,"6) $750 - $1,000",82.94,1,1,Urban,1,Multichannel,No E-Mail,0,0,0.0
+2,3) $200 - $350,51.19,1,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+7,2) $100 - $200,1094.24,1,0,Urban,0,Phone,No E-Mail,0,0,0.0
+4,2) $100 - $200,621.21,1,1,Rural,1,Web,Mens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1254.57,0,1,Rural,0,Web,Mens E-Mail,0,0,0.0
+6,5) $500 - $750,276.67,0,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1073.62,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",1408.18,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+5,4) $350 - $500,919.54,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+1,3) $200 - $350,272.67,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+3,3) $200 - $350,751.66,1,1,Urban,0,Web,Mens E-Mail,1,0,0.0
+11,"6) $750 - $1,000",193.31,1,1,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+9,3) $200 - $350,1278.69,1,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+5,2) $100 - $200,367.03,1,1,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+3,"7) $1,000 +",1420.07,1,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+5,4) $350 - $500,1019.79,0,0,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+2,"7) $1,000 +",1150.08,1,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+1,1) $0 - $100,263.29,1,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+8,2) $100 - $200,791.88,0,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,781.8,1,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+4,5) $500 - $750,170.21,1,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+9,5) $500 - $750,1271.61,1,1,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+11,1) $0 - $100,290.29,0,1,Surburban,0,Web,No E-Mail,0,0,0.0
+7,"6) $750 - $1,000",73.59,0,0,Urban,1,Phone,No E-Mail,1,0,0.0
+10,3) $200 - $350,517.93,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+10,2) $100 - $200,948.73,0,0,Rural,0,Multichannel,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,1061.47,1,0,Rural,1,Web,No E-Mail,0,0,0.0
+10,5) $500 - $750,551.49,1,0,Rural,0,Phone,Womens E-Mail,1,0,0.0
+5,"7) $1,000 +",568.02,1,0,Rural,1,Phone,Mens E-Mail,0,0,0.0
+9,4) $350 - $500,1415.2,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+1,5) $500 - $750,441.1,1,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+9,1) $0 - $100,440.27,1,1,Urban,1,Phone,No E-Mail,0,0,0.0
+4,1) $0 - $100,630.41,1,1,Urban,1,Web,Womens E-Mail,0,0,0.0
+3,5) $500 - $750,1279.78,0,1,Surburban,0,Web,Womens E-Mail,0,0,0.0
+11,5) $500 - $750,215.84,1,0,Surburban,1,Phone,Mens E-Mail,1,0,0.0
+8,1) $0 - $100,1224.67,1,0,Urban,1,Web,No E-Mail,0,0,0.0
+3,"6) $750 - $1,000",1335.97,1,0,Urban,1,Web,Mens E-Mail,1,0,0.0
+2,4) $350 - $500,284.23,1,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",995.96,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+5,3) $200 - $350,1215.02,1,0,Urban,0,Phone,Mens E-Mail,0,0,0.0
+7,2) $100 - $200,1076.68,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+9,"6) $750 - $1,000",747.66,0,0,Rural,0,Web,No E-Mail,1,0,0.0
+7,"6) $750 - $1,000",638.71,0,1,Rural,0,Phone,Mens E-Mail,1,0,0.0
+11,1) $0 - $100,466.01,1,1,Rural,0,Phone,No E-Mail,0,0,0.0
+11,5) $500 - $750,657.31,1,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+10,2) $100 - $200,47.59,1,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+9,"7) $1,000 +",835.64,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+3,4) $350 - $500,1293.75,1,0,Rural,0,Phone,Mens E-Mail,1,0,0.0
+4,3) $200 - $350,1082.27,1,0,Urban,1,Web,No E-Mail,0,0,0.0
+6,5) $500 - $750,580.49,0,1,Surburban,1,Multichannel,Womens E-Mail,1,0,0.0
+7,"7) $1,000 +",976.13,0,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",193.85,1,1,Surburban,1,Web,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,606.58,0,0,Urban,1,Web,Mens E-Mail,0,0,0.0
+2,5) $500 - $750,1096.59,1,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+3,1) $0 - $100,1428.67,0,1,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+7,3) $200 - $350,1168.64,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",792.07,0,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+6,2) $100 - $200,1449.59,1,0,Urban,1,Multichannel,Mens E-Mail,0,0,0.0
+10,3) $200 - $350,872.08,1,1,Rural,1,Phone,Mens E-Mail,0,0,0.0
+9,3) $200 - $350,538.84,0,0,Rural,0,Web,Mens E-Mail,0,0,0.0
+7,3) $200 - $350,347.53,1,0,Rural,1,Multichannel,Mens E-Mail,0,0,0.0
+2,"7) $1,000 +",160.41,0,1,Urban,0,Web,Mens E-Mail,1,0,0.0
+7,"7) $1,000 +",1400.96,1,0,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+5,"7) $1,000 +",517.82,0,0,Urban,0,Web,Womens E-Mail,0,0,0.0
+4,"7) $1,000 +",344.93,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+2,1) $0 - $100,109.72,0,0,Urban,1,Multichannel,Mens E-Mail,1,0,0.0
+5,1) $0 - $100,679.59,1,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+4,"6) $750 - $1,000",164.26,0,0,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,1356.62,0,1,Urban,1,Phone,No E-Mail,0,0,0.0
+8,3) $200 - $350,1210.83,1,1,Surburban,1,Multichannel,No E-Mail,0,0,0.0
+8,2) $100 - $200,303.6,0,0,Rural,0,Phone,Mens E-Mail,0,0,0.0
+8,1) $0 - $100,145.35,1,1,Surburban,0,Web,No E-Mail,0,0,0.0
+7,5) $500 - $750,1059.24,1,1,Rural,0,Phone,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,512.88,0,0,Rural,0,Phone,Womens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",1465.08,1,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+4,"6) $750 - $1,000",287.56,0,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+7,3) $200 - $350,279.94,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",469.16,0,1,Urban,1,Phone,Mens E-Mail,1,0,0.0
+8,3) $200 - $350,1033.72,1,1,Urban,0,Phone,Womens E-Mail,1,0,0.0
+7,"6) $750 - $1,000",985.33,0,1,Surburban,0,Multichannel,Womens E-Mail,1,0,0.0
+4,1) $0 - $100,476.21,1,1,Rural,0,Web,No E-Mail,1,0,0.0
+11,"6) $750 - $1,000",874.43,1,0,Rural,1,Web,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,1058.03,1,1,Surburban,1,Web,Womens E-Mail,1,0,0.0
+4,3) $200 - $350,1178.8,1,0,Urban,0,Phone,Womens E-Mail,0,0,0.0
+5,2) $100 - $200,305.28,0,1,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+7,4) $350 - $500,1023.65,0,0,Urban,1,Web,No E-Mail,0,0,0.0
+6,2) $100 - $200,39.46,1,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+6,2) $100 - $200,555.39,1,1,Rural,1,Multichannel,Womens E-Mail,0,0,0.0
+1,1) $0 - $100,104.01,1,1,Rural,0,Web,Womens E-Mail,1,0,0.0
+8,2) $100 - $200,1151.51,0,1,Urban,1,Web,No E-Mail,0,0,0.0
+2,"7) $1,000 +",633.97,0,0,Urban,1,Phone,Womens E-Mail,0,0,0.0
+1,"7) $1,000 +",769.09,0,1,Surburban,0,Multichannel,Mens E-Mail,1,0,0.0
+10,4) $350 - $500,450.74,0,0,Urban,0,Multichannel,No E-Mail,0,0,0.0
+7,"6) $750 - $1,000",264.13,0,0,Surburban,0,Multichannel,No E-Mail,0,0,0.0
+3,1) $0 - $100,1192.44,1,0,Surburban,0,Web,Womens E-Mail,1,0,0.0
+11,1) $0 - $100,904.73,1,0,Rural,0,Web,No E-Mail,0,0,0.0
+5,"6) $750 - $1,000",825.43,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+11,3) $200 - $350,1213.63,0,1,Surburban,0,Phone,Womens E-Mail,0,1,99.1
+7,"7) $1,000 +",502.47,1,0,Rural,0,Web,No E-Mail,0,1,145.66
+7,2) $100 - $200,323.53,0,1,Rural,0,Phone,No E-Mail,0,0,0.0
+1,1) $0 - $100,1128.1,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+1,"6) $750 - $1,000",1234.97,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",700.71,0,0,Urban,0,Multichannel,Mens E-Mail,1,0,0.0
+8,"7) $1,000 +",742.31,1,0,Urban,1,Multichannel,No E-Mail,0,0,0.0
+8,5) $500 - $750,1365.49,0,0,Urban,0,Multichannel,Womens E-Mail,0,0,0.0
+4,"6) $750 - $1,000",1242.23,1,1,Surburban,0,Web,Mens E-Mail,0,0,0.0
+2,3) $200 - $350,209.54,0,0,Urban,0,Web,Mens E-Mail,1,0,0.0
+11,3) $200 - $350,916.7,0,0,Rural,0,Web,No E-Mail,0,0,0.0
+11,3) $200 - $350,838.48,1,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+6,"7) $1,000 +",992.01,0,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+3,4) $350 - $500,782.58,0,0,Surburban,0,Phone,Mens E-Mail,1,0,0.0
+6,2) $100 - $200,153.45,0,1,Rural,0,Multichannel,No E-Mail,0,0,0.0
+10,5) $500 - $750,1089.95,1,0,Surburban,0,Multichannel,Womens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",261.19,0,0,Surburban,0,Web,No E-Mail,0,0,0.0
+3,4) $350 - $500,869.42,1,1,Urban,0,Phone,Mens E-Mail,1,0,0.0
+5,3) $200 - $350,953.74,1,0,Surburban,1,Multichannel,Mens E-Mail,0,0,0.0
+4,4) $350 - $500,888.64,1,1,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+11,"6) $750 - $1,000",1243.93,1,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+11,3) $200 - $350,267.39,1,0,Urban,0,Web,Mens E-Mail,0,0,0.0
+5,"6) $750 - $1,000",1318.02,1,1,Rural,0,Phone,Mens E-Mail,0,0,0.0
+1,3) $200 - $350,1053.31,1,0,Rural,0,Multichannel,No E-Mail,0,0,0.0
+2,"7) $1,000 +",1262.23,1,0,Surburban,0,Web,Mens E-Mail,0,0,0.0
+11,5) $500 - $750,878.77,1,1,Rural,0,Multichannel,Mens E-Mail,0,0,0.0
+3,3) $200 - $350,45.11,0,0,Surburban,1,Phone,Womens E-Mail,0,0,0.0
+2,"6) $750 - $1,000",200.91,0,0,Surburban,0,Phone,No E-Mail,0,0,0.0
+11,3) $200 - $350,1237.79,1,1,Surburban,1,Multichannel,Mens E-Mail,1,0,0.0
+5,"6) $750 - $1,000",352.3,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+7,1) $0 - $100,420.34,1,0,Urban,1,Multichannel,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,829.39,0,1,Rural,0,Web,Womens E-Mail,0,0,0.0
+4,3) $200 - $350,435.32,0,1,Surburban,1,Web,Womens E-Mail,1,0,0.0
+3,"7) $1,000 +",931.11,0,0,Surburban,0,Phone,Mens E-Mail,0,0,0.0
+3,5) $500 - $750,705.41,1,1,Urban,0,Multichannel,No E-Mail,1,0,0.0
+7,5) $500 - $750,660.12,1,0,Surburban,0,Phone,Womens E-Mail,0,0,0.0
+1,2) $100 - $200,1321.15,0,1,Surburban,1,Multichannel,Womens E-Mail,0,0,0.0
+10,"6) $750 - $1,000",1166.3,1,0,Urban,1,Web,Womens E-Mail,0,0,0.0
+7,"6) $750 - $1,000",359.27,1,0,Surburban,1,Web,Mens E-Mail,1,0,0.0
