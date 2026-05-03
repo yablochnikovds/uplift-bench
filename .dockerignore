@@ -1,0 +1,45 @@
+# Source-tree clutter that shouldn't ship into the image.
+
+.git/
+.github/
+.venv/
+.uv-cache/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Build artefacts and run dirs.
+dist/
+build/
+*.egg-info/
+mlruns/
+mlartifacts/
+outputs/
+multirun/
+data/raw/
+data/cache/
+data/processed/
+
+# Notebooks render to large bytes.
+notebooks/
+.ipynb_checkpoints/
+
+# Docs.
+site/
+docs/
+
+# Editor.
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Local secrets.
+.env
+.env.local
+*.pem

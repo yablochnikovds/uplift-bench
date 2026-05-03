@@ -1,0 +1,51 @@
+# Two services:
+#   mlflow  — UI on :5000, file backend store under ./mlruns
+#   worker  — runs the benchmark CLI; shares mlruns + outputs + data with mlflow
+#
+# Start: docker compose up -d
+# Smoke run inside the worker:
+#   docker compose run --rm worker benchmark +experiment=quick_smoke dataset.data_dir=/data/sample
+#
+# UI:    open http://localhost:5000
+
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.16.2
+    container_name: uplift-bench-mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri file:///mlruns
+      --default-artifact-root file:///mlruns
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:5000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 4
+      start_period: 10s
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: uplift-bench:local
+    container_name: uplift-bench-worker
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    volumes:
+      - ./data:/data
+      - ./mlruns:/mlruns
+      - ./outputs:/app/outputs
+    # Tail-on-no-args so `docker compose up worker` doesn't exit immediately.
+    # Override on the CLI for actual runs:
+    #   docker compose run --rm worker benchmark +experiment=quick_smoke
+    entrypoint: ["uplift-bench"]
+    command: ["--help"]
