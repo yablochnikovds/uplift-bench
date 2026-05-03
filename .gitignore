@@ -54,4 +54,3 @@ site/
 .env
 .env.local
 *.pem
-.github/workflows/
