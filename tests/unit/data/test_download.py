@@ -9,6 +9,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
+import requests
 
 from uplift_bench.data import download as dl
 from uplift_bench.utils.io import file_sha256
@@ -59,7 +60,7 @@ def test_redownload_when_hash_mismatches_calls_http(
         calls.append(url)
         return _FakeResp()
 
-    monkeypatch.setattr(dl.requests, "get", _fake_get)
+    monkeypatch.setattr(requests, "get", _fake_get)
 
     out = dl.download_file(
         "http://example.test/payload",
@@ -86,7 +87,7 @@ def test_hash_mismatch_after_download_raises(
             return self
         def __exit__(self, *a: object) -> None: ...
 
-    monkeypatch.setattr(dl.requests, "get", lambda *_a, **_kw: _FakeResp())
+    monkeypatch.setattr(requests, "get", lambda *_a, **_kw: _FakeResp())
 
     with pytest.raises(ValueError, match="sha256 mismatch"):
         dl.download_file("http://example.test/x", target, expected_sha256="0" * 64)
@@ -117,7 +118,7 @@ def test_overwrite_forces_redownload(
         calls.append(url)
         return _FakeResp()
 
-    monkeypatch.setattr(dl.requests, "get", _fake_get)
+    monkeypatch.setattr(requests, "get", _fake_get)
     dl.download_file("http://example.test/x", target, overwrite=True)
     assert calls == ["http://example.test/x"]
     assert target.read_bytes() == b"new-bytes"
