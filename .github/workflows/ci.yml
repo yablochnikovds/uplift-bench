@@ -54,7 +54,11 @@ jobs:
         with:
           enable-cache: true
       - run: uv python install ${{ matrix.python }}
-      - run: uv sync --extra dev --python ${{ matrix.python }}
+      - name: install deps with bench extras
+        run: uv sync --extra dev --extra bench --python ${{ matrix.python }}
+      - name: install libomp (lightgbm runtime dep)
+        if: runner.os == 'macOS'
+        run: brew install libomp
       - name: pytest
         run: |
           uv run --python ${{ matrix.python }} pytest \

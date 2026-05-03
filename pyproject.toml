@@ -191,6 +191,15 @@ filterwarnings = [
     "ignore::PendingDeprecationWarning",
     # sklearn warns about convergence on tiny synthetic fixtures.
     "ignore:.*ConvergenceWarning.*",
+    # Logreg overflow on un-scaled features inside small-sample CV folds.
+    # We see these when the test fixture happens to have a near-degenerate
+    # feature; the resulting prediction is still valid (sklearn returns
+    # 0.5 probability), and the symptom is harmless.
+    "ignore:.*divide by zero encountered in matmul.*:RuntimeWarning",
+    "ignore:.*overflow encountered in matmul.*:RuntimeWarning",
+    "ignore:.*invalid value encountered in matmul.*:RuntimeWarning",
+    # joblib parallel returns dimensionless lists; numpy nags on conversion.
+    "ignore:.*invalid value encountered in scalar.*:RuntimeWarning",
 ]
 
 # ------------------------------------------------------------------ #
