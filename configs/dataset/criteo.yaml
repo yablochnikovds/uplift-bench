@@ -1,0 +1,7 @@
+name: criteo
+data_dir: data/raw
+loader_params:
+  outcome: visit
+  # Set to a positive int (e.g. 1_000_000) to subsample for quick iteration.
+  subsample: null
+  subsample_seed: 42

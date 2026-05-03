@@ -1,0 +1,17 @@
+# @package _global_
+#
+# Smoke config — meant to run end-to-end in under a minute on Hillstrom.
+# Used by CI and by anyone first cloning the repo to confirm the install.
+
+defaults:
+  - override /dataset: hillstrom
+  - override /model: s_learner
+  - override /base_learner: logreg
+
+bootstrap:
+  n_boot: 100        # cheap CI for smoke
+  method: percentile
+
+robustness:
+  enable_permutation: false
+  enable_overlap: false

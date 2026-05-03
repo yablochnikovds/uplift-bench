@@ -1,0 +1,7 @@
+name: causal_forest
+# Causal forest doesn't take base_learner — it has its own RF nuisances.
+# These map to the model class kwargs.
+extra_params:
+  n_estimators: 200
+  min_samples_leaf: 30
+  max_samples: 0.45

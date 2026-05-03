@@ -12,6 +12,7 @@ commands here so `--help` always reflects what actually works.
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 import click
 
@@ -52,6 +53,43 @@ def info() -> None:
     click.echo(f"python      {platform.python_version()}")
     click.echo(f"numpy       {np.__version__}")
     click.echo(f"pandas      {pd.__version__}")
+
+
+@main.command("download")
+@click.argument("dataset", type=click.Choice(["hillstrom", "criteo", "all"]))
+@click.option(
+    "--data-dir",
+    type=click.Path(file_okay=False, path_type=Path),
+    default=Path("data/raw"),
+    show_default=True,
+)
+def download(dataset: str, data_dir: Path) -> None:
+    """Download an auto-fetchable dataset to `--data-dir` (skips if cached).
+
+    Datasets behind login walls (RetailHero, MegaFon) are not handled here —
+    see docs/datasets.md.
+    """
+    from uplift_bench.data import download as _download
+
+    _download.fetch(dataset, data_dir)
+
+
+@main.command(
+    "benchmark",
+    help="Run the benchmark via Hydra. All `key=value` overrides after the "
+    "command pass through to Hydra.",
+    context_settings={"ignore_unknown_options": True, "allow_extra_args": True},
+)
+@click.pass_context
+def benchmark(ctx: click.Context) -> None:
+    # Hydra owns sys.argv parsing — strip our "benchmark" subcommand off and
+    # delegate. Click's allow_extra_args lets users do
+    #   uplift-bench benchmark dataset=criteo model=dr_learner seed=7
+    # without click eating the keys.
+    from uplift_bench.pipelines.benchmark import hydra_entry
+
+    sys.argv = [sys.argv[0], *ctx.args]
+    hydra_entry()
 
 
 if __name__ == "__main__":  # pragma: no cover — exercised by `python -m`

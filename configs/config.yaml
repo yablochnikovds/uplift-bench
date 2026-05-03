@@ -1,0 +1,43 @@
+# Root Hydra config. Composed from defaults below; any field can be
+# overridden on the CLI via key=value, or via -m for multirun.
+#
+# Example:
+#   uv run uplift-bench benchmark dataset=criteo model=dr_learner seed=7
+#
+# For a sweep across all models on Hillstrom:
+#   uv run uplift-bench benchmark -m model=s_learner,t_learner,x_learner,r_learner,dr_learner,class_transformation,causal_forest dataset=hillstrom
+
+defaults:
+  - dataset: hillstrom
+  - model: s_learner
+  - base_learner: catboost
+  - _self_
+
+seed: 42
+output_dir: outputs
+
+split:
+  train_frac: 0.7
+  val_frac: 0.15
+  seed: ${seed}
+
+bootstrap:
+  n_boot: 1000
+  method: bca
+  alpha: 0.05
+  n_jobs: 1
+  seed: ${seed}
+
+robustness:
+  enable_permutation: true
+  permutation_n_repeats: 5
+  enable_feature_drop: false
+  enable_learning_curve: false
+  learning_curve_fractions: [0.25, 0.5, 0.75, 1.0]
+  enable_overlap: true
+
+tracking:
+  enabled: true
+  experiment_name: uplift-bench
+  tracking_uri: file://./mlruns
+  run_name: null

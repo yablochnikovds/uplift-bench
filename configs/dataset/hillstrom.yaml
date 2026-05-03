@@ -1,0 +1,5 @@
+name: hillstrom
+data_dir: data/raw
+loader_params:
+  treatment_arm: "Womens E-Mail"
+  outcome: visit

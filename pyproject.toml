@@ -33,6 +33,7 @@ dependencies = [
     "tqdm>=4.66",
     "requests>=2.31",
     "matplotlib>=3.8",
+    "tabulate>=0.9",
 ]
 
 [project.optional-dependencies]
