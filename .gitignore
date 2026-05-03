@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# uv
+.uv-cache/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Project artifacts
+mlruns/
+mlartifacts/
+outputs/                # hydra default
+multirun/               # hydra multirun
+data/raw/
+data/cache/
+data/processed/
+!data/sample/           # sample fixtures DO get committed
+
+# Docs build
+site/
+
+# Notebook outputs
+.ipynb_checkpoints/
+
+# Local secrets / env
+.env
+.env.local
+*.pem
+.github/workflows/

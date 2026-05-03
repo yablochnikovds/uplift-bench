@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^(notebooks/|results/)
+      - id: end-of-file-fixer
+        exclude: ^(notebooks/|results/)
+      - id: check-yaml
+        args: ["--unsafe"]   # hydra configs use !! tags
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=2048"]
+      - id: debug-statements
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.11.2
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - pydantic>=2.6
+          - pandas-stubs
+          - types-requests
+          - types-tqdm
+        args: ["--config-file=pyproject.toml"]
+        # Pre-commit runs mypy file-by-file by default which breaks our package
+        # imports. Force it to evaluate the whole src/ tree at once.
+        pass_filenames: false
+        files: ^(src|tests)/
