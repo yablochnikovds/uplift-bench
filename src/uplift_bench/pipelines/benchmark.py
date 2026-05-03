@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+from typing import Any, cast
 
 import hydra
 from hydra.core.config_store import ConfigStore
@@ -29,6 +30,11 @@ cs = ConfigStore.instance()
 cs.store(name="base_experiment", node=ExperimentConfig)
 
 log = get_logger(__name__)
+
+
+def _to_dict(node: Any) -> dict[str, Any]:
+    """OmegaConf → plain dict, narrowed to what the pipelines expect."""
+    return cast(dict[str, Any], OmegaConf.to_container(node, resolve=True))
 
 
 def _find_configs_dir() -> Path:
@@ -57,7 +63,10 @@ def _find_configs_dir() -> Path:
 _CONFIG_DIR = str(_find_configs_dir())
 
 
-@hydra.main(config_path=_CONFIG_DIR, config_name="config", version_base=None)
+# hydra.main is dynamically typed; mypy --strict flags it on Linux but not
+# on Mac depending on hydra-core version. The misc-suppress is the only
+# clean way to keep it green across both.
+@hydra.main(config_path=_CONFIG_DIR, config_name="config", version_base=None)  # type: ignore[misc, unused-ignore]
 def hydra_entry(cfg: DictConfig) -> None:
     """Single-config Hydra entry. Multirun composes this across the model axis."""
     configure(level="INFO")
@@ -74,13 +83,13 @@ def hydra_entry(cfg: DictConfig) -> None:
     )
 
     result = run_one(
-        dataset_cfg=OmegaConf.to_container(cfg.dataset, resolve=True),  # type: ignore[arg-type]
-        model_cfg=OmegaConf.to_container(cfg.model, resolve=True),  # type: ignore[arg-type]
-        base_learner_cfg=OmegaConf.to_container(cfg.base_learner, resolve=True),  # type: ignore[arg-type]
-        split_cfg=OmegaConf.to_container(cfg.split, resolve=True),  # type: ignore[arg-type]
-        bootstrap_cfg=OmegaConf.to_container(cfg.bootstrap, resolve=True),  # type: ignore[arg-type]
-        robustness_cfg=OmegaConf.to_container(cfg.robustness, resolve=True),  # type: ignore[arg-type]
-        tracking_cfg=OmegaConf.to_container(cfg.tracking, resolve=True),  # type: ignore[arg-type]
+        dataset_cfg=_to_dict(cfg.dataset),
+        model_cfg=_to_dict(cfg.model),
+        base_learner_cfg=_to_dict(cfg.base_learner),
+        split_cfg=_to_dict(cfg.split),
+        bootstrap_cfg=_to_dict(cfg.bootstrap),
+        robustness_cfg=_to_dict(cfg.robustness),
+        tracking_cfg=_to_dict(cfg.tracking),
         seed=cfg.seed,
         output_dir=output_dir,
     )
