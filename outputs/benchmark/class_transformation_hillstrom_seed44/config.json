@@ -1,0 +1,40 @@
+{
+  "base_learner": {
+    "name": "catboost",
+    "params": {
+      "depth": 6,
+      "iterations": 500,
+      "learning_rate": 0.05
+    }
+  },
+  "bootstrap": {
+    "alpha": 0.05,
+    "method": "bca",
+    "n_boot": 500,
+    "n_jobs": 1,
+    "seed": 44
+  },
+  "dataset": {
+    "data_dir": "data/raw",
+    "loader_params": {
+      "outcome": "visit",
+      "treatment_arm": "Womens E-Mail"
+    },
+    "name": "hillstrom"
+  },
+  "model": {
+    "extra_params": {},
+    "name": "class_transformation"
+  },
+  "robustness": {
+    "enable_overlap": true,
+    "enable_permutation": true,
+    "permutation_n_repeats": 5
+  },
+  "seed": 44,
+  "split": {
+    "seed": 44,
+    "train_frac": 0.7,
+    "val_frac": 0.15
+  }
+}

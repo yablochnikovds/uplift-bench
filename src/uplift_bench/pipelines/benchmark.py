@@ -66,7 +66,7 @@ _CONFIG_DIR = str(_find_configs_dir())
 # hydra.main is dynamically typed; mypy --strict flags it on Linux but not
 # on Mac depending on hydra-core version. The misc-suppress is the only
 # clean way to keep it green across both.
-@hydra.main(config_path=_CONFIG_DIR, config_name="config", version_base=None)  # type: ignore[misc, unused-ignore]
+@hydra.main(config_path=_CONFIG_DIR, config_name="config", version_base=None)  # type: ignore[misc, untyped-decorator, unused-ignore]
 def hydra_entry(cfg: DictConfig) -> None:
     """Single-config Hydra entry. Multirun composes this across the model axis."""
     configure(level="INFO")
