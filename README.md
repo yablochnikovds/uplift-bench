@@ -48,9 +48,12 @@ Full reproducibility recipe: [`docs/reproducing.md`](docs/reproducing.md).
 
 ## Latest results
 
-Mean Qini ± 95% BCa CI, 3 seeds × 7 models on the public Hillstrom
-"Womens E-Mail vs No E-Mail" contrast (`visit` outcome). CatBoost base
-learner, 200 iterations, 30k train / 6k test rows.
+Mean Qini ± 95% BCa CI. CatBoost base learner. Per-dataset details:
+
+### Hillstrom (3 seeds × 7 models)
+
+`Womens E-Mail vs No E-Mail` contrast, `visit` outcome.
+30k train / 6k test rows, CatBoost 200 iters.
 
 | model                | mean Qini | 95% CI            | AUUC (norm.) |
 |----------------------|-----------|-------------------|--------------|
@@ -62,14 +65,41 @@ learner, 200 iterations, 30k train / 6k test rows.
 | t_learner            | 0.0030    | [0.0005, 0.0054]  | 0.205        |
 | class_transformation | 0.0016    | [-0.0009, 0.0038] | 0.185        |
 
+### Criteo Uplift v2.1 (1 seed × 7 models, subsample 1M)
+
+700k train / 150k test rows, CatBoost 500 iters. Confounded treatment
+(observed propensity ESS / N ≈ 0.51).
+
+![Qini comparison on Criteo](results/figures/qini_criteo.png)
+
+| model                | Qini   | 95% CI             | AUUC (norm.) |
+|----------------------|--------|--------------------|--------------|
+| **r_learner**        | **0.0036** | [0.0026, 0.0045] | 0.69       |
+| s_learner            | 0.0036 | [0.0025, 0.0045]   | 0.78         |
+| t_learner            | 0.0034 | [0.0024, 0.0043]   | 0.64         |
+| causal_forest        | 0.0033 | [0.0022, 0.0043]   | 0.69         |
+| x_learner            | 0.0032 | [0.0022, 0.0042]   | 0.69         |
+| dr_learner           | 0.0031 | [0.0020, 0.0040]   | 0.72         |
+| class_transformation | 0.0021 | [0.0013, 0.0030]   | 0.64         |
+
 > Qini values are reported on the **per-person** scale (cumulative uplift
-> divided by N). To convert to the raw-count Qini that some legacy
-> packages report, multiply by N. Relative ordering is identical.
+> divided by N). Multiply by N to convert to the raw-count Qini that some
+> legacy packages quote. Relative ordering is identical.
+>
+> **Note on the original spec.** This benchmark was scoped expecting
+> DR-learner + CatBoost to lead on Criteo by ~12% over S-learner. On the
+> 1M subsample we observed the opposite — DR-learner trails S-learner by
+> a small margin, and on Hillstrom the meta-learners cluster within the
+> bootstrap CI. Likely contributors: smaller N (subsample vs full 13.9M),
+> Criteo's confounded treatment (ESS≈0.51), and CI overlap. The numbers
+> here are what we measured, not adjusted to match a prior expectation.
 
 The full per-seed table lives at
-[`results/benchmark_results.md`](results/benchmark_results.md).
-Criteo, RetailHero, and MegaFon results are added to the same file as
-they finish — see [`docs/results.md`](docs/results.md) for the latest.
+[`results/benchmark_results.md`](results/benchmark_results.md) (Hillstrom)
+and [`results/criteo_results.md`](results/criteo_results.md) (Criteo).
+Combined summary in [`results/benchmark_summary.md`](results/benchmark_summary.md).
+RetailHero and MegaFon need manual data placement — see
+[`docs/datasets.md`](docs/datasets.md).
 
 ## Layout
 
