@@ -14,14 +14,14 @@ import pandas as pd
 import pytest
 
 from uplift_bench.metrics.bootstrap import BootstrapCI
-from uplift_bench.models._base_learners import make_base_learner
+from uplift_bench.models._base_learners import BaseLearnerName, TaskKind, make_base_learner
 from uplift_bench.models.s_learner import SLearner
 from uplift_bench.tracking.mlflow_logger import start_run
 
 
 @pytest.mark.parametrize("name", ["catboost", "lightgbm", "logreg"])
 @pytest.mark.parametrize("task", ["classification", "regression"])
-def test_make_base_learner_returns_fittable(name: str, task: str) -> None:
+def test_make_base_learner_returns_fittable(name: BaseLearnerName, task: TaskKind) -> None:
     rng = np.random.default_rng(0)
     X = pd.DataFrame(rng.standard_normal((40, 4)), columns=list("abcd"))
     y_cls = rng.integers(0, 2, 40)
@@ -30,7 +30,7 @@ def test_make_base_learner_returns_fittable(name: str, task: str) -> None:
     est = make_base_learner(
         name,
         task=task,
-        seed=0,  # type: ignore[arg-type]
+        seed=0,
         params={"iterations": 30, "n_estimators": 30},
     )
     est.fit(X, y)
