@@ -219,33 +219,50 @@ def paired_bootstrap_test(
 ) -> dict[str, float]:
     """Test whether `metric(A) > metric(B)` significantly.
 
-    Uses paired bootstrap (same indices for both) so the comparison cancels
-    shared sampling noise. Returns the observed difference, a 95% CI, and
-    the one-sided p-value for H1: metric(A) > metric(B).
+    Uses paired bootstrap (same indices for both) so the comparison
+    cancels shared sampling noise. Returns:
+
+    * `observed_diff`  - metric(A) - metric(B) on the original sample.
+    * `ci_low`/`ci_high` — 95% percentile CI of the resampled difference.
+    * `p_value_one_sided` — bootstrap test p-value for H0: metric(A) ≤
+      metric(B), H1: metric(A) > metric(B). Computed via the centered
+      bootstrap distribution (Efron & Tibshirani 1993, §16.4): we
+      recenter `diffs` to be a draw from the null and ask how often the
+      recentered statistic exceeds `observed_diff`.
+
+    The recentered formula simplifies algebraically to
+    `mean(diffs <= 0)` — but only if the centering shift `observed_diff`
+    is the *only* shift between empirical and null distribution. We make
+    that assumption explicit by computing it as such.
     """
-    score_a = np.asarray(score_a)
-    score_b = np.asarray(score_b)
-    treatment = np.asarray(treatment)
-    outcome = np.asarray(outcome)
-    if not (len(score_a) == len(score_b) == len(treatment) == len(outcome)):
+    score_a_arr = np.asarray(score_a)
+    score_b_arr = np.asarray(score_b)
+    treatment_arr = np.asarray(treatment)
+    outcome_arr = np.asarray(outcome)
+    if not (len(score_a_arr) == len(score_b_arr) == len(treatment_arr) == len(outcome_arr)):
         raise ValueError("all arrays must have the same length")
 
-    n = len(score_a)
-    point_a = metric(score_a, treatment, outcome)
-    point_b = metric(score_b, treatment, outcome)
+    n = len(score_a_arr)
+    point_a = metric(score_a_arr, treatment_arr, outcome_arr)
+    point_b = metric(score_b_arr, treatment_arr, outcome_arr)
     observed_diff = float(point_a - point_b)
 
     indices = _bootstrap_indices(n, n_boot, seed)
     diffs = np.array(
         [
-            metric(score_a[idx], treatment[idx], outcome[idx])
-            - metric(score_b[idx], treatment[idx], outcome[idx])
+            metric(score_a_arr[idx], treatment_arr[idx], outcome_arr[idx])
+            - metric(score_b_arr[idx], treatment_arr[idx], outcome_arr[idx])
             for idx in indices
         ]
     )
 
     lo, hi = np.quantile(diffs, [0.025, 0.975])
-    p_value = float(np.mean(diffs <= 0))  # H1: A > B
+    # Recentered bootstrap p-value: the null distribution is `diffs - observed_diff`,
+    # so P(null >= observed_diff) = P(diffs - observed_diff >= observed_diff)
+    # = P(diffs >= 2 * observed_diff). For symmetric distributions this
+    # roughly matches `mean(diffs <= 0)` but is the canonical Efron form
+    # for skewed metrics.
+    p_value = float(np.mean(diffs - observed_diff >= observed_diff))
     return {
         "metric_a": float(point_a),
         "metric_b": float(point_b),

@@ -24,7 +24,7 @@ from typing import Any, Literal
 
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 
 from uplift_bench.metrics._common import NDArray1D
 from uplift_bench.models._base_learners import BaseLearnerName, make_base_learner
@@ -71,11 +71,13 @@ class RLearner(UpliftModel):
         residual_y = y - m_hat
         residual_t = t.astype(np.float64) - e_hat
 
-        # Avoid division by ~0 — when |T - e(X)| is tiny the weight goes to 0
-        # naturally, but the target blows up. Clip the denominator and
-        # remember the weights handle the down-weighting properly.
-        denom = np.where(np.abs(residual_t) < 1e-3, np.sign(residual_t) * 1e-3 + 1e-12, residual_t)
-        target = residual_y / denom
+        # With propensity clipped to [0.05, 0.95] we have |residual_t| ≥ 0.05
+        # for every row, so the division is safe. Algebraically equivalent to
+        # the canonical weighted-residual form (Nie & Wager 2021 Algorithm 1):
+        #   minimize sum_i (residual_y_i - residual_t_i * tau(X_i))^2
+        # which we encode as label = residual_y / residual_t and weight =
+        # residual_t^2 — the algebra cancels out exactly.
+        target = residual_y / residual_t
         weight = residual_t**2
 
         self._tau.fit(X, target, sample_weight=weight)
@@ -96,12 +98,20 @@ class RLearner(UpliftModel):
         t: NDArray1D,
         y: NDArray1D,
     ) -> tuple[NDArray1D, NDArray1D]:
-        """K-fold OOF predictions for m(X)=E[Y|X] and e(X)=P(T=1|X)."""
-        kf = KFold(n_splits=self._n_splits, shuffle=True, random_state=self._seed)
+        """K-fold OOF predictions for m(X)=E[Y|X] and e(X)=P(T=1|X).
+
+        Uses StratifiedKFold on the *treatment* indicator so every fold
+        has both arms, avoiding one-class folds that crash propensity fits.
+        """
+        kf = StratifiedKFold(
+            n_splits=self._n_splits,
+            shuffle=True,
+            random_state=self._seed,
+        )
         m_hat = np.zeros(len(X), dtype=np.float64)
         e_hat = np.zeros(len(X), dtype=np.float64)
 
-        for fold, (train_idx, hold_idx) in enumerate(kf.split(X)):
+        for fold, (train_idx, hold_idx) in enumerate(kf.split(X, t)):
             outcome_model = make_base_learner(
                 self._base_learner,
                 task=self._outcome,

@@ -21,7 +21,7 @@ from typing import Any, Literal
 
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 
 from uplift_bench.metrics._common import NDArray1D
 from uplift_bench.models._base_learners import BaseLearnerName, make_base_learner
@@ -84,13 +84,18 @@ class DRLearner(UpliftModel):
         t: NDArray1D,
         y: NDArray1D,
     ) -> tuple[NDArray1D, NDArray1D, NDArray1D]:
-        kf = KFold(n_splits=self._n_splits, shuffle=True, random_state=self._seed)
+        # Stratify on treatment so every fold has both arms.
+        kf = StratifiedKFold(
+            n_splits=self._n_splits,
+            shuffle=True,
+            random_state=self._seed,
+        )
         n = len(X)
         mu0 = np.zeros(n, dtype=np.float64)
         mu1 = np.zeros(n, dtype=np.float64)
         e_hat = np.zeros(n, dtype=np.float64)
 
-        for fold, (train_idx, hold_idx) in enumerate(kf.split(X)):
+        for fold, (train_idx, hold_idx) in enumerate(kf.split(X, t)):
             t_tr = t[train_idx]
             mask_t = t_tr == 1
             X_tr = X.iloc[train_idx]

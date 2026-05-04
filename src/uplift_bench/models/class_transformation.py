@@ -8,12 +8,27 @@ i.e. Z = 1 iff (treated and responded) OR (not treated and not responded).
 Then 2 * P(Z=1|X) - 1 = E[Y|T=1, X] - E[Y|T=0, X] = tau(X).
 
 So a single classifier on (X, Z) recovers an unbiased uplift estimator —
-without ever fitting two outcome models. Catches:
+without ever fitting two outcome models.
 
-* Requires balanced treatment, ideally close to 50/50. We re-weight rows
-  by `1 / P(T=t_i)` to make this work for arbitrary marginal propensities,
-  which is the modern adjustment used by scikit-uplift.
-* Only defined for binary outcomes. Calling with continuous outcome raises.
+**Important assumption: this learner is correct only under randomised
+treatment with marginal propensity P(T=1) ≈ const** (i.e. an RCT, like
+Hillstrom, Criteo Uplift, RetailHero, MegaFon, all of which are
+randomised). The marginal-propensity reweighting we apply (`1/p_t` for
+treated, `1/(1-p_t)` for control) compensates for unbalanced *marginal*
+share but **does not** correct for covariate-conditional propensity
+e(X). On observational data with non-random treatment assignment use
+DR-learner or X-learner instead. We refuse to fit when the marginal
+propensity is outside [0.05, 0.95] as a coarse RCT check, but this does
+not catch heterogeneous propensity.
+
+Only defined for binary outcomes; calling with continuous outcome raises.
+
+References
+----------
+* Jaskowski & Jaroszewicz 2012, "Uplift modeling for clinical trial data"
+  ICML Workshop on Clinical Data Analysis.
+* scikit-uplift `ClassTransformation` documentation —
+  https://www.uplift-modeling.com/en/latest/api/models/ClassTransformation.html
 """
 
 from __future__ import annotations
