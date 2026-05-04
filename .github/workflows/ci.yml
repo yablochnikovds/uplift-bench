@@ -63,7 +63,8 @@ jobs:
         run: |
           uv run --python ${{ matrix.python }} pytest \
             -m "not slow and not needs_data" \
-            --cov --cov-report=term-missing --cov-report=xml
+            --cov --cov-report=term-missing --cov-report=xml \
+            --cov-fail-under=90
       - name: upload coverage
         if: matrix.python == '3.11'
         uses: codecov/codecov-action@v4

@@ -210,8 +210,9 @@ filterwarnings = [
 branch = true
 source = ["src/uplift_bench"]
 omit = [
-    "src/uplift_bench/cli.py",      # thin click shim, exercised by integration tests
-    "src/uplift_bench/viz/*",       # plotting functions are visually verified
+    "src/uplift_bench/cli.py",                  # thin click shim, exercised via smoke run
+    "src/uplift_bench/viz/*",                   # plotting functions are visually verified
+    "src/uplift_bench/pipelines/benchmark.py",  # Hydra @main entry; tested via end-to-end smoke
 ]
 parallel = true
 

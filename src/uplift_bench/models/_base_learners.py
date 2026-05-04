@@ -94,6 +94,21 @@ def make_base_learner(
         return LGBMRegressor(**merged)
 
     if name == "logreg":
+        # Tree-model knobs leak in through shared configs; drop them so
+        # logreg/Ridge don't TypeError on unknown kwargs.
+        for k in (
+            "iterations",
+            "n_estimators",
+            "depth",
+            "num_leaves",
+            "min_child_samples",
+            "l2_leaf_reg",
+            "learning_rate",
+            "verbose",
+            "allow_writing_files",
+            "thread_count",
+        ):
+            overrides.pop(k, None)
         merged = {**_LOGREG_DEFAULTS, "random_state": seed, **overrides}
         # Logistic without scaling can be misleading on Criteo features that
         # span ten orders of magnitude. Pipeline keeps it honest.

@@ -1,0 +1,46 @@
+{
+  "base_learner": {
+    "name": "logreg",
+    "params": {
+      "max_iter": 1000
+    }
+  },
+  "bootstrap": {
+    "alpha": 0.05,
+    "method": "percentile",
+    "n_boot": 100,
+    "n_jobs": 1,
+    "seed": 42
+  },
+  "dataset": {
+    "data_dir": "data/sample",
+    "loader_params": {
+      "outcome": "visit",
+      "treatment_arm": "Womens E-Mail"
+    },
+    "name": "hillstrom"
+  },
+  "model": {
+    "extra_params": {},
+    "name": "s_learner"
+  },
+  "robustness": {
+    "enable_feature_drop": false,
+    "enable_learning_curve": false,
+    "enable_overlap": false,
+    "enable_permutation": false,
+    "learning_curve_fractions": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "permutation_n_repeats": 5
+  },
+  "seed": 42,
+  "split": {
+    "seed": 42,
+    "train_frac": 0.7,
+    "val_frac": 0.15
+  }
+}
