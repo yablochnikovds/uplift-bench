@@ -115,6 +115,15 @@ $$
 against $k / N$. Qini = area between this curve and the random-targeting
 diagonal.
 
+!!! note "Normalisation convention"
+    Both axes are divided by $N$, so our Qini lives on the *per-person*
+    scale and is in roughly $[0, \text{ATE}/2]$. Some packages
+    (Radcliffe's original paper, parts of the scikit-uplift API) report
+    Qini on the raw-count scale — multiply our value by $N$ to convert.
+    The relative ordering of models is identical either way; only the
+    absolute number differs. We use the per-person scale because it makes
+    Qini comparable across datasets of different sizes.
+
 ### AUUC
 
 Same idea but with raw cumulative differences instead of the

@@ -62,6 +62,10 @@ learner, 200 iterations, 30k train / 6k test rows.
 | t_learner            | 0.0030    | [0.0005, 0.0054]  | 0.205        |
 | class_transformation | 0.0016    | [-0.0009, 0.0038] | 0.185        |
 
+> Qini values are reported on the **per-person** scale (cumulative uplift
+> divided by N). To convert to the raw-count Qini that some legacy
+> packages report, multiply by N. Relative ordering is identical.
+
 The full per-seed table lives at
 [`results/benchmark_results.md`](results/benchmark_results.md).
 Criteo, RetailHero, and MegaFon results are added to the same file as
