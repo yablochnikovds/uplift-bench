@@ -1,0 +1,81 @@
+site_name: uplift-bench
+site_description: Reproducible benchmark of uplift modeling approaches.
+site_author: Danila Yablochnikov
+site_url: https://yablochnikovds.github.io/uplift-bench
+repo_url: https://github.com/yablochnikovds/uplift-bench
+repo_name: yablochnikovds/uplift-bench
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: switch to dark
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: switch to light
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - include-markdown
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_root_heading: true
+            show_source: false
+            docstring_style: numpy
+            heading_level: 2
+            members_order: source
+
+nav:
+  - Home: index.md
+  - Methodology: methodology.md
+  - Datasets: datasets.md
+  - Results: results.md
+  - Reproducing: reproducing.md
+  - API:
+      - Models: api/models.md
+      - Metrics: api/metrics.md
+      - Robustness: api/robustness.md
+      - Data: api/data.md
