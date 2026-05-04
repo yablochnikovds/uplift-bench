@@ -34,15 +34,16 @@ htmlcov/
 *.swp
 .DS_Store
 
-# Project artifacts
+# Project artifacts (hydra default + multirun)
 mlruns/
 mlartifacts/
-outputs/                # hydra default
-multirun/               # hydra multirun
+outputs/
+multirun/
 data/raw/
 data/cache/
 data/processed/
-!data/sample/           # sample fixtures DO get committed
+# sample fixtures DO get committed
+!data/sample/
 
 # Docs build
 site/
