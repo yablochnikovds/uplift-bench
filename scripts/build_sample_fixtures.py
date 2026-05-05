@@ -28,23 +28,33 @@ def build_hillstrom(n: int = 2_000) -> None:
 
     segments = rng.choice(
         ["Womens E-Mail", "Mens E-Mail", "No E-Mail"],
-        size=n, p=[0.35, 0.35, 0.30],
+        size=n,
+        p=[0.35, 0.35, 0.30],
     )
-    df = pd.DataFrame({
-        "recency": rng.integers(1, 12, n),
-        "history_segment": rng.choice(
-            ["1) $0 - $100", "2) $100 - $200", "3) $200 - $350",
-             "4) $350 - $500", "5) $500 - $750", "6) $750 - $1,000",
-             "7) $1,000 +"], size=n,
-        ),
-        "history": rng.uniform(20, 1500, n).round(2),
-        "mens": rng.integers(0, 2, n),
-        "womens": rng.integers(0, 2, n),
-        "zip_code": rng.choice(["Surburban", "Urban", "Rural"], size=n),
-        "newbie": rng.integers(0, 2, n),
-        "channel": rng.choice(["Multichannel", "Phone", "Web"], size=n),
-        "segment": segments,
-    })
+    df = pd.DataFrame(
+        {
+            "recency": rng.integers(1, 12, n),
+            "history_segment": rng.choice(
+                [
+                    "1) $0 - $100",
+                    "2) $100 - $200",
+                    "3) $200 - $350",
+                    "4) $350 - $500",
+                    "5) $500 - $750",
+                    "6) $750 - $1,000",
+                    "7) $1,000 +",
+                ],
+                size=n,
+            ),
+            "history": rng.uniform(20, 1500, n).round(2),
+            "mens": rng.integers(0, 2, n),
+            "womens": rng.integers(0, 2, n),
+            "zip_code": rng.choice(["Surburban", "Urban", "Rural"], size=n),
+            "newbie": rng.integers(0, 2, n),
+            "channel": rng.choice(["Multichannel", "Phone", "Web"], size=n),
+            "segment": segments,
+        }
+    )
 
     # Visits: roughly 14% control, 30% treated. Conversion: ~0.5%/0.9%.
     base_visit = 0.14 + 0.16 * (df["segment"] != "No E-Mail").astype(float)
@@ -64,24 +74,28 @@ def build_retailhero(n: int = 3_000) -> None:
     client_ids = [f"c_{i:06d}" for i in range(n)]
     treatment = rng.integers(0, 2, n)
     target = (rng.uniform(size=n) < (0.10 + 0.08 * treatment)).astype(int)
-    pd.DataFrame({
-        "client_id": client_ids,
-        "treatment_flg": treatment,
-        "target": target,
-    }).to_csv(out / "uplift_train.csv", index=False)
+    pd.DataFrame(
+        {
+            "client_id": client_ids,
+            "treatment_flg": treatment,
+            "target": target,
+        }
+    ).to_csv(out / "uplift_train.csv", index=False)
 
     age = rng.integers(18, 80, n).astype(float)
     age[rng.uniform(size=n) < 0.05] = np.nan
-    pd.DataFrame({
-        "client_id": client_ids,
-        "gender": rng.choice(["F", "M", "U"], size=n, p=[0.5, 0.45, 0.05]),
-        "age": age,
-        "average_amount": rng.uniform(50, 5000, n).round(2),
-        "purchase_sum_3m": rng.uniform(0, 50_000, n).round(2),
-        "purchase_count_3m": rng.integers(0, 50, n),
-        "days_since_first": rng.integers(30, 2000, n),
-        "days_since_last": rng.integers(0, 365, n),
-    }).to_csv(out / "clients.csv", index=False)
+    pd.DataFrame(
+        {
+            "client_id": client_ids,
+            "gender": rng.choice(["F", "M", "U"], size=n, p=[0.5, 0.45, 0.05]),
+            "age": age,
+            "average_amount": rng.uniform(50, 5000, n).round(2),
+            "purchase_sum_3m": rng.uniform(0, 50_000, n).round(2),
+            "purchase_count_3m": rng.integers(0, 50, n),
+            "days_since_first": rng.integers(30, 2000, n),
+            "days_since_last": rng.integers(0, 365, n),
+        }
+    ).to_csv(out / "clients.csv", index=False)
     print(f"wrote {out / 'uplift_train.csv'} + clients.csv  ({n} rows)")
 
 

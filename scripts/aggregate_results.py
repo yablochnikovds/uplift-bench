@@ -16,13 +16,15 @@ import pandas as pd
 
 from uplift_bench.utils.io import ensure_dir
 from uplift_bench.viz.comparison_plots import plot_qini_comparison
+from uplift_bench.viz.diagnostic_plots import plot_qini_heatmap
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--results-dir", default="results")
-    parser.add_argument("--inputs", nargs="+",
-                        help="explicit list of CSVs; default = results/*_results.csv")
+    parser.add_argument(
+        "--inputs", nargs="+", help="explicit list of CSVs; default = results/*_results.csv"
+    )
     args = parser.parse_args()
 
     results_dir = Path(args.results_dir)
@@ -56,13 +58,24 @@ def main() -> int:
 
     figures_dir = ensure_dir(results_dir / "figures")
     for ds, sub in summary.groupby("dataset"):
-        per_ds = sub.rename(columns={
-            "qini_mean": "qini",
-        })[["model", "qini", "qini_ci_lower", "qini_ci_upper"]]
+        per_ds = sub.rename(
+            columns={
+                "qini_mean": "qini",
+            }
+        )[["model", "qini", "qini_ci_lower", "qini_ci_upper"]]
         plot_qini_comparison(
             per_ds,
             title=f"Qini by model — {ds}",
             save_path=figures_dir / f"qini_{ds}.png",
+        )
+
+    # Cross-dataset heatmap (only meaningful with ≥ 2 datasets).
+    if summary["dataset"].nunique() >= 2:
+        plot_qini_heatmap(
+            summary,
+            value_col="qini_mean",
+            title="Qini by model x dataset",
+            save_path=figures_dir / "heatmap_qini.png",
         )
     print(f"wrote {md_path}")
     return 0

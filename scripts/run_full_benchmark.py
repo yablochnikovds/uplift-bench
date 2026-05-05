@@ -84,25 +84,37 @@ def main() -> int:
     parser.add_argument("--datasets", nargs="+", default=list(DEFAULT_DATASETS))
     parser.add_argument("--models", nargs="+", default=list(DEFAULT_MODELS))
     parser.add_argument("--seeds", nargs="+", type=int, default=list(DEFAULT_SEEDS))
-    parser.add_argument("--base-learner", default="catboost",
-                        choices=["catboost", "lightgbm", "logreg"])
-    parser.add_argument("--data-dir", default="data/raw",
-                        help="passed through to each loader; use data/sample for smoke runs")
-    parser.add_argument("--criteo-subsample", type=int, default=None,
-                        help="subsample Criteo to N rows (omit for full ~13.9M rows)")
+    parser.add_argument(
+        "--base-learner", default="catboost", choices=["catboost", "lightgbm", "logreg"]
+    )
+    parser.add_argument(
+        "--data-dir",
+        default="data/raw",
+        help="passed through to each loader; use data/sample for smoke runs",
+    )
+    parser.add_argument(
+        "--criteo-subsample",
+        type=int,
+        default=None,
+        help="subsample Criteo to N rows (omit for full ~13.9M rows)",
+    )
     parser.add_argument("--output-dir", default="outputs/benchmark")
     parser.add_argument("--results-dir", default="results")
     parser.add_argument("--n-boot", type=int, default=1000)
-    parser.add_argument("--bootstrap-method", default="bca",
-                        choices=["bca", "percentile"])
+    parser.add_argument("--bootstrap-method", default="bca", choices=["bca", "percentile"])
     parser.add_argument("--enable-permutation", action="store_true")
     parser.add_argument("--enable-overlap", action="store_true")
-    parser.add_argument("--no-tracking", action="store_true",
-                        help="disable MLflow logging (CI / smoke runs)")
-    parser.add_argument("--fast", action="store_true",
-                        help="reduce base learner iterations for quick iteration")
-    parser.add_argument("--continue-on-error", action="store_true",
-                        help="log and skip rather than fail the whole matrix")
+    parser.add_argument(
+        "--no-tracking", action="store_true", help="disable MLflow logging (CI / smoke runs)"
+    )
+    parser.add_argument(
+        "--fast", action="store_true", help="reduce base learner iterations for quick iteration"
+    )
+    parser.add_argument(
+        "--continue-on-error",
+        action="store_true",
+        help="log and skip rather than fail the whole matrix",
+    )
     args = parser.parse_args()
 
     configure(level="INFO")
@@ -111,14 +123,15 @@ def main() -> int:
     results_dir.mkdir(parents=True, exist_ok=True)
 
     matrix: list[tuple[str, str, int]] = [
-        (ds, m, s)
-        for ds in args.datasets
-        for m in args.models
-        for s in args.seeds
+        (ds, m, s) for ds in args.datasets for m in args.models for s in args.seeds
     ]
-    log.info("benchmark_matrix",
-             n_combos=len(matrix), datasets=args.datasets,
-             models=args.models, seeds=args.seeds)
+    log.info(
+        "benchmark_matrix",
+        n_combos=len(matrix),
+        datasets=args.datasets,
+        models=args.models,
+        seeds=args.seeds,
+    )
 
     results: list[TrainResult] = []
     failures: list[dict] = []
@@ -153,14 +166,13 @@ def main() -> int:
                 output_dir=run_dir,
             )
             results.append(result)
-            log.info("matrix_step_done", dataset=ds, model=model, seed=seed,
-                     qini=result.qini)
-        except Exception as exc:  # noqa: BLE001 — by design with --continue-on-error
+            log.info("matrix_step_done", dataset=ds, model=model, seed=seed, qini=result.qini)
+        except Exception as exc:
             tb = traceback.format_exc()
-            failures.append({"dataset": ds, "model": model, "seed": seed,
-                             "error": str(exc), "traceback": tb})
-            log.error("matrix_step_failed", dataset=ds, model=model, seed=seed,
-                      error=str(exc))
+            failures.append(
+                {"dataset": ds, "model": model, "seed": seed, "error": str(exc), "traceback": tb}
+            )
+            log.error("matrix_step_failed", dataset=ds, model=model, seed=seed, error=str(exc))
             if not args.continue_on_error:
                 raise
 
@@ -173,14 +185,20 @@ def main() -> int:
     md_path = results_dir / "benchmark_results.md"
     df.to_csv(csv_path, index=False)
     write_markdown_table(df, md_path)
-    log.info("benchmark_done", results_csv=str(csv_path), md=str(md_path),
-             n_runs=len(results), n_failures=len(failures))
+    log.info(
+        "benchmark_done",
+        results_csv=str(csv_path),
+        md=str(md_path),
+        n_runs=len(results),
+        n_failures=len(failures),
+    )
 
     if failures:
         # Failures captured to disk so we can inspect them even when CI
         # later truncates stdout. The matrix continues, the report shows
         # what made it through.
-        from uplift_bench.utils.io import dump_json
+        from uplift_bench.utils.io import dump_json  # noqa: PLC0415
+
         dump_json(failures, results_dir / "benchmark_failures.json")
 
     return 0

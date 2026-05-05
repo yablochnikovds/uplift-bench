@@ -26,6 +26,12 @@ from uplift_bench.tracking.mlflow_logger import start_run
 from uplift_bench.utils.io import dump_json, ensure_dir
 from uplift_bench.utils.logging import get_logger
 from uplift_bench.utils.reproducibility import seed_everything
+from uplift_bench.viz.diagnostic_plots import (
+    plot_calibration,
+    plot_decile_uplift,
+    plot_permutation_importance,
+    plot_propensity_histogram,
+)
 from uplift_bench.viz.qini_curve import plot_qini_curve
 from uplift_bench.viz.uplift_distribution import plot_uplift_distribution
 
@@ -150,6 +156,20 @@ def run_one(
     plot_uplift_distribution(test_preds, save_path=dist_path)
     deciles_path = output_dir / "deciles.csv"
     deciles.to_csv(deciles_path, index=False)
+    decile_plot_path = output_dir / "deciles.png"
+    plot_decile_uplift(
+        deciles,
+        title=f"{model_cfg['name']} on {dataset_cfg['name']} — per-decile uplift",
+        save_path=decile_plot_path,
+    )
+    calibration_path = output_dir / "calibration.png"
+    plot_calibration(
+        test_preds,
+        t_test,
+        y_test,
+        title=f"{model_cfg['name']} on {dataset_cfg['name']} — calibration",
+        save_path=calibration_path,
+    )
     config_dump = {
         "dataset": dataset_cfg,
         "model": model_cfg,
@@ -164,6 +184,7 @@ def run_one(
 
     # Robustness — only compute the parts the config asks for.
     perm_path: Path | None = None
+    perm_plot_path: Path | None = None
     if robustness_cfg.get("enable_permutation"):
         perm = permutation_uplift_importance(
             model,
@@ -175,8 +196,15 @@ def run_one(
         )
         perm_path = output_dir / "permutation_importance.csv"
         perm.to_csv(perm_path, index=False)
+        perm_plot_path = output_dir / "permutation_importance.png"
+        plot_permutation_importance(
+            perm,
+            title=f"{model_cfg['name']} on {dataset_cfg['name']} — permutation importance",
+            save_path=perm_plot_path,
+        )
 
     overlap_path: Path | None = None
+    overlap_plot_path: Path | None = None
     if robustness_cfg.get("enable_overlap"):
         diag = overlap_diagnostics(X_test, t_test, n_splits=3, seed=seed)
         extra_metrics["overlap_ess_ratio"] = diag.ess_ratio
@@ -185,6 +213,13 @@ def run_one(
         # Save the propensity vector for downstream analysis.
         overlap_path = output_dir / "propensity.csv"
         pd.DataFrame({"propensity": diag.propensity}).to_csv(overlap_path, index=False)
+        overlap_plot_path = output_dir / "propensity.png"
+        plot_propensity_histogram(
+            diag.treated_propensity,
+            diag.control_propensity,
+            title=f"{model_cfg['name']} on {dataset_cfg['name']} — propensity overlap",
+            save_path=overlap_plot_path,
+        )
 
     # MLflow.
     run_name = (
@@ -226,8 +261,14 @@ def run_one(
         run.log_artifact_path(config_path)
         if perm_path is not None:
             run.log_artifact_path(perm_path)
+        if perm_plot_path is not None:
+            run.log_artifact_path(perm_plot_path)
         if overlap_path is not None:
             run.log_artifact_path(overlap_path)
+        if overlap_plot_path is not None:
+            run.log_artifact_path(overlap_plot_path)
+        run.log_artifact_path(decile_plot_path)
+        run.log_artifact_path(calibration_path)
 
     log.info(
         "pipeline_done", model=model_cfg["name"], dataset=dataset_cfg["name"], qini=qini_ci.point
