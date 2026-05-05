@@ -21,7 +21,6 @@ from uplift_bench.viz.diagnostic_plots import (
     plot_learning_curve,
     plot_permutation_importance,
     plot_propensity_histogram,
-    plot_qini_curves_overlay,
     plot_qini_heatmap,
 )
 
@@ -97,17 +96,6 @@ def test_plot_qini_heatmap(tmp_path: Path) -> None:
         }
     )
     out = plot_qini_heatmap(summary, save_path=tmp_path / "heatmap.png")
-    assert out is not None
-    assert out.exists()
-
-
-def test_plot_qini_curves_overlay(tmp_path: Path) -> None:
-    share = np.linspace(0, 1, 50)
-    curves = {
-        "s_learner": (share, share * 0.04, 0.012),
-        "dr_learner": (share, share * 0.05, 0.018),
-    }
-    out = plot_qini_curves_overlay(curves, save_path=tmp_path / "overlay.png")
     assert out is not None
     assert out.exists()
 

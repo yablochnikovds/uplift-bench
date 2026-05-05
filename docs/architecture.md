@@ -117,6 +117,20 @@ type-safe access in pipelines and for IDE autocomplete.
 * `reproducibility.py` — `seed_everything()` + `SeedBundle`.
 * `io.py` — atomic-write parquet, sha256, JSON dump.
 
+## Why both `config/schemas.py` *and* `configs/*.yaml`?
+
+This looks like duplication but isn't. The dataclasses in
+`config/schemas.py` describe the **type** of every config slice
+(field names, defaults, value types) — Hydra uses them to validate
+incoming YAML and to type-check overrides at runtime. The `configs/`
+YAMLs are the **user-editable values**: pinned hyperparameter sets,
+named experiments, dataset-specific knobs. Editors, the Hydra CLI
+override syntax (`dataset=criteo seed=7`), and the docs flow assume
+file-based YAMLs, so we don't generate them from the dataclasses.
+
+If you add a new field, update **both**: dataclass for validation,
+YAML for the default value.
+
 ## Where new things go
 
 | You want to add… | Edit / create |

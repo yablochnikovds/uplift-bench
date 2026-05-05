@@ -50,15 +50,23 @@ def plot_qini_curves(
     curves: dict[str, QiniCurve],
     *,
     title: str = "Qini curves",
+    colors: dict[str, str] | None = None,
     save_path: Path | None = None,
 ) -> Path | None:
-    """Overlay multiple model curves on one axis."""
+    """Overlay multiple model curves on one axis.
+
+    `colors` optionally maps model label → matplotlib color so the same
+    model uses the same colour across multiple plots. Unset labels fall
+    back to matplotlib's default cycle.
+    """
     fig, ax = plt.subplots(figsize=(7, 5))
+    color_map = colors or {}
     for label, curve in curves.items():
         ax.plot(
             curve.population_share,
             curve.cumulative_uplift,
             lw=2,
+            color=color_map.get(label),
             label=f"{label}  Q={curve.qini_coefficient:+.4f}",
         )
     # Use the largest endpoint for the random baseline.

@@ -19,7 +19,6 @@ from __future__ import annotations
 import argparse
 import functools
 import json
-import sys
 from pathlib import Path
 
 import matplotlib
@@ -29,6 +28,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+from uplift_bench._presets import fast_model_kwargs, loader_params
 from uplift_bench.data.factory import make_loader
 from uplift_bench.data.splits import make_splits
 from uplift_bench.metrics._common import make_bucket_indices
@@ -38,10 +38,7 @@ from uplift_bench.metrics.qini import qini_curve
 from uplift_bench.models.factory import make_model
 from uplift_bench.utils.logging import configure, get_logger
 from uplift_bench.utils.reproducibility import seed_everything
-
-# Sibling helpers — shared with `extend_results_with_new_metrics.py`.
-sys.path.insert(0, str(Path(__file__).parent))
-from _bench_helpers import fast_model_kwargs, loader_params
+from uplift_bench.viz.qini_curve import plot_qini_curves as plot_qini_curves_canonical
 
 log = get_logger(__name__)
 
@@ -97,31 +94,19 @@ def plot_qini_curves_overlay(
     data_dir: str,
     save_path: Path,
 ) -> None:
-    """One Qini curve per model on a single axis."""
-    fig, ax = plt.subplots(figsize=(8, 5.5))
-    endpoints: list[float] = []
-    for m in models:
-        preds, t_test, y_test, _ = _refit_one(dataset, m, seed, data_dir)
-        curve = qini_curve(preds, t_test, y_test)
-        ax.plot(
-            curve.population_share,
-            curve.cumulative_uplift,
-            lw=2.2,
-            color=MODEL_COLORS.get(m, "grey"),
-            label=f"{m}  Q={curve.qini_coefficient:+.3f}",
-        )
-        endpoints.append(float(curve.cumulative_uplift[-1]))
-    if endpoints:
-        ax.plot([0, 1], [0, max(endpoints)], "--", color="grey", lw=1, label="random")
-    ax.set_xlabel("targeted fraction of population")
-    ax.set_ylabel("cumulative uplift (per-person scale)")
-    ax.set_title(f"Qini curves — all models on {dataset} (seed {seed})")
-    ax.grid(alpha=0.3)
-    ax.legend(loc="lower right", fontsize=9, frameon=True)
-    fig.tight_layout()
-    save_path.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(save_path, dpi=140)
-    plt.close(fig)
+    """Refit every model on `dataset/seed` and overlay their Qini curves.
+
+    Thin wrapper: delegates plotting to `viz.qini_curve.plot_qini_curves`
+    (with the per-model colour map) so we don't carry a second copy of
+    matplotlib boilerplate.
+    """
+    curves = {m: qini_curve(*_refit_one(dataset, m, seed, data_dir)[:3]) for m in models}
+    plot_qini_curves_canonical(
+        curves,
+        title=f"Qini curves — all models on {dataset} (seed {seed})",
+        colors=MODEL_COLORS,
+        save_path=save_path,
+    )
     log.info("wrote_overlay", path=str(save_path))
 
 

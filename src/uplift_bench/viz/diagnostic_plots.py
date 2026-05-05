@@ -263,31 +263,6 @@ def plot_qini_heatmap(
     return _save(fig, save_path)
 
 
-def plot_qini_curves_overlay(
-    curves: dict[str, tuple[NDArray1D, NDArray1D, float]],
-    *,
-    title: str = "Qini curves",
-    save_path: Path | None = None,
-) -> Path | None:
-    """Multiple Qini curves on one axis.
-
-    `curves` maps model_label -> (population_share, cumulative_uplift, qini_value).
-    """
-    fig, ax = plt.subplots(figsize=(7, 5))
-    for label, (share, uplift, q) in curves.items():
-        ax.plot(share, uplift, lw=2, label=f"{label}  Q={q:+.4f}")
-    if curves:
-        max_endpoint = max(uplift[-1] for _, uplift, _ in curves.values())
-        ax.plot([0, 1], [0, max_endpoint], "--", color="grey", lw=1, label="random")
-    ax.set_xlabel("targeted fraction of population")
-    ax.set_ylabel("cumulative uplift")
-    ax.set_title(title)
-    ax.grid(alpha=0.3)
-    ax.legend(loc="lower right", fontsize=9)
-    fig.tight_layout()
-    return _save(fig, save_path)
-
-
 def plot_cumulative_gain_overlay(
     curves: dict[str, tuple[NDArray1D, NDArray1D, float]],
     *,

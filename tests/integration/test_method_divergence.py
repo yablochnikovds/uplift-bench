@@ -24,6 +24,8 @@ our predicted uplift and causalml's, on the same data, should be > 0.7.
 
 from __future__ import annotations
 
+from dataclasses import dataclass
+
 import numpy as np
 import pandas as pd
 import pytest
@@ -36,20 +38,27 @@ from uplift_bench.models.factory import make_model
 pytestmark = pytest.mark.slow
 
 
-@pytest.fixture(scope="module")
-def heterogeneous_split() -> tuple[
-    pd.DataFrame, np.ndarray, np.ndarray, pd.DataFrame, np.ndarray, np.ndarray
-]:
-    """Strong-heterogeneity DGP with confounded treatment.
+@dataclass(frozen=True, slots=True)
+class _Split:
+    """Train + test arrays in one bundle so tests don't unpack a 6-tuple."""
 
-    Train: 6000 rows. Test: 4000 rows.
-    """
+    X_train: pd.DataFrame
+    t_train: np.ndarray
+    y_train: np.ndarray
+    X_test: pd.DataFrame
+    t_test: np.ndarray
+    y_test: np.ndarray
+
+
+@pytest.fixture(scope="module")
+def heterogeneous_split() -> _Split:
+    """Strong-heterogeneity DGP with confounded treatment (6k train / 4k test)."""
     train = make_uplift_dataset(
         n_samples=6000,
         n_features=8,
         n_informative_uplift=4,
         treatment_share=0.5,
-        propensity_drift=1.5,  # confounded
+        propensity_drift=1.5,
         noise=0.5,
         seed=101,
     )
@@ -63,13 +72,13 @@ def heterogeneous_split() -> tuple[
         seed=102,
     )
     feat = train.feature_names
-    return (
-        train.df[feat].copy(),
-        train.df["treatment"].to_numpy(),
-        train.df["outcome"].to_numpy(),
-        test.df[feat].copy(),
-        test.df["treatment"].to_numpy(),
-        test.df["outcome"].to_numpy(),
+    return _Split(
+        X_train=train.df[feat].copy(),
+        t_train=train.df["treatment"].to_numpy(),
+        y_train=train.df["outcome"].to_numpy(),
+        X_test=test.df[feat].copy(),
+        t_test=test.df["treatment"].to_numpy(),
+        y_test=test.df["outcome"].to_numpy(),
     )
 
 
@@ -80,30 +89,30 @@ def _common_kwargs(model_name: str) -> dict:
     return {"seed": 0, "base_params": {"iterations": 200, "n_estimators": 200}}
 
 
+def _fit_and_qini(model_name: str, split: _Split) -> float:
+    model = make_model(model_name, **_common_kwargs(model_name))
+    model.fit(split.X_train, split.t_train, split.y_train)
+    preds = model.predict_uplift(split.X_test)
+    return qini_coefficient(preds, split.t_test, split.y_test)
+
+
 def test_models_qini_spreads_meaningfully_under_heterogeneity(
-    heterogeneous_split: tuple[
-        pd.DataFrame, np.ndarray, np.ndarray, pd.DataFrame, np.ndarray, np.ndarray
-    ],
+    heterogeneous_split: _Split,
 ) -> None:
     """The spread between best and worst meta-learner should be > 0.05
     Qini under strong heterogeneity. If this fails, several implementations
     have collapsed onto similar predictions — likely bug."""
-    X_train, t_train, y_train, X_test, t_test, y_test = heterogeneous_split
-
-    qinis: dict[str, float] = {}
-    for name in [
-        "s_learner",
-        "t_learner",
-        "x_learner",
-        "r_learner",
-        "dr_learner",
-        "class_transformation",
-    ]:
-        model = make_model(name, **_common_kwargs(name))
-        model.fit(X_train, t_train, y_train)
-        preds = model.predict_uplift(X_test)
-        qinis[name] = qini_coefficient(preds, t_test, y_test)
-
+    qinis = {
+        name: _fit_and_qini(name, heterogeneous_split)
+        for name in [
+            "s_learner",
+            "t_learner",
+            "x_learner",
+            "r_learner",
+            "dr_learner",
+            "class_transformation",
+        ]
+    }
     spread = max(qinis.values()) - min(qinis.values())
     assert spread > 0.05, (
         f"Qini values too clustered (spread={spread:.4f}); models may have "
@@ -112,21 +121,15 @@ def test_models_qini_spreads_meaningfully_under_heterogeneity(
 
 
 def test_dr_or_x_learner_beats_s_learner_under_confounding(
-    heterogeneous_split: tuple[
-        pd.DataFrame, np.ndarray, np.ndarray, pd.DataFrame, np.ndarray, np.ndarray
-    ],
+    heterogeneous_split: _Split,
 ) -> None:
     """Under confounded treatment (propensity_drift=1.5), DR or X should
     outperform plain S-learner. This is the textbook claim for these
     learners — if it fails, the implementation is suspect."""
-    X_train, t_train, y_train, X_test, t_test, y_test = heterogeneous_split
-
-    qinis: dict[str, float] = {}
-    for name in ["s_learner", "x_learner", "dr_learner"]:
-        model = make_model(name, **_common_kwargs(name))
-        model.fit(X_train, t_train, y_train)
-        preds = model.predict_uplift(X_test)
-        qinis[name] = qini_coefficient(preds, t_test, y_test)
+    qinis = {
+        name: _fit_and_qini(name, heterogeneous_split)
+        for name in ["s_learner", "x_learner", "dr_learner"]
+    }
 
     # At least one of the confounding-aware learners should beat S.
     advanced_best = max(qinis["x_learner"], qinis["dr_learner"])

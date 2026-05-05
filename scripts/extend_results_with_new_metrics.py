@@ -12,11 +12,11 @@ which writes the new columns natively.
 from __future__ import annotations
 
 import argparse
-import sys
 from pathlib import Path
 
 import pandas as pd
 
+from uplift_bench._presets import fast_model_kwargs, loader_params
 from uplift_bench.data.factory import make_loader
 from uplift_bench.data.splits import make_splits
 from uplift_bench.metrics.cumulative_gain import cumulative_gain_curve
@@ -24,10 +24,6 @@ from uplift_bench.metrics.policy_value import policy_value_curve
 from uplift_bench.models.factory import make_model
 from uplift_bench.utils.logging import configure, get_logger
 from uplift_bench.utils.reproducibility import seed_everything
-
-# Sibling helper module — shared with `build_comparison_plots.py`.
-sys.path.insert(0, str(Path(__file__).parent))
-from _bench_helpers import fast_model_kwargs, loader_params
 
 log = get_logger(__name__)
 
