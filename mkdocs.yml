@@ -71,6 +71,8 @@ plugins:
 nav:
   - Home: index.md
   - Methodology: methodology.md
+  - Architecture: architecture.md
+  - Validation: validation.md
   - Datasets: datasets.md
   - Results: results.md
   - Reproducing: reproducing.md
