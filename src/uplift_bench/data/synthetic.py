@@ -1,32 +1,44 @@
 """Synthetic uplift dataset generator.
 
-Why this lives here, not in `src/`: nothing in production should ever depend
-on synthetic data. The generator exists exclusively to test that our models
-and metrics behave correctly under known ground truth — which is impossible
-on real data because the true individual treatment effect is never observed.
+We expose this as a first-class dataset (not just a test fixture) for
+two reasons:
 
-The DGP follows Athey & Imbens (2016) "Recursive partitioning for heterogeneous
-causal effects" — feature-driven heterogeneous treatment effects under
-unconfounded treatment assignment.
+1. **Validation.** On real data the *individual* treatment effect tau(x)
+   is never observed — only the realised outcome under one arm. So the
+   only way to verify that a meta-learner is actually estimating tau
+   rather than just predicting Y is to test on a DGP with known tau.
+   Most reference uplift libraries do the same: see
+   `causalml.dataset.synthetic_data`, `econml.utilities`, and the
+   simulation studies in Künzel et al. 2019.
 
-    Y(0) = mu0(X) + epsilon0
-    Y(1) = mu0(X) + tau(X) + epsilon1
-    T    ~ Bernoulli(propensity(X))
+2. **Method differentiation.** Real public uplift datasets (Hillstrom,
+   Criteo Uplift v2, Lenta) are RCTs with relatively low heterogeneity,
+   which means meta-learners cluster within bootstrap CI. To *show*
+   differences between S/T/X/R/DR/CT/CF you need a DGP you can
+   deliberately make heterogeneous and confounded.
+
+The DGP follows Athey & Imbens (2016) "Recursive partitioning for
+heterogeneous causal effects" — feature-driven heterogeneous treatment
+effects, optionally with confounded propensity.
+
+    Y(0) = mu0(X) + epsilon
+    Y(1) = mu0(X) + tau(X) + epsilon
+    T    ~ Bernoulli(e(X))
     Y    = T * Y(1) + (1 - T) * Y(0)
 
-`tau(X)` is the *true* individual uplift. Models should rank observations by
-their score in roughly the same order tau(X) ranks them.
+`tau(X)` is the *true* individual uplift, returned alongside the data.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Literal
+from typing import Any, Literal
 
 import numpy as np
 import pandas as pd
 
 OutcomeKind = Literal["binary", "continuous"]
+NDArray1D = np.ndarray[Any, np.dtype[Any]]
 
 
 @dataclass(frozen=True, slots=True)
@@ -34,8 +46,8 @@ class SyntheticDataset:
     """Container around the materialized DataFrame plus ground-truth uplift."""
 
     df: pd.DataFrame  # columns: f0..fN, treatment, outcome
-    true_uplift: np.ndarray  # tau(X_i) per row
-    true_propensity: np.ndarray  # P(T=1 | X_i)
+    true_uplift: NDArray1D  # tau(X_i) per row
+    true_propensity: NDArray1D  # P(T=1 | X_i)
     feature_names: list[str]
     treatment_col: str = "treatment"
     outcome_col: str = "outcome"

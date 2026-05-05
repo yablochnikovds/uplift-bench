@@ -3,7 +3,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from tests.fixtures.synthetic import make_uplift_dataset
+from uplift_bench.data.synthetic import make_uplift_dataset
 from uplift_bench.metrics.bootstrap import bootstrap_ci, paired_bootstrap_test
 from uplift_bench.metrics.qini import qini_coefficient
 

@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from tests.fixtures.synthetic import make_uplift_dataset
+from uplift_bench.data.synthetic import make_uplift_dataset
 from uplift_bench.models.s_learner import SLearner
 from uplift_bench.robustness.feature_drop import feature_drop_stability
 from uplift_bench.robustness.learning_curve import learning_curve

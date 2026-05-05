@@ -28,8 +28,16 @@ def test_dataset_factory_unknown_raises() -> None:
         make_loader("nope", data_dir="/tmp")
 
 
-def test_dataset_registry_covers_all_five() -> None:
-    assert {"hillstrom", "criteo", "lenta", "retailhero", "megafon"} == set(DATASET_REGISTRY)
+def test_dataset_registry_covers_all_six() -> None:
+    expected = {
+        "hillstrom",
+        "criteo",
+        "lenta",
+        "retailhero",
+        "megafon",
+        "synthetic",
+    }
+    assert expected == set(DATASET_REGISTRY)
 
 
 def test_resolve_file_uri_passes_non_file_through() -> None:

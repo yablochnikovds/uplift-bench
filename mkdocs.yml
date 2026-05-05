@@ -74,6 +74,7 @@ nav:
   - Architecture: architecture.md
   - Validation: validation.md
   - Datasets: datasets.md
+  - Why synthetic data: why_synthetic.md
   - Results: results.md
   - Reproducing: reproducing.md
   - API:

@@ -11,7 +11,7 @@ import pytest
 from hypothesis import HealthCheck, given, settings
 from hypothesis import strategies as st
 
-from tests.fixtures.synthetic import make_uplift_dataset
+from uplift_bench.data.synthetic import make_uplift_dataset
 from uplift_bench.metrics.qini import qini_coefficient, qini_curve
 
 

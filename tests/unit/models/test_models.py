@@ -16,7 +16,7 @@ import pandas as pd
 import pytest
 from scipy.stats import spearmanr
 
-from tests.fixtures.synthetic import make_uplift_dataset
+from uplift_bench.data.synthetic import make_uplift_dataset
 from uplift_bench.models.factory import MODEL_REGISTRY, make_model
 from uplift_bench.models.s_learner import SLearner
 from uplift_bench.models.t_learner import TLearner

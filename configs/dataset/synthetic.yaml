@@ -1,0 +1,11 @@
+name: synthetic
+data_dir: data/raw
+loader_params:
+  n_samples: 10000
+  n_features: 10
+  n_informative_uplift: 4
+  treatment_share: 0.5
+  propensity_drift: 1.5    # confounded — meta-learners with propensity awareness should win here
+  noise: 0.5
+  outcome: binary
+  seed: 0

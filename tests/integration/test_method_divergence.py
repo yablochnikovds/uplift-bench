@@ -29,7 +29,7 @@ import pandas as pd
 import pytest
 from scipy.stats import spearmanr
 
-from tests.fixtures.synthetic import make_uplift_dataset
+from uplift_bench.data.synthetic import make_uplift_dataset
 from uplift_bench.metrics.qini import qini_coefficient
 from uplift_bench.models.factory import make_model
 

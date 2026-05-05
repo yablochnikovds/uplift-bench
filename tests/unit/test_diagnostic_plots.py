@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from tests.fixtures.synthetic import make_uplift_dataset
+from uplift_bench.data.synthetic import make_uplift_dataset
 from uplift_bench.metrics.decile import decile_table
 from uplift_bench.viz.diagnostic_plots import (
     plot_bootstrap_distribution,

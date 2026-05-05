@@ -14,6 +14,7 @@ from uplift_bench.data.hillstrom import HillstromLoader
 from uplift_bench.data.lenta import LentaLoader
 from uplift_bench.data.megafon import MegaFonLoader
 from uplift_bench.data.retailhero import RetailHeroLoader
+from uplift_bench.data.synthetic_loader import SyntheticLoader
 
 DATASET_REGISTRY: dict[str, type[DatasetLoader]] = {
     "hillstrom": HillstromLoader,
@@ -21,6 +22,7 @@ DATASET_REGISTRY: dict[str, type[DatasetLoader]] = {
     "lenta": LentaLoader,
     "retailhero": RetailHeroLoader,
     "megafon": MegaFonLoader,
+    "synthetic": SyntheticLoader,
 }
 
 

@@ -3,7 +3,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from tests.fixtures.synthetic import SyntheticDataset, make_uplift_dataset
+from uplift_bench.data.synthetic import SyntheticDataset, make_uplift_dataset
 from uplift_bench.data.splits import make_splits
 from uplift_bench.data.validation import DatasetSchema, UpliftDataset, validate_dataframe
 
