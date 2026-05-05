@@ -56,7 +56,7 @@ def info() -> None:
 
 
 @main.command("download")
-@click.argument("dataset", type=click.Choice(["hillstrom", "criteo", "all"]))
+@click.argument("dataset", type=click.Choice(["hillstrom", "criteo", "lenta", "all"]))
 @click.option(
     "--data-dir",
     type=click.Path(file_okay=False, path_type=Path),

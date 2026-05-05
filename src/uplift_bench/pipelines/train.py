@@ -84,7 +84,9 @@ class _DataFolds:
 
 
 def _prepare_data(
-    dataset_cfg: dict[str, Any], split_cfg: dict[str, Any], seed: int,
+    dataset_cfg: dict[str, Any],
+    split_cfg: dict[str, Any],
+    seed: int,
 ) -> _DataFolds:
     loader = make_loader(
         dataset_cfg["name"],
@@ -103,8 +105,12 @@ def _prepare_data(
     y = dataset.y
     return _DataFolds(
         dataset=dataset,
-        X_train=X.iloc[splits.train], t_train=t[splits.train], y_train=y[splits.train],
-        X_test=X.iloc[splits.test], t_test=t[splits.test], y_test=y[splits.test],
+        X_train=X.iloc[splits.train],
+        t_train=t[splits.train],
+        y_train=y[splits.train],
+        X_test=X.iloc[splits.test],
+        t_test=t[splits.test],
+        y_test=y[splits.test],
     )
 
 
@@ -138,8 +144,10 @@ def _fit_uplift_model(
     seed: int,
 ) -> UpliftModel:
     kwargs = _build_model_kwargs(
-        model_cfg["name"], base_learner_cfg,
-        model_cfg.get("extra_params") or {}, seed,
+        model_cfg["name"],
+        base_learner_cfg,
+        model_cfg.get("extra_params") or {},
+        seed,
     )
     model = make_model(model_cfg["name"], **kwargs)
     log.info("fitting_model", model=model_cfg["name"], n_train=len(folds.X_train))
@@ -165,7 +173,9 @@ def _compute_metrics(
 ) -> _Metrics:
     qini_ci = bootstrap_ci(
         qini_coefficient,
-        test_preds, folds.t_test, folds.y_test,
+        test_preds,
+        folds.t_test,
+        folds.y_test,
         n_boot=bootstrap_cfg["n_boot"],
         method=bootstrap_cfg["method"],
         alpha=bootstrap_cfg["alpha"],
@@ -179,7 +189,10 @@ def _compute_metrics(
     }
     for k_frac in UPLIFT_AT_K_FRACTIONS:
         extras[f"uplift_at_{int(k_frac * 100)}"] = uplift_at_k(
-            test_preds, folds.t_test, folds.y_test, k=k_frac,
+            test_preds,
+            folds.t_test,
+            folds.y_test,
+            k=k_frac,
         )
     return _Metrics(qini_ci=qini_ci, extras=extras)
 
@@ -227,27 +240,41 @@ def _compute_artifacts(
     deciles.to_csv(deciles_csv, index=False)
     deciles_png = output_dir / "deciles.png"
     plot_decile_uplift(
-        deciles, title=f"{title_prefix} — per-decile uplift", save_path=deciles_png,
+        deciles,
+        title=f"{title_prefix} — per-decile uplift",
+        save_path=deciles_png,
     )
 
     calibration_png = output_dir / "calibration.png"
     plot_calibration(
-        test_preds, folds.t_test, folds.y_test,
-        title=f"{title_prefix} — calibration", save_path=calibration_png,
+        test_preds,
+        folds.t_test,
+        folds.y_test,
+        title=f"{title_prefix} — calibration",
+        save_path=calibration_png,
     )
 
     config_json = output_dir / "config.json"
-    dump_json({
-        "dataset": dataset_cfg, "model": model_cfg,
-        "base_learner": base_learner_cfg, "split": split_cfg,
-        "bootstrap": bootstrap_cfg, "robustness": robustness_cfg,
-        "seed": seed,
-    }, config_json)
+    dump_json(
+        {
+            "dataset": dataset_cfg,
+            "model": model_cfg,
+            "base_learner": base_learner_cfg,
+            "split": split_cfg,
+            "bootstrap": bootstrap_cfg,
+            "robustness": robustness_cfg,
+            "seed": seed,
+        },
+        config_json,
+    )
 
     return _Artifacts(
-        qini_path=qini_path, dist_path=dist_path,
-        deciles_csv=deciles_csv, deciles_png=deciles_png,
-        calibration_png=calibration_png, config_json=config_json,
+        qini_path=qini_path,
+        dist_path=dist_path,
+        deciles_csv=deciles_csv,
+        deciles_png=deciles_png,
+        calibration_png=calibration_png,
+        config_json=config_json,
     )
 
 
@@ -279,7 +306,10 @@ def _compute_robustness(
     perm_png: Path | None = None
     if robustness_cfg.get("enable_permutation"):
         perm = permutation_uplift_importance(
-            model, folds.X_test, folds.t_test, folds.y_test,
+            model,
+            folds.X_test,
+            folds.t_test,
+            folds.y_test,
             n_repeats=robustness_cfg.get("permutation_n_repeats", 5),
             seed=seed,
         )
@@ -287,7 +317,8 @@ def _compute_robustness(
         perm.to_csv(perm_csv, index=False)
         perm_png = output_dir / "permutation_importance.png"
         plot_permutation_importance(
-            perm, title=f"{title_prefix} — permutation importance",
+            perm,
+            title=f"{title_prefix} — permutation importance",
             save_path=perm_png,
         )
 
@@ -302,14 +333,17 @@ def _compute_robustness(
         pd.DataFrame({"propensity": diag.propensity}).to_csv(overlap_csv, index=False)
         overlap_png = output_dir / "propensity.png"
         plot_propensity_histogram(
-            diag.treated_propensity, diag.control_propensity,
+            diag.treated_propensity,
+            diag.control_propensity,
             title=f"{title_prefix} — propensity overlap",
             save_path=overlap_png,
         )
 
     return _RobustnessOutputs(
-        perm_csv=perm_csv, perm_png=perm_png,
-        overlap_csv=overlap_csv, overlap_png=overlap_png,
+        perm_csv=perm_csv,
+        perm_png=perm_png,
+        overlap_csv=overlap_csv,
+        overlap_png=overlap_png,
         extras=extras,
     )
 
@@ -334,8 +368,7 @@ def _log_run(
     seed: int,
 ) -> None:
     run_name = (
-        tracking_cfg.get("run_name")
-        or f"{model_cfg['name']}.{dataset_cfg['name']}.seed{seed}"
+        tracking_cfg.get("run_name") or f"{model_cfg['name']}.{dataset_cfg['name']}.seed{seed}"
     )
     with start_run(
         enabled=tracking_cfg["enabled"],
@@ -348,30 +381,41 @@ def _log_run(
             "base_learner": base_learner_cfg["name"],
         },
     ) as run:
-        run.log_params({
-            "model": model_cfg["name"],
-            "dataset": dataset_cfg["name"],
-            "seed": seed,
-            "base_learner": base_learner_cfg["name"],
-            "base_learner_params": base_learner_cfg.get("params", {}),
-            "model_extra_params": model_cfg.get("extra_params", {}),
-            "split_train_frac": split_cfg["train_frac"],
-            "split_val_frac": split_cfg["val_frac"],
-            "bootstrap_n_boot": bootstrap_cfg["n_boot"],
-            "bootstrap_method": bootstrap_cfg["method"],
-            "dataset_source_hash": folds.dataset.source_hash,
-            "n_train": len(folds.X_train),
-            "n_test": len(folds.X_test),
-        })
+        run.log_params(
+            {
+                "model": model_cfg["name"],
+                "dataset": dataset_cfg["name"],
+                "seed": seed,
+                "base_learner": base_learner_cfg["name"],
+                "base_learner_params": base_learner_cfg.get("params", {}),
+                "model_extra_params": model_cfg.get("extra_params", {}),
+                "split_train_frac": split_cfg["train_frac"],
+                "split_val_frac": split_cfg["val_frac"],
+                "bootstrap_n_boot": bootstrap_cfg["n_boot"],
+                "bootstrap_method": bootstrap_cfg["method"],
+                "dataset_source_hash": folds.dataset.source_hash,
+                "n_train": len(folds.X_train),
+                "n_test": len(folds.X_test),
+            }
+        )
         run.log_metric_with_ci("qini", metrics.qini_ci)
         run.log_metrics({**metrics.extras, **robustness.extras})
 
-        for path in (artifacts.qini_path, artifacts.dist_path,
-                     artifacts.deciles_csv, artifacts.deciles_png,
-                     artifacts.calibration_png, artifacts.config_json):
+        for path in (
+            artifacts.qini_path,
+            artifacts.dist_path,
+            artifacts.deciles_csv,
+            artifacts.deciles_png,
+            artifacts.calibration_png,
+            artifacts.config_json,
+        ):
             run.log_artifact_path(path)
-        for opt in (robustness.perm_csv, robustness.perm_png,
-                    robustness.overlap_csv, robustness.overlap_png):
+        for opt in (
+            robustness.perm_csv,
+            robustness.perm_png,
+            robustness.overlap_csv,
+            robustness.overlap_png,
+        ):
             if opt is not None:
                 run.log_artifact_path(opt)
 
@@ -396,8 +440,7 @@ def run_one(
     """Train + evaluate + log + persist one (model, dataset) combination."""
     seed_everything(seed)
     ensure_dir(output_dir)
-    log.info("pipeline_start",
-             model=model_cfg["name"], dataset=dataset_cfg["name"], seed=seed)
+    log.info("pipeline_start", model=model_cfg["name"], dataset=dataset_cfg["name"], seed=seed)
 
     folds = _prepare_data(dataset_cfg, split_cfg, seed)
     model = _fit_uplift_model(folds, model_cfg, base_learner_cfg, seed)
@@ -405,26 +448,45 @@ def run_one(
 
     metrics = _compute_metrics(test_preds, folds, bootstrap_cfg)
     artifacts = _compute_artifacts(
-        test_preds, folds, output_dir,
-        model_cfg=model_cfg, dataset_cfg=dataset_cfg,
-        base_learner_cfg=base_learner_cfg, split_cfg=split_cfg,
-        bootstrap_cfg=bootstrap_cfg, robustness_cfg=robustness_cfg, seed=seed,
+        test_preds,
+        folds,
+        output_dir,
+        model_cfg=model_cfg,
+        dataset_cfg=dataset_cfg,
+        base_learner_cfg=base_learner_cfg,
+        split_cfg=split_cfg,
+        bootstrap_cfg=bootstrap_cfg,
+        robustness_cfg=robustness_cfg,
+        seed=seed,
     )
     robustness = _compute_robustness(
-        model, folds, output_dir,
+        model,
+        folds,
+        output_dir,
         robustness_cfg=robustness_cfg,
         title_prefix=f"{model_cfg['name']} on {dataset_cfg['name']}",
         seed=seed,
     )
     _log_run(
-        folds=folds, metrics=metrics, artifacts=artifacts, robustness=robustness,
-        model_cfg=model_cfg, dataset_cfg=dataset_cfg,
-        base_learner_cfg=base_learner_cfg, split_cfg=split_cfg,
-        bootstrap_cfg=bootstrap_cfg, tracking_cfg=tracking_cfg, seed=seed,
+        folds=folds,
+        metrics=metrics,
+        artifacts=artifacts,
+        robustness=robustness,
+        model_cfg=model_cfg,
+        dataset_cfg=dataset_cfg,
+        base_learner_cfg=base_learner_cfg,
+        split_cfg=split_cfg,
+        bootstrap_cfg=bootstrap_cfg,
+        tracking_cfg=tracking_cfg,
+        seed=seed,
     )
 
-    log.info("pipeline_done", model=model_cfg["name"],
-             dataset=dataset_cfg["name"], qini=metrics.qini_ci.point)
+    log.info(
+        "pipeline_done",
+        model=model_cfg["name"],
+        dataset=dataset_cfg["name"],
+        qini=metrics.qini_ci.point,
+    )
 
     return TrainResult(
         model_name=model_cfg["name"],

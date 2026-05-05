@@ -31,6 +31,26 @@ binary treatment, two outcomes (visit, conversion).
   `dataset.loader_params.subsample=1_000_000` to grab a fixed-seed
   one-million-row slice.
 
+## Lenta uplift dataset
+
+Russian grocery loyalty campaign published by Lenta and packaged into
+the scikit-uplift library.
+
+* **Auto-download.** `uv run uplift-bench download lenta`
+* **URL.** `https://sklift.s3.eu-west-2.amazonaws.com/lenta_dataset.csv.gz`
+  (~138 MB compressed, ~567 MB uncompressed). Same source-of-truth URL
+  that `sklift.datasets.fetch_lenta` uses, so this loader stays in
+  lock-step with upstream without depending on it at runtime.
+* **Schema.** ~687k rows, binary treatment (`group` = test/control,
+  ratio ~0.75/0.25), binary outcome (`response_att`, ~10% positive).
+  We retain ~14 most informative numeric features plus a one-hot
+  `gender` block; the full ~190-column raw schema is documented at
+  <https://www.uplift-modeling.com/en/v0.5.1/api/datasets/fetch_lenta.html>.
+* **Cache.** First load decodes the CSV.gz and caches a parquet next to
+  it; subsequent loads parse in seconds.
+* **Sample fixture.** `data/sample/lenta/lenta_dataset.csv.gz` for
+  offline tests / smoke runs.
+
 ## X5 RetailHero Uplift Modeling Contest
 
 Russian retail-loyalty contest dataset. Login-walled on Ods.ai.

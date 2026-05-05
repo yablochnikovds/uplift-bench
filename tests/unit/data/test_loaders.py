@@ -12,6 +12,7 @@ from pathlib import Path
 import pytest
 
 from uplift_bench.data.hillstrom import HillstromLoader
+from uplift_bench.data.lenta import LentaLoader
 from uplift_bench.data.megafon import MegaFonLoader
 from uplift_bench.data.retailhero import RetailHeroLoader
 
@@ -74,3 +75,16 @@ def test_megafon_missing_file_message_is_helpful() -> None:
     loader = MegaFonLoader(data_dir=Path("/nonexistent/dir"))
     with pytest.raises(FileNotFoundError, match="login-walled"):
         loader.load()
+
+
+def test_lenta_loads_from_sample() -> None:
+    loader = LentaLoader(data_dir=SAMPLE_DIR)
+    ds = loader.load()
+    assert ds.n > 100
+    assert set(ds.df["treatment"].unique()) <= {0, 1}
+    assert set(ds.df["outcome"].unique()) <= {0, 1}
+    # Numeric and dummy features are present.
+    for col in ("age", "main_format", "gender_F" if False else "gender_Ж"):
+        assert col in ds.df.columns
+    # Numeric block has no NaNs (median imputation).
+    assert ds.df[["age"]].isna().sum().sum() == 0

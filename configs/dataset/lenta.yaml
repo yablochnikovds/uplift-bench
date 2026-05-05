@@ -1,0 +1,3 @@
+name: lenta
+data_dir: data/raw
+loader_params: {}

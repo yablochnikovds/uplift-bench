@@ -11,12 +11,14 @@ from typing import Any
 from uplift_bench.data.base import DatasetLoader
 from uplift_bench.data.criteo import CriteoLoader
 from uplift_bench.data.hillstrom import HillstromLoader
+from uplift_bench.data.lenta import LentaLoader
 from uplift_bench.data.megafon import MegaFonLoader
 from uplift_bench.data.retailhero import RetailHeroLoader
 
 DATASET_REGISTRY: dict[str, type[DatasetLoader]] = {
     "hillstrom": HillstromLoader,
     "criteo": CriteoLoader,
+    "lenta": LentaLoader,
     "retailhero": RetailHeroLoader,
     "megafon": MegaFonLoader,
 }

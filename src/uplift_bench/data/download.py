@@ -99,17 +99,24 @@ def download_file(
 
 
 def fetch(name: str, data_dir: Path) -> None:
-    """CLI dispatch: download one (or all) supported dataset(s)."""
+    """CLI dispatch: download one (or all) auto-downloadable dataset(s)."""
     from uplift_bench.data.criteo import CriteoLoader
     from uplift_bench.data.hillstrom import HillstromLoader
+    from uplift_bench.data.lenta import LentaLoader
 
-    targets = {"hillstrom": HillstromLoader, "criteo": CriteoLoader}
+    targets = {
+        "hillstrom": HillstromLoader,
+        "criteo": CriteoLoader,
+        "lenta": LentaLoader,
+    }
     if name == "all":
         loaders = list(targets.values())
     elif name in targets:
         loaders = [targets[name]]
     else:
-        raise ValueError(f"unknown dataset {name!r}; choose from {sorted(targets) + ['all']}")
+        raise ValueError(
+            f"unknown dataset {name!r}; choose from {sorted(targets) + ['all']}"
+        )
 
     for cls in loaders:
         loader = cls(data_dir=data_dir)
