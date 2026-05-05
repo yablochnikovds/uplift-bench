@@ -1,0 +1,50 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/__pycache__": true,
+    "**/*.egg-info": true,
+    ".mypy_cache": true,
+    ".ruff_cache": true,
+    ".pytest_cache": true,
+    ".hypothesis": true,
+    ".uv-cache": true,
+    "htmlcov": true,
+    ".coverage": true,
+    "coverage.xml": true,
+    ".venv": true,
+    "outputs": true,
+    "multirun": true,
+    "mlruns": true,
+    "mlartifacts": true,
+    "site": true,
+    "data/raw": true,
+    "data/cache": true,
+    "data/processed": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/outputs": true,
+    "**/mlruns": true,
+    "**/site": true,
+    "**/data/raw": true,
+    "**/__pycache__": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true,
+    "**/.pytest_cache": true,
+    "**/.hypothesis": true,
+    "uv.lock": true
+  },
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  }
+}

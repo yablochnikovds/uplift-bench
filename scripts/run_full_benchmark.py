@@ -53,6 +53,19 @@ def _build_dataset_cfg(name: str, data_dir: str, criteo_subsample: int | None) -
             "subsample": criteo_subsample,
             "subsample_seed": 42,
         }
+    elif name == "synthetic":
+        # Confounded heterogeneous DGP: meta-learners that handle
+        # propensity should clearly beat S/T baselines here.
+        base["loader_params"] = {
+            "n_samples": 10_000,
+            "n_features": 10,
+            "n_informative_uplift": 4,
+            "treatment_share": 0.5,
+            "propensity_drift": 1.5,
+            "noise": 0.5,
+            "outcome": "binary",
+            "seed": 0,
+        }
     return base
 
 
@@ -181,14 +194,20 @@ def main() -> int:
         return 1
 
     df = aggregate_results(results)
-    csv_path = results_dir / "benchmark_results.csv"
-    md_path = results_dir / "benchmark_results.md"
-    df.to_csv(csv_path, index=False)
-    write_markdown_table(df, md_path)
+    # Write one CSV/MD per dataset under results/per_dataset/. The aggregate
+    # summary (mean ± std across seeds) is produced by aggregate_results.py.
+    per_dataset_dir = results_dir / "per_dataset"
+    per_dataset_dir.mkdir(parents=True, exist_ok=True)
+    written: list[str] = []
+    for ds_name, sub in df.groupby("dataset"):
+        ds_csv = per_dataset_dir / f"{ds_name}.csv"
+        ds_md = per_dataset_dir / f"{ds_name}.md"
+        sub.to_csv(ds_csv, index=False)
+        write_markdown_table(sub, ds_md)
+        written.append(str(ds_csv))
     log.info(
         "benchmark_done",
-        results_csv=str(csv_path),
-        md=str(md_path),
+        per_dataset_csvs=written,
         n_runs=len(results),
         n_failures=len(failures),
     )

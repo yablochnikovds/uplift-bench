@@ -1,10 +1,11 @@
 """Aggregate per-seed runs into a single per-(dataset, model) summary.
 
-Reads `results/<dataset>_results.csv` files (one per dataset run) and
+Reads `results/per_dataset/<dataset>.csv` files (one per dataset run) and
 writes:
     results/benchmark_summary.csv     — per (dataset, model) means / stds
     results/benchmark_summary.md      — markdown for the README
     results/figures/qini_<dataset>.png — bar chart with CIs
+    results/figures/heatmap_qini.png   — model x dataset heatmap (>= 2 datasets)
 """
 
 from __future__ import annotations
@@ -23,7 +24,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--results-dir", default="results")
     parser.add_argument(
-        "--inputs", nargs="+", help="explicit list of CSVs; default = results/*_results.csv"
+        "--inputs",
+        nargs="+",
+        help="explicit list of CSVs; default = results/per_dataset/*.csv",
     )
     args = parser.parse_args()
 
@@ -31,7 +34,7 @@ def main() -> int:
     if args.inputs:
         csvs = [Path(p) for p in args.inputs]
     else:
-        csvs = sorted(results_dir.glob("*_results.csv"))
+        csvs = sorted((results_dir / "per_dataset").glob("*.csv"))
     if not csvs:
         raise SystemExit(f"no per-dataset CSVs found under {results_dir}/")
 

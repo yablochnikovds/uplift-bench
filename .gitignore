@@ -29,16 +29,19 @@ coverage.xml
 htmlcov/
 
 # Editors
-.vscode/
+.vscode/*
+!.vscode/settings.json
 .idea/
 *.swp
 .DS_Store
 
-# Project artifacts (hydra default + multirun)
+# Project artifacts (hydra default + multirun + ad-hoc tmp dirs from scripts)
 mlruns/
 mlartifacts/
 outputs/
 multirun/
+*_tmp/
+results/_tmp/
 data/raw/
 data/cache/
 data/processed/
