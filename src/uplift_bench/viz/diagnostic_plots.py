@@ -289,6 +289,51 @@ def plot_qini_curves_overlay(
     return _save(fig, save_path)
 
 
+def plot_cumulative_gain_overlay(
+    curves: dict[str, tuple[NDArray1D, NDArray1D, float]],
+    *,
+    title: str = "Cumulative gain curves",
+    save_path: Path | None = None,
+) -> Path | None:
+    """Multiple cumulative-gain curves on one axis.
+
+    `curves` maps model_label -> (population_share, cumulative_per_capita, auc).
+    """
+    fig, ax = plt.subplots(figsize=(7, 5))
+    endpoints: list[float] = []
+    for label, (share, gain, auc) in curves.items():
+        ax.plot(share, gain, lw=2, label=f"{label}  AUC={auc:.4f}")
+        endpoints.append(float(gain[-1]))
+    if endpoints:
+        ax.plot([0, 1], [0, max(endpoints)], "--", color="grey", lw=1, label="random")
+    ax.set_xlabel("targeted fraction of population")
+    ax.set_ylabel("cumulative treated responders / N")
+    ax.set_title(title)
+    ax.grid(alpha=0.3)
+    ax.legend(loc="lower right", fontsize=9)
+    fig.tight_layout()
+    return _save(fig, save_path)
+
+
+def plot_policy_value_overlay(
+    curves: dict[str, tuple[NDArray1D, NDArray1D]],
+    *,
+    title: str = "Policy value vs budget",
+    save_path: Path | None = None,
+) -> Path | None:
+    """Multiple policy-value curves on one axis."""
+    fig, ax = plt.subplots(figsize=(7, 5))
+    for label, (budgets, values) in curves.items():
+        ax.plot(budgets, values, marker="o", lw=2, ms=5, label=label)
+    ax.set_xlabel("budget (fraction of population treated)")
+    ax.set_ylabel("expected outcome E[Y(pi(X))]")
+    ax.set_title(title)
+    ax.grid(alpha=0.3)
+    ax.legend(loc="best", fontsize=9)
+    fig.tight_layout()
+    return _save(fig, save_path)
+
+
 def plot_bootstrap_distribution(
     boot_values: NDArray1D,
     *,

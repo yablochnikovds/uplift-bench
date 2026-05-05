@@ -29,6 +29,8 @@ import pandas as pd
 
 from uplift_bench.data.factory import make_loader
 from uplift_bench.data.splits import make_splits
+from uplift_bench.metrics.cumulative_gain import cumulative_gain_curve
+from uplift_bench.metrics.policy_value import policy_value_curve
 from uplift_bench.metrics.qini import qini_curve
 from uplift_bench.models.factory import make_model
 from uplift_bench.utils.logging import configure, get_logger
@@ -50,15 +52,23 @@ MODEL_COLORS: dict[str, str] = {
 
 
 def _refit_one(
-    dataset: str, model_name: str, seed: int, data_dir: str,
+    dataset: str,
+    model_name: str,
+    seed: int,
+    data_dir: str,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Refit one (dataset, model, seed) and return (preds, t_test, y_test, true_tau)."""
     seed_everything(seed)
     if dataset == "synthetic":
         loader_params = {
-            "n_samples": 10_000, "n_features": 10, "n_informative_uplift": 4,
-            "treatment_share": 0.5, "propensity_drift": 1.5,
-            "noise": 0.5, "outcome": "binary", "seed": seed,
+            "n_samples": 10_000,
+            "n_features": 10,
+            "n_informative_uplift": 4,
+            "treatment_share": 0.5,
+            "propensity_drift": 1.5,
+            "noise": 0.5,
+            "outcome": "binary",
+            "seed": seed,
         }
     elif dataset == "hillstrom":
         loader_params = {"treatment_arm": "Womens E-Mail", "outcome": "visit"}
@@ -77,8 +87,7 @@ def _refit_one(
     if model_name == "causal_forest":
         kwargs = {"seed": seed, "n_estimators": 80, "min_samples_leaf": 30}
     else:
-        kwargs = {"seed": seed,
-                  "base_params": {"iterations": 200, "n_estimators": 200}}
+        kwargs = {"seed": seed, "base_params": {"iterations": 200, "n_estimators": 200}}
     model = make_model(model_name, **kwargs)
     model.fit(X_train, t_train, y_train)
     preds = model.predict_uplift(X_test)
@@ -86,7 +95,11 @@ def _refit_one(
 
 
 def plot_qini_curves_overlay(
-    dataset: str, models: list[str], seed: int, data_dir: str, save_path: Path,
+    dataset: str,
+    models: list[str],
+    seed: int,
+    data_dir: str,
+    save_path: Path,
 ) -> None:
     """One Qini curve per model on a single axis."""
     fig, ax = plt.subplots(figsize=(8, 5.5))
@@ -94,9 +107,13 @@ def plot_qini_curves_overlay(
     for m in models:
         preds, t_test, y_test, _ = _refit_one(dataset, m, seed, data_dir)
         curve = qini_curve(preds, t_test, y_test)
-        ax.plot(curve.population_share, curve.cumulative_uplift,
-                lw=2.2, color=MODEL_COLORS.get(m, "grey"),
-                label=f"{m}  Q={curve.qini_coefficient:+.3f}")
+        ax.plot(
+            curve.population_share,
+            curve.cumulative_uplift,
+            lw=2.2,
+            color=MODEL_COLORS.get(m, "grey"),
+            label=f"{m}  Q={curve.qini_coefficient:+.3f}",
+        )
         endpoints.append(float(curve.cumulative_uplift[-1]))
     if endpoints:
         ax.plot([0, 1], [0, max(endpoints)], "--", color="grey", lw=1, label="random")
@@ -113,7 +130,10 @@ def plot_qini_curves_overlay(
 
 
 def plot_decile_overlay(
-    dataset: str, outputs_root: Path, seed: int, save_path: Path,
+    dataset: str,
+    outputs_root: Path,
+    seed: int,
+    save_path: Path,
 ) -> None:
     """Grouped bar chart: per-decile uplift by model."""
     rows: list[pd.DataFrame] = []
@@ -135,9 +155,15 @@ def plot_decile_overlay(
     width = 0.11
     x = np.arange(len(pivot.index))
     for i, m in enumerate(pivot.columns):
-        ax.bar(x + (i - len(pivot.columns) / 2) * width, pivot[m],
-               width, label=m, color=MODEL_COLORS.get(m, "grey"),
-               edgecolor="black", alpha=0.85)
+        ax.bar(
+            x + (i - len(pivot.columns) / 2) * width,
+            pivot[m],
+            width,
+            label=m,
+            color=MODEL_COLORS.get(m, "grey"),
+            edgecolor="black",
+            alpha=0.85,
+        )
     ax.axhline(0, color="black", lw=0.6)
     ax.set_xticks(x)
     ax.set_xticklabels([str(b) for b in pivot.index])
@@ -154,8 +180,12 @@ def plot_decile_overlay(
 
 
 def plot_calibration_overlay(
-    dataset: str, models: list[str], seed: int, data_dir: str,
-    save_path: Path, n_buckets: int = 10,
+    dataset: str,
+    models: list[str],
+    seed: int,
+    data_dir: str,
+    save_path: Path,
+    n_buckets: int = 10,
 ) -> None:
     """Overlay calibration scatter for every model — points + identity line."""
     fig, ax = plt.subplots(figsize=(7, 6.5))
@@ -166,7 +196,9 @@ def plot_calibration_overlay(
         order = np.argsort(-preds, kind="stable")
         sizes = [len(s) for s in np.array_split(np.arange(len(preds)), n_buckets)]
         bucket_idx = np.repeat(np.arange(1, n_buckets + 1), sizes)
-        s_ord, t_ord, y_ord = preds[order], t_test[order].astype(bool), y_test[order].astype(np.float64)
+        s_ord = preds[order]
+        t_ord = t_test[order].astype(bool)
+        y_ord = y_test[order].astype(np.float64)
         xs: list[float] = []
         ys: list[float] = []
         for b in range(1, n_buckets + 1):
@@ -176,14 +208,14 @@ def plot_calibration_overlay(
             if tb.any() and (~tb).any():
                 xs.append(float(s_ord[mask].mean()))
                 ys.append(float(yb[tb].mean() - yb[~tb].mean()))
-        ax.plot(xs, ys, marker="o", lw=1.5, ms=7,
-                color=MODEL_COLORS.get(m, "grey"), label=m, alpha=0.9)
+        ax.plot(
+            xs, ys, marker="o", lw=1.5, ms=7, color=MODEL_COLORS.get(m, "grey"), label=m, alpha=0.9
+        )
         all_x.extend(xs)
         all_y.extend(ys)
     if all_x and all_y:
         lim = max(abs(min(all_x + all_y)), abs(max(all_x + all_y))) * 1.1
-        ax.plot([-lim, lim], [-lim, lim], "--", color="grey", lw=1,
-                label="perfect calibration")
+        ax.plot([-lim, lim], [-lim, lim], "--", color="grey", lw=1, label="perfect calibration")
         ax.set_xlim(-lim, lim)
         ax.set_ylim(-lim, lim)
     ax.axhline(0, color="black", lw=0.4)
@@ -200,14 +232,91 @@ def plot_calibration_overlay(
     log.info("wrote_overlay", path=str(save_path))
 
 
+def plot_cumulative_gain_overlay(
+    dataset: str,
+    models: list[str],
+    seed: int,
+    data_dir: str,
+    save_path: Path,
+) -> None:
+    """One cumulative-gain curve per model (Radcliffe 2007)."""
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    endpoints: list[float] = []
+    for m in models:
+        preds, t_test, y_test, _ = _refit_one(dataset, m, seed, data_dir)
+        cg = cumulative_gain_curve(preds, t_test, y_test)
+        ax.plot(
+            cg.population_share,
+            cg.cumulative_responders_per_capita,
+            lw=2.2,
+            color=MODEL_COLORS.get(m, "grey"),
+            label=f"{m}  AUC={cg.auc:.4f}",
+        )
+        endpoints.append(float(cg.cumulative_responders_per_capita[-1]))
+    if endpoints:
+        ax.plot([0, 1], [0, max(endpoints)], "--", color="grey", lw=1, label="random")
+    ax.set_xlabel("targeted fraction of population")
+    ax.set_ylabel("cumulative treated responders / N")
+    ax.set_title(f"Cumulative gain — all models on {dataset} (seed {seed})")
+    ax.grid(alpha=0.3)
+    ax.legend(loc="lower right", fontsize=9, frameon=True)
+    fig.tight_layout()
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(save_path, dpi=140)
+    plt.close(fig)
+    log.info("wrote_overlay", path=str(save_path))
+
+
+def plot_policy_value_overlay(
+    dataset: str,
+    models: list[str],
+    seed: int,
+    data_dir: str,
+    save_path: Path,
+) -> None:
+    """One policy-value curve per model (Manski 2004 / Athey & Wager 2021)."""
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    budgets = [0.0, 0.05, 0.1, 0.15, 0.2, 0.3, 0.5, 0.7, 1.0]
+    for m in models:
+        preds, t_test, y_test, _ = _refit_one(dataset, m, seed, data_dir)
+        pv = policy_value_curve(preds, t_test, y_test, budgets=budgets)
+        ax.plot(
+            pv.budgets,
+            pv.policy_values,
+            marker="o",
+            lw=2,
+            ms=5,
+            color=MODEL_COLORS.get(m, "grey"),
+            label=m,
+        )
+    ax.set_xlabel("budget (fraction of population treated)")
+    ax.set_ylabel("expected outcome E[Y(pi(X))]")
+    ax.set_title(f"Policy value vs budget — all models on {dataset} (seed {seed})")
+    ax.grid(alpha=0.3)
+    ax.legend(loc="best", fontsize=9, frameon=True)
+    fig.tight_layout()
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(save_path, dpi=140)
+    plt.close(fig)
+    log.info("wrote_overlay", path=str(save_path))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--datasets", nargs="+",
-                        default=["hillstrom", "synthetic"])
-    parser.add_argument("--models", nargs="+",
-                        default=["s_learner", "t_learner", "x_learner",
-                                 "r_learner", "dr_learner",
-                                 "class_transformation", "causal_forest"])
+    parser.add_argument("--datasets", nargs="+", default=["hillstrom", "synthetic"])
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        default=[
+            "s_learner",
+            "t_learner",
+            "x_learner",
+            "r_learner",
+            "dr_learner",
+            "class_transformation",
+            "causal_forest",
+        ],
+    )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--data-dir", default="data/raw")
     parser.add_argument("--outputs-dir", default="outputs/v0.2.0")
@@ -220,16 +329,38 @@ def main() -> int:
 
     for ds in args.datasets:
         plot_qini_curves_overlay(
-            ds, args.models, args.seed, args.data_dir,
+            ds,
+            args.models,
+            args.seed,
+            args.data_dir,
             figures_dir / f"comparison_qini_curves_{ds}.png",
         )
         plot_decile_overlay(
-            ds, outputs_root, args.seed,
+            ds,
+            outputs_root,
+            args.seed,
             figures_dir / f"comparison_deciles_{ds}.png",
         )
         plot_calibration_overlay(
-            ds, args.models, args.seed, args.data_dir,
+            ds,
+            args.models,
+            args.seed,
+            args.data_dir,
             figures_dir / f"comparison_calibration_{ds}.png",
+        )
+        plot_cumulative_gain_overlay(
+            ds,
+            args.models,
+            args.seed,
+            args.data_dir,
+            figures_dir / f"comparison_cumulative_gain_{ds}.png",
+        )
+        plot_policy_value_overlay(
+            ds,
+            args.models,
+            args.seed,
+            args.data_dir,
+            figures_dir / f"comparison_policy_value_{ds}.png",
         )
 
     # JSON manifest of what was produced — handy for the README to

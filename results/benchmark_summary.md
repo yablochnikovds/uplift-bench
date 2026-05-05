@@ -1,5 +1,12 @@
 | dataset   | model                |   qini_mean |   qini_std |   qini_ci_lower |   qini_ci_upper |   auuc |   n_seeds |
 |:----------|:---------------------|------------:|-----------:|----------------:|----------------:|-------:|----------:|
+| criteo    | s_learner            |      0.0986 |   nan      |          0.0673 |          0.127  | 0.7834 |         1 |
+| criteo    | r_learner            |      0.0969 |   nan      |          0.0634 |          0.1238 | 0.715  |         1 |
+| criteo    | t_learner            |      0.0943 |   nan      |          0.0666 |          0.1236 | 0.6756 |         1 |
+| criteo    | dr_learner           |      0.0929 |   nan      |          0.0594 |          0.1179 | 0.7416 |         1 |
+| criteo    | causal_forest        |      0.0913 |   nan      |          0.0619 |          0.121  | 0.6886 |         1 |
+| criteo    | x_learner            |      0.0903 |   nan      |          0.0585 |          0.1182 | 0.7279 |         1 |
+| criteo    | class_transformation |      0.0669 |   nan      |          0.038  |          0.0889 | 0.7025 |         1 |
 | hillstrom | causal_forest        |      0.0666 |     0.005  |          0.0292 |          0.1038 | 0.2149 |         3 |
 | hillstrom | t_learner            |      0.0619 |     0.006  |          0.0211 |          0.1035 | 0.2112 |         3 |
 | hillstrom | dr_learner           |      0.0612 |     0.0066 |          0.0201 |          0.1007 | 0.2116 |         3 |

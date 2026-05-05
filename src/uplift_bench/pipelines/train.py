@@ -27,7 +27,9 @@ from uplift_bench.data.validation import UpliftDataset
 from uplift_bench.metrics._common import NDArray1D
 from uplift_bench.metrics.auuc import auuc
 from uplift_bench.metrics.bootstrap import BootstrapCI, bootstrap_ci
+from uplift_bench.metrics.cumulative_gain import cumulative_gain_curve
 from uplift_bench.metrics.decile import decile_table
+from uplift_bench.metrics.policy_value import policy_value_curve
 from uplift_bench.metrics.qini import qini_coefficient, qini_curve
 from uplift_bench.metrics.uplift_at_k import uplift_at_k
 from uplift_bench.models.base import UpliftModel
@@ -194,6 +196,20 @@ def _compute_metrics(
             folds.y_test,
             k=k_frac,
         )
+
+    # Cumulative gain (Radcliffe 2007) — top-k responder rate.
+    cg = cumulative_gain_curve(test_preds, folds.t_test, folds.y_test)
+    extras["cumulative_gain_auc"] = cg.auc
+
+    # Policy value at standard budget tiers (Manski 2004 / Athey & Wager 2021).
+    pv = policy_value_curve(
+        test_preds,
+        folds.t_test,
+        folds.y_test,
+        budgets=[0.0, 0.1, 0.2, 0.3, 0.5, 1.0],
+    )
+    for b, v in zip(pv.budgets, pv.policy_values, strict=True):
+        extras[f"policy_value_b{int(b * 100):02d}"] = float(v)
     return _Metrics(qini_ci=qini_ci, extras=extras)
 
 

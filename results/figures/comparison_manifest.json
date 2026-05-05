@@ -1,7 +1,6 @@
 {
   "datasets": [
-    "hillstrom",
-    "synthetic"
+    "criteo"
   ],
   "models": [
     "s_learner",
@@ -14,10 +13,13 @@
   ],
   "seed": 42,
   "figures": [
+    "comparison_calibration_criteo.png",
     "comparison_calibration_hillstrom.png",
     "comparison_calibration_synthetic.png",
+    "comparison_deciles_criteo.png",
     "comparison_deciles_hillstrom.png",
     "comparison_deciles_synthetic.png",
+    "comparison_qini_curves_criteo.png",
     "comparison_qini_curves_hillstrom.png",
     "comparison_qini_curves_synthetic.png"
   ]
