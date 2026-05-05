@@ -82,6 +82,13 @@ on the held-out test fold. CatBoost base learner with 200 iterations.
 | r_learner            | 0.0573    | [0.0149, 0.0949]  | 0.209        |
 | class_transformation | 0.0268    | [-0.0156, 0.0660] | 0.185        |
 
+<table>
+<tr>
+<td><img src="results/figures/comparison_qini_curves_hillstrom.png" alt="Qini curves on Hillstrom"/></td>
+<td><img src="results/figures/comparison_deciles_hillstrom.png" alt="Per-decile uplift on Hillstrom"/></td>
+</tr>
+</table>
+
 ### Criteo Uplift v2.1 (1 seed × 7 models, subsample 1M)
 
 700k train / 150k test rows. RCT (uniform propensity by design).
@@ -95,6 +102,13 @@ on the held-out test fold. CatBoost base learner with 200 iterations.
 | causal_forest        | 0.0913 | [0.0619, 0.1210]   | 0.69         |
 | x_learner            | 0.0903 | [0.0585, 0.1182]   | 0.73         |
 | class_transformation | 0.0669 | [0.0380, 0.0889]   | 0.70         |
+
+<table>
+<tr>
+<td><img src="results/figures/comparison_qini_curves_criteo.png" alt="Qini curves on Criteo"/></td>
+<td><img src="results/figures/comparison_calibration_criteo.png" alt="Calibration on Criteo"/></td>
+</tr>
+</table>
 
 ### Synthetic DGP with confounding (3 seeds × 7 models)
 
@@ -110,6 +124,17 @@ confounding). Tests methods' robustness to non-random treatment.
 | r_learner            | 0.0194    | [-0.0249, 0.0598] | 0.317        |
 | s_learner            | 0.0191    | [-0.0283, 0.0693] | 0.384        |
 | dr_learner           | 0.0183    | [-0.0255, 0.0616] | 0.319        |
+
+<table>
+<tr>
+<td><img src="results/figures/comparison_qini_curves_synthetic.png" alt="Qini curves on synthetic"/></td>
+<td><img src="results/figures/comparison_policy_value_synthetic.png" alt="Policy value vs budget on synthetic"/></td>
+</tr>
+<tr>
+<td><img src="results/figures/comparison_cumulative_gain_synthetic.png" alt="Cumulative gain on synthetic"/></td>
+<td><img src="results/figures/comparison_calibration_synthetic.png" alt="Calibration on synthetic"/></td>
+</tr>
+</table>
 
 ### Reading the table
 
@@ -131,8 +156,10 @@ confounding). Tests methods' robustness to non-random treatment.
 Per-seed CSVs and Markdown live in
 [`results/per_dataset/`](results/per_dataset/). Combined summary:
 [`results/benchmark_summary.md`](results/benchmark_summary.md).
-Comparison plots (all models on one canvas):
-[`results/figures/comparison_*.png`](results/figures/).
+**All 18 figures** (per-bar Qini, comparison overlays for Qini /
+deciles / calibration / cumulative gain / policy value, plus the
+model × dataset heatmap) live in
+[`results/figures/`](results/figures/).
 
 > **Q values are normalised** by the perfect-ranking area, following
 > the `scikit-uplift.metrics.qini_auc_score` convention. To convert to
