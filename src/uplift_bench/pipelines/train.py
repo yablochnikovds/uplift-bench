@@ -34,6 +34,7 @@ from uplift_bench.metrics.qini import qini_coefficient, qini_curve
 from uplift_bench.metrics.uplift_at_k import uplift_at_k
 from uplift_bench.models.base import UpliftModel
 from uplift_bench.models.factory import make_model
+from uplift_bench.models.utils import build_model_kwargs
 from uplift_bench.robustness.overlap import overlap_diagnostics
 from uplift_bench.robustness.permutation import permutation_uplift_importance
 from uplift_bench.tracking.mlflow_logger import start_run
@@ -121,35 +122,17 @@ def _prepare_data(
 # ---------------------------------------------------------------------- #
 
 
-def _build_model_kwargs(
-    model_name: str,
-    base_learner_cfg: dict[str, Any],
-    extra_params: dict[str, Any],
-    seed: int,
-) -> dict[str, Any]:
-    """Translate the Hydra config layout into model __init__ kwargs."""
-    if model_name == "causal_forest":
-        # Causal forest takes its own knobs; doesn't accept base_learner.
-        return {"seed": seed, **extra_params}
-    return {
-        "base_learner": base_learner_cfg["name"],
-        "base_params": base_learner_cfg.get("params", {}) or None,
-        "seed": seed,
-        **extra_params,
-    }
-
-
 def _fit_uplift_model(
     folds: _DataFolds,
     model_cfg: dict[str, Any],
     base_learner_cfg: dict[str, Any],
     seed: int,
 ) -> UpliftModel:
-    kwargs = _build_model_kwargs(
+    kwargs = build_model_kwargs(
         model_cfg["name"],
         base_learner_cfg,
         model_cfg.get("extra_params") or {},
-        seed,
+        seed=seed,
     )
     model = make_model(model_cfg["name"], **kwargs)
     log.info("fitting_model", model=model_cfg["name"], n_train=len(folds.X_train))
@@ -165,6 +148,7 @@ def _fit_uplift_model(
 @dataclass(frozen=True, slots=True)
 class _Metrics:
     qini_ci: BootstrapCI
+    auuc_normalized: float
     extras: dict[str, float]
 
 
@@ -210,7 +194,11 @@ def _compute_metrics(
     )
     for b, v in zip(pv.budgets, pv.policy_values, strict=True):
         extras[f"policy_value_b{int(b * 100):02d}"] = float(v)
-    return _Metrics(qini_ci=qini_ci, extras=extras)
+    return _Metrics(
+        qini_ci=qini_ci,
+        auuc_normalized=auuc_res.auuc_normalized,
+        extras=extras,
+    )
 
 
 # ---------------------------------------------------------------------- #
@@ -511,7 +499,7 @@ def run_one(
         qini=metrics.qini_ci.point,
         qini_ci_lower=metrics.qini_ci.lower,
         qini_ci_upper=metrics.qini_ci.upper,
-        auuc=auuc(test_preds, folds.t_test, folds.y_test).auuc_normalized,
+        auuc=metrics.auuc_normalized,
         metrics={**metrics.extras, **robustness.extras},
         artifacts_dir=output_dir,
     )

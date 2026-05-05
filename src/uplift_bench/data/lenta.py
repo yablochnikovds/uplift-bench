@@ -91,12 +91,25 @@ class LentaLoader(DatasetLoader):
 
     def _read(self, path: Path) -> pd.DataFrame:
         parquet = self._parquet_path()
+        # We only ever consume ~20 of the ~190 raw columns — restrict the
+        # CSV / parquet reads to just those so we don't shovel ~150 MB of
+        # unused customer-id features through pandas only to drop them.
+        keep_cols = (
+            ["group", "response_att", "gender"]
+            + list(_NUMERIC_FEATURES)
+        )
         if parquet.exists():
             log.info("lenta_using_cached_parquet", path=str(parquet))
-            df = pd.read_parquet(parquet)
+            available = pd.read_parquet(parquet, columns=None).columns.tolist()
+            cols = [c for c in keep_cols if c in available]
+            df = pd.read_parquet(parquet, columns=cols)
         else:
             log.info("lenta_parsing_csv", path=str(path))
-            df = pd.read_csv(path, compression="gzip", low_memory=False)
+            # Probe the CSV header so we can only ask for columns that exist
+            # — Lenta snapshots vary in which `*_g\d+` features are present.
+            header = pd.read_csv(path, compression="gzip", nrows=0).columns.tolist()
+            cols = [c for c in keep_cols if c in header]
+            df = pd.read_csv(path, compression="gzip", usecols=cols, low_memory=False)
             log.info("lenta_caching_parquet", path=str(parquet))
             write_parquet_atomic(df, parquet)
 

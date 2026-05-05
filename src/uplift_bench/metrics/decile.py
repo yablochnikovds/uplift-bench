@@ -12,7 +12,12 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from uplift_bench.metrics._common import NDArray1D, as_1d_arrays, sort_by_score_desc
+from uplift_bench.metrics._common import (
+    NDArray1D,
+    as_1d_arrays,
+    make_bucket_indices,
+    sort_by_score_desc,
+)
 
 
 def decile_table(
@@ -48,10 +53,7 @@ def decile_table(
     t = treatment[order].astype(bool)
     y = outcome[order].astype(np.float64)
 
-    # np.array_split handles non-divisible n by giving the early buckets one
-    # extra row. That matches what most published uplift packages do.
-    sizes = [len(s) for s in np.array_split(np.arange(n), n_buckets)]
-    bucket_idx: NDArray1D = np.repeat(np.arange(1, n_buckets + 1), sizes)
+    bucket_idx = make_bucket_indices(n, n_buckets)
 
     # Per-bucket aggregates via vectorised masking — much friendlier to
     # pandas-stubs than groupby.apply with conditional returns.

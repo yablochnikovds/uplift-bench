@@ -38,3 +38,14 @@ def sort_by_score_desc(score: NDArray1D) -> NDArray1D:
     scores are exactly equal (common with tree models on small data).
     """
     return np.argsort(-score, kind="stable")
+
+
+def make_bucket_indices(n: int, n_buckets: int) -> NDArray1D:
+    """1-indexed bucket assignment for `n` items split into `n_buckets`.
+
+    Earlier buckets get the extra row when n isn't divisible by n_buckets,
+    matching `np.array_split`. The output is positional, intended to apply
+    AFTER `sort_by_score_desc` — so bucket 1 is the highest-scoring band.
+    """
+    sizes = [len(s) for s in np.array_split(np.arange(n), n_buckets)]
+    return np.repeat(np.arange(1, n_buckets + 1), sizes)

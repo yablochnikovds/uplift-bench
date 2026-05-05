@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from uplift_bench.metrics._common import NDArray1D, sort_by_score_desc
+from uplift_bench.metrics._common import NDArray1D, make_bucket_indices, sort_by_score_desc
 
 
 def plot_calibration(
@@ -62,8 +62,7 @@ def plot_calibration(
     n = len(score)
 
     order = sort_by_score_desc(score)
-    sizes = [len(s) for s in np.array_split(np.arange(n), n_buckets)]
-    bucket_idx = np.repeat(np.arange(1, n_buckets + 1), sizes)
+    bucket_idx = make_bucket_indices(n, n_buckets)
 
     s_ord = score[order]
     t_ord = treatment[order]

@@ -17,7 +17,9 @@ Run after `scripts/run_full_benchmark.py` and
 from __future__ import annotations
 
 import argparse
+import functools
 import json
+import sys
 from pathlib import Path
 
 import matplotlib
@@ -29,12 +31,17 @@ import pandas as pd
 
 from uplift_bench.data.factory import make_loader
 from uplift_bench.data.splits import make_splits
+from uplift_bench.metrics._common import make_bucket_indices
 from uplift_bench.metrics.cumulative_gain import cumulative_gain_curve
 from uplift_bench.metrics.policy_value import policy_value_curve
 from uplift_bench.metrics.qini import qini_curve
 from uplift_bench.models.factory import make_model
 from uplift_bench.utils.logging import configure, get_logger
 from uplift_bench.utils.reproducibility import seed_everything
+
+# Sibling helpers — shared with `extend_results_with_new_metrics.py`.
+sys.path.insert(0, str(Path(__file__).parent))
+from _bench_helpers import fast_model_kwargs, loader_params
 
 log = get_logger(__name__)
 
@@ -51,47 +58,36 @@ MODEL_COLORS: dict[str, str] = {
 }
 
 
+@functools.cache
 def _refit_one(
     dataset: str,
     model_name: str,
     seed: int,
     data_dir: str,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    """Refit one (dataset, model, seed) and return (preds, t_test, y_test, true_tau)."""
-    seed_everything(seed)
-    if dataset == "synthetic":
-        loader_params = {
-            "n_samples": 10_000,
-            "n_features": 10,
-            "n_informative_uplift": 4,
-            "treatment_share": 0.5,
-            "propensity_drift": 1.5,
-            "noise": 0.5,
-            "outcome": "binary",
-            "seed": seed,
-        }
-    elif dataset == "hillstrom":
-        loader_params = {"treatment_arm": "Womens E-Mail", "outcome": "visit"}
-    elif dataset == "criteo":
-        loader_params = {"outcome": "visit", "subsample": 1_000_000, "subsample_seed": 42}
-    else:
-        loader_params = {}
+    """Refit one (dataset, model, seed) and return (preds, t_test, y_test, true_tau).
 
-    loader = make_loader(dataset, data_dir=data_dir, **loader_params)
+    Cached so the 4 comparison plot types (qini / calibration / cumulative
+    gain / policy value) reuse the same fit instead of training the model
+    from scratch four times. Saves ~28-70s on a Hillstrom + synthetic run.
+    """
+    seed_everything(seed)
+    loader = make_loader(
+        dataset,
+        data_dir=data_dir,
+        **loader_params(dataset, seed=seed, criteo_subsample=1_000_000),
+    )
     ds = loader.load()
     splits = make_splits(ds, train_frac=0.7, val_frac=0.15, seed=seed)
     X, t, y = ds.X, ds.t, ds.y
     X_train, t_train, y_train = X.iloc[splits.train], t[splits.train], y[splits.train]
     X_test, t_test, y_test = X.iloc[splits.test], t[splits.test], y[splits.test]
 
-    if model_name == "causal_forest":
-        kwargs = {"seed": seed, "n_estimators": 80, "min_samples_leaf": 30}
-    else:
-        kwargs = {"seed": seed, "base_params": {"iterations": 200, "n_estimators": 200}}
-    model = make_model(model_name, **kwargs)
+    model = make_model(model_name, **fast_model_kwargs(model_name, seed=seed))
     model.fit(X_train, t_train, y_train)
     preds = model.predict_uplift(X_test)
-    return preds, t_test, y_test, np.zeros_like(preds)  # true_tau unused for real datasets
+    # true_tau placeholder kept for signature stability with synthetic-only callers.
+    return preds, t_test, y_test, np.zeros_like(preds)
 
 
 def plot_qini_curves_overlay(
@@ -194,8 +190,7 @@ def plot_calibration_overlay(
     for m in models:
         preds, t_test, y_test, _ = _refit_one(dataset, m, seed, data_dir)
         order = np.argsort(-preds, kind="stable")
-        sizes = [len(s) for s in np.array_split(np.arange(len(preds)), n_buckets)]
-        bucket_idx = np.repeat(np.arange(1, n_buckets + 1), sizes)
+        bucket_idx = make_bucket_indices(len(preds), n_buckets)
         s_ord = preds[order]
         t_ord = t_test[order].astype(bool)
         y_ord = y_test[order].astype(np.float64)

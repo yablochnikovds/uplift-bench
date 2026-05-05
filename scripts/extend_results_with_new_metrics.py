@@ -12,6 +12,7 @@ which writes the new columns natively.
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -24,32 +25,11 @@ from uplift_bench.models.factory import make_model
 from uplift_bench.utils.logging import configure, get_logger
 from uplift_bench.utils.reproducibility import seed_everything
 
+# Sibling helper module — shared with `build_comparison_plots.py`.
+sys.path.insert(0, str(Path(__file__).parent))
+from _bench_helpers import fast_model_kwargs, loader_params
+
 log = get_logger(__name__)
-
-
-def _loader_params(dataset: str, seed: int, criteo_subsample: int | None) -> dict:
-    if dataset == "hillstrom":
-        return {"treatment_arm": "Womens E-Mail", "outcome": "visit"}
-    if dataset == "criteo":
-        return {"outcome": "visit", "subsample": criteo_subsample, "subsample_seed": 42}
-    if dataset == "synthetic":
-        return {
-            "n_samples": 10_000,
-            "n_features": 10,
-            "n_informative_uplift": 4,
-            "treatment_share": 0.5,
-            "propensity_drift": 1.5,
-            "noise": 0.5,
-            "outcome": "binary",
-            "seed": seed,
-        }
-    return {}
-
-
-def _model_kwargs(model_name: str) -> dict:
-    if model_name == "causal_forest":
-        return {"n_estimators": 80, "min_samples_leaf": 30}
-    return {"base_params": {"iterations": 200, "n_estimators": 200}}
 
 
 def main() -> int:
@@ -77,7 +57,7 @@ def main() -> int:
             loader = make_loader(
                 ds,
                 data_dir=args.data_dir,
-                **_loader_params(ds, seed, args.criteo_subsample),
+                **loader_params(ds, seed=seed, criteo_subsample=args.criteo_subsample),
             )
             dataset = loader.load()
             splits = make_splits(dataset, train_frac=0.7, val_frac=0.15, seed=seed)
@@ -91,7 +71,7 @@ def main() -> int:
             t_test = t[splits.test]
             y_test = y[splits.test]
 
-            model_obj = make_model(model, seed=seed, **_model_kwargs(model))
+            model_obj = make_model(model, **fast_model_kwargs(model, seed=seed))
             log.info("refitting", dataset=ds, model=model, seed=seed)
             model_obj.fit(X_train, t_train, y_train)
             preds = model_obj.predict_uplift(X_test)
@@ -113,7 +93,10 @@ def main() -> int:
         new_df = pd.DataFrame.from_dict(new_cols, orient="index")
         new_df.index = pd.MultiIndex.from_tuples(new_df.index, names=["model", "seed"])
         df = df.merge(
-            new_df.reset_index(), on=["model", "seed"], how="left", validate="m:1",
+            new_df.reset_index(),
+            on=["model", "seed"],
+            how="left",
+            validate="m:1",
         )
         df.to_csv(csv, index=False)
         df.round(4).to_markdown(per_dir / f"{ds}.md", index=False)
