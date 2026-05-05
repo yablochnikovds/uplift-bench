@@ -153,6 +153,47 @@ confounding). Tests methods' robustness to non-random treatment.
   statistically significant. The benchmark is a useful diagnostic, not
   a leaderboard.
 
+### Key takeaways
+
+The headline finding across all three datasets:
+
+1. **Simpler is better at the extremes of n.** Cross-fit meta-learners
+   (R, DR) shine in the middle regime (Hillstrom, ~30k rows, RCT) where
+   they have enough data to fit nuisance models well *and* enough
+   heterogeneity to benefit from doubly-robust correction. They lose
+   on both ends — on huge-n RCT (Criteo, 700k rows) where regularisation
+   of a single S-learner is hard to beat, and on small-n confounded
+   data (synthetic, 7k train) where the cross-fit nuisance models
+   themselves are starved.
+
+2. **No "universal best" meta-learner.** Each dataset has a different
+   leader (causal_forest, s_learner, class_transformation) and the gap
+   to second place is within bootstrap CI for both real datasets.
+   **Practical implication:** there's no point picking a meta-learner
+   in advance — run several and pick by Qini on a held-out fold.
+
+3. **AUUC and Qini sometimes disagree on rankings** (compare the
+   second-place positions per dataset). AUUC favours models that lift
+   the *full* curve evenly, while Qini favours models that lift the
+   *head* (top-k). For marketing-style budget-constrained targeting,
+   Qini is the more decision-relevant metric — that's what we lead with.
+
+4. **Confounded data is genuinely hard.** On the synthetic DGP with
+   `propensity_drift=1.5`, observed propensity ESS / N drops from ~1.0
+   (RCT) to ~0.33 (heavy overlap problem). This is exactly the regime
+   where DR-learner's theory promises to win, but it doesn't here
+   because the nuisance models can't be estimated reliably at n=7k.
+   To see DR shine you need *both* confounding *and* enough n — a
+   combination none of our public datasets provide.
+
+5. **Methodological honesty matters more than the leaderboard.** The
+   first benchmark run had a Qini-normalisation bug that compressed
+   all models to ~0.003 and made differences invisible. The audit in
+   [`docs/validation.md`](docs/validation.md) caught it; the fixed
+   numbers spread by an order of magnitude. The lesson: any benchmark
+   without an independent audit of the metric implementations is
+   suspect — use ours as a starting point and re-validate.
+
 Per-seed CSVs and Markdown live in
 [`results/per_dataset/`](results/per_dataset/). Combined summary:
 [`results/benchmark_summary.md`](results/benchmark_summary.md).
@@ -174,12 +215,15 @@ and the loaders are wired in for when you place the files.
 ## Layout
 
 ```
-src/uplift_bench/   library
+src/uplift_bench/   library — 7 models, 6 metrics, 4 robustness modules,
+                    11 plot fns, synthetic DGP, MLflow logger, Hydra schemas
 configs/            Hydra configs (dataset / model / base_learner / experiment)
-tests/              unit + integration tests + synthetic fixtures
-results/            committed CSV/MD with the latest benchmark numbers
-docs/               MkDocs site (methodology, datasets, results, API)
-scripts/            run_full_benchmark.py, aggregate_results.py
+tests/              unit + integration tests + reference cross-validation vs causalml
+results/            committed per-dataset CSV/MD + 18 figures + benchmark summary
+docs/               MkDocs site — methodology, architecture, validation,
+                    datasets, why_synthetic, results, reproducing, API
+scripts/            run_full_benchmark.py, build_comparison_plots.py,
+                    aggregate_results.py, build_sample_fixtures.py
 ```
 
 ## Development
